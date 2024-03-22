@@ -30,4 +30,9 @@ button.main{
 
 main{
     padding: 0 2rem;
+
+    > p:nth-of-type(1){
+        font-size: 1.2rem;
+        margin-top: 3rem;
+    }
 }

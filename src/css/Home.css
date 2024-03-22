@@ -47,4 +47,16 @@
   text-shadow: 1px 1px 1px gray;
 }
 
+.locationsGroup {
+  margin: 6rem 0;
+}
+.locationsGroup > p {
+  margin-top: 1rem;
+}
+.locationsGroup .locations {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
 /*# sourceMappingURL=Home.css.map */
