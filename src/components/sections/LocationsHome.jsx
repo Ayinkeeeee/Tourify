@@ -9,6 +9,7 @@ function LocationsHome({data}) {
       <div className="locations">
         {data.locations && data.locations.map((location, index) => <LocationHome key={index} />)}
       </div>
+      <p className="full_list">View Full List</p>
     </section>
   )
 }

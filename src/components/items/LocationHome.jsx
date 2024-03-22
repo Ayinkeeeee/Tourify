@@ -6,8 +6,10 @@ function LocationHome({location}) {
         <div className="image-container">
             <img src={jlm} alt="jabi_lake_mall" />
         </div>
-        <p className="name">{location.locationName}</p>
-        <p className="rating">{location.rating} / 5</p>
+        <div className="text">
+            <p className="name">{location.locationName}</p>
+            <p className="rating">{location.rating} / 5</p>
+        </div>
     </div>
   )
 }

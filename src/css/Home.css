@@ -1,62 +1,17 @@
-.controls {
-  background: transparent;
-  border: none;
-  color: white;
-  position: absolute;
-  right: 2rem;
-  bottom: 2rem;
-  z-index: 5;
-  font-size: 1.2rem;
-  padding: 0.5rem 1rem;
-  border-radius: 0.25re;
-  cursor: pointer;
-}
+/* Error: Undefined variable.
+ *     ,
+ * 101 |                     color: $dark_blue;
+ *     |                            ^^^^^^^^^^
+ *     '
+ *   scss/Home.scss 101:28  root stylesheet */
 
-.controls:hover {
-  border: solid 1px white;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a     \2577 \a 101 \2502                      color: $dark_blue;\a     \2502                             ^^^^^^^^^^\a     \2575 \a   scss/Home.scss 101:28  root stylesheet";
 }
-
-.hero {
-  width: 100%;
-  height: 100%;
-}
-.hero video {
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-.hero div {
-  z-index: 3;
-  position: absolute;
-  top: 50%;
-  left: 2rem;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  row-gap: 2rem;
-}
-.hero div p {
-  color: white;
-  font-size: 1.5rem;
-  font-weight: normal;
-  font-family: serif;
-}
-.hero div .large_text {
-  font-size: 8rem;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px gray;
-}
-
-.locationsGroup {
-  margin: 6rem 0;
-}
-.locationsGroup > p {
-  margin-top: 1rem;
-}
-.locationsGroup .locations {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-/*# sourceMappingURL=Home.css.map */
