@@ -35,6 +35,8 @@ function App() {
     <main>
       <p>Welcome to Abuja! Discover the best of Abuja with Tourify, the best guide for the Capital. Find things to do in Abuja, from iconic leisure spots and fun-filled days out to top restaurants and unmissable Abuja events. If you’re not able to visit just yet, plan ahead to make the most of your next visit.</p>
       <LocationsHome/>
+      <LocationsHome/>
+      <LocationsHome/>
     </main>
     </>
   );

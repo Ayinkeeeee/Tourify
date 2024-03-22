@@ -47,35 +47,4 @@
   text-shadow: 1px 1px 1px gray;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-}
-
-button {
-  width: fit-content;
-}
-
-h1 {
-  font-family: serif;
-  font-size: 1.8rem;
-}
-
-button.main {
-  background: darkblue;
-  color: white;
-  padding: 0.5rem 1rem;
-  border: none;
-  font-size: 1.2rem;
-  width: fit-content;
-  border-radius: 0.5rem;
-  font-family: sans-serif;
-}
-
-main {
-  padding: 0 2rem;
-}
-
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=Home.css.map */

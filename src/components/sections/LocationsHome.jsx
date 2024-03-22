@@ -4,7 +4,7 @@ import { useState } from "react"
 function LocationsHome({data}) {
   return (
     <section className="locationsGroup">
-      <h2>{data.header}</h2>
+      <h1>{data.header}</h1>
       <p>{data.text}</p>
       <div className="locations">
         {data.locations && data.locations.map((location, index) => <LocationHome key={index} />)}

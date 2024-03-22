@@ -1,4 +1,5 @@
 @import "colours";
+@import "Home";
 
 *{
     box-sizing: border-box;
@@ -11,58 +12,9 @@ button{
     width: fit-content;
 }
 
-.controls{
-    background: transparent;
-    border: none;
-    color: white;
-    position: absolute;
-    right: 2rem;
-    bottom: 2rem;
-    z-index: 5;
-    font-size: 1.2rem;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25re;
-    cursor: pointer;
-}
-
-.controls:hover{
-    border: solid 1px white;
-}
-
-
-.hero{
-    width: 100%;
-    height: 100%;
-
-    video{
-        width: 100%;
-        height: 100%;
-        z-index: 0;
-    }
-
-    div{
-        z-index: 3;
-        position: absolute;
-        top: 50%;
-        left: 2rem;
-        transform: translateY(-50%);
-        display: flex;
-        flex-direction: column;
-        row-gap: 2rem;
-
-        p{
-            color: white;
-            font-size: 1.5rem;
-            font-weight: normal;
-            font-family: serif;
-        }
-
-        .large_text{
-            font-size: 8rem;
-            font-weight: bold;
-            text-shadow: 1px 1px 1px gray;
-        }
-    }
+h1{
+    font-family: serif;
+    font-size: 1.8rem;
 }
 
 button.main{
