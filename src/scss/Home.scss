@@ -43,12 +43,12 @@
             color: white;
             font-size: 1.5rem;
             font-weight: normal;
-            font-family: serif;
         }
 
         .large_text{
             font-size: 8rem;
             font-weight: bold;
+            color: white;
             text-shadow: 1px 1px 1px gray;
         }
     }
@@ -146,4 +146,32 @@
 
 .faq{
     @extend .about;
+
+    .text{
+        width: 100%;
+
+        .faq{
+            display: flex;
+            flex-direction: column;
+
+            .question{
+                display: flex;
+                justify-content: space-between;
+                padding: 0.5rem 0;
+                border-bottom: solid 1px $dark_blue;
+                cursor: default;
+            }
+
+            .question.open{
+                border-bottom: none;
+            }
+
+            .answer{
+                border: solid 1px $dark_blue;
+                padding: 1rem;
+                border-bottom-right-radius: 0.5rem;
+                border-bottom-left-radius: 0.5rem;
+            }
+        }
+    }
 }

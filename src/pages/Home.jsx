@@ -1,6 +1,7 @@
 import cityVideo from "../assets/videos/city_gate.mp4"
 import fAQ from "../assets/images/faq.png"
 import tourBus from "../assets/images/tour_bus.jpeg"
+import FAQItem from "../components/items/FAQItem"
 import LocationsHome from "../components/sections/LocationsHome"
 import { useState, useRef } from "react"
 
@@ -24,7 +25,7 @@ function Home() {
         <div className="hero">
             <video ref={videoRef} muted autoPlay loop width="1000px" height="1000px" src={cityVideo}></video>
             <div>
-            <p className="large_text">New to Abuja?</p>
+            <h1 className="large_text">New to Abuja?</h1>
             <p>Don't worry, we would love to show you around</p>
             <button className="main">Explore Locations</button>
             </div>
@@ -59,6 +60,9 @@ function Home() {
                 <div className="text">
                     <h1>FAQs</h1>
                     <p>Here are some freqently asked questions about Tourify</p>
+                    <FAQItem/>
+                    <FAQItem/>
+                    <FAQItem/>
                 </div>
             </section>
         </main>

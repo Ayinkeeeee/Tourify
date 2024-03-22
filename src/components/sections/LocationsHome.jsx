@@ -1,5 +1,4 @@
 import LocationHome from "../items/LocationHome"
-import { useState } from "react"
 
 function LocationsHome({data}) {
   return (

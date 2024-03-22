@@ -1,5 +1,5 @@
 import angleDown from "../../assets/icons/angle_down.svg"
-import angleUp from "../../assets/icons/angle_down.svg"
+import angleUp from "../../assets/icons/angle_up.svg"
 import { useState } from "react"
 
 function FAQItem({faq}) {
@@ -10,14 +10,14 @@ function FAQItem({faq}) {
     }
 
     return (
-        <div>
-            <div onClick={toggle}>
+        <div className="faq">
+            <div onClick={toggle} className={`question ${isOpen ? "open" : ''}`} >
                 <p>{faq.question}</p>
                 <div>
-                    <img src={isOpen ? angleUp : angleDown} alt="" />
+                    <img src={isOpen ? angleUp : angleDown} alt="toggle button" />
                 </div>
             </div>
-            <p>{faq.answer}</p>
+            {isOpen && <p className="answer">{faq.answer}</p>}
         </div>
     )
 }
