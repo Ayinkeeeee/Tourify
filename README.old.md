@@ -1,2 +1,0 @@
-# Tourify
-Tourify Web App
