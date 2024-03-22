@@ -60,10 +60,17 @@ function Home() {
                 <div className="text">
                     <h1>FAQs</h1>
                     <p>Here are some freqently asked questions about Tourify</p>
-                    <FAQItem/>
-                    <FAQItem/>
-                    <FAQItem/>
+                    <div className="faqs">
+                        <FAQItem/>
+                        <FAQItem/>
+                        <FAQItem/>
+                    </div>
                 </div>
+            </section>
+            <section className="testimonials">
+                <h1>Testimonials</h1>
+                <p>Don’t just take our word for it. Here are some reviews from satisfied our customers. We’d love to see a review from you too 🥹</p>
+                <button className="main">Get a Tour Guide</button>
             </section>
         </main>
       </>

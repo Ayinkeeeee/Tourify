@@ -39,24 +39,25 @@
 }
 .hero div p {
   color: white;
-  font-size: 1.5rem;
-  font-weight: normal;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-shadow: 1px 4px 4px gray;
 }
 .hero div .large_text {
-  font-size: 8rem;
+  font-size: 9rem;
   font-weight: bold;
   color: white;
-  text-shadow: 1px 1px 1px gray;
+  text-shadow: 1px 4px 4px gray;
 }
 
 .locationsGroup {
-  margin: 6rem 0;
+  margin: 6rem 0 0 0;
   display: flex;
   flex-direction: column;
 }
 .locationsGroup > p {
   margin-top: 1.5rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   width: 55%;
 }
 .locationsGroup .locations {
@@ -83,10 +84,11 @@
   display: flex;
   flex-direction: column;
   row-gap: 0.25rem;
+  padding-left: 1rem;
 }
 .locationsGroup .locations .locationItem .text .name {
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
 }
 .locationsGroup .locations .locationItem .text .rating {
   font-size: 1rem;
@@ -111,11 +113,17 @@
 
 .about, .faq {
   display: flex;
-  column-gap: 10rem;
+  column-gap: 15rem;
+  margin: 10rem 0 0 0;
 }
 .about .text, .faq .text {
   text-align: justify;
-  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+.about .text ul li, .faq .text ul li {
+  font-size: 1.1rem;
 }
 .about .image-container img, .faq .image-container img {
   width: 549px;
@@ -123,28 +131,42 @@
   border-radius: 1.5rem;
 }
 
+.faq {
+  margin: 8rem 0 0 0;
+}
 .faq .text {
   width: 100%;
 }
-.faq .text .faq {
+.faq .text .faqs .faqItem {
   display: flex;
   flex-direction: column;
 }
-.faq .text .faq .question {
+.faq .text .faqs .faqItem .question {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 0;
+  font-size: 1.1rem;
   border-bottom: solid 1px #1F3B98;
   cursor: default;
 }
-.faq .text .faq .question.open {
+.faq .text .faqs .faqItem .question.open {
   border-bottom: none;
 }
-.faq .text .faq .answer {
+.faq .text .faqs .faqItem .answer {
   border: solid 1px #1F3B98;
   padding: 1rem;
+  font-size: 1.1rem;
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
+}
+
+.testimonials {
+  margin: 8rem 0 0 0;
+  text-align: center;
+}
+.testimonials > p {
+  margin: 0 auto;
+  width: 70%;
 }
 
 * {
@@ -152,12 +174,6 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-}
-
-.abril-fatface-regular {
-  font-family: "Abril Fatface", serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 button {
@@ -170,7 +186,8 @@ h1 {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 400;
 }
 
 button.main {
@@ -188,7 +205,7 @@ main {
   padding: 0 2rem;
 }
 main > p:nth-of-type(1) {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-top: 3rem;
 }
 

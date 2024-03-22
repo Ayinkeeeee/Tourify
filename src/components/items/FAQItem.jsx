@@ -10,7 +10,7 @@ function FAQItem({faq}) {
     }
 
     return (
-        <div className="faq">
+        <div className="faqItem">
             <div onClick={toggle} className={`question ${isOpen ? "open" : ''}`} >
                 <p>{faq.question}</p>
                 <div>
