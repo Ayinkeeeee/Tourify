@@ -1,4 +1,6 @@
 import cityVideo from "../assets/videos/city_gate.mp4"
+import fAQ from "../assets/images/faq.png"
+import tourBus from "../assets/images/tour_bus.jpeg"
 import LocationsHome from "../components/sections/LocationsHome"
 import { useState, useRef } from "react"
 
@@ -36,6 +38,25 @@ function Home() {
             <LocationsHome/>
             <LocationsHome/>
             <LocationsHome/>
+            <section className="about">
+                <div className="text">
+                    <h1>About Us</h1>
+                    <p>Tourify is the go-to platform for discovering new locations in any city. Whether you’re new to the city, a tourist, or a long-time resident, we have something for you.</p>
+                    <ul>
+                        <li>As a long-time resident Tourify can help you discover new locations you didn’t know about.</li>
+                        <li>As a tourist or new comer to a city, we know it can be overwhelming. So we provide a list  popular places to visit. </li>
+                        <li>We also provide a tour guides to show you around so you don’t get lost.</li>
+                    </ul>
+                </div>
+                <div className="image-container">
+                    <img src={tourBus} alt="tour_bus" />
+                </div>
+            </section>
+            <section className="faq">
+                <div className="image-container">
+                    <img src={fAQ} alt="faq" />
+                </div>
+            </section>
         </main>
       </>
     )

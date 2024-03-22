@@ -17,12 +17,14 @@
 }
 
 .hero {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: 100vh;
+  position: relative;
 }
 .hero video {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   z-index: 0;
 }
 .hero div {
@@ -105,6 +107,20 @@
 }
 .locationsGroup .full_list:active {
   color: #1F3B98;
+}
+
+.about, .faq {
+  display: flex;
+  column-gap: 10rem;
+}
+.about .text, .faq .text {
+  text-align: justify;
+  font-size: 1.2rem;
+}
+.about .image-container img, .faq .image-container img {
+  width: 549px;
+  height: 300px;
+  border-radius: 1.5rem;
 }
 
 * {
