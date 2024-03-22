@@ -56,6 +56,10 @@ function Home() {
                 <div className="image-container">
                     <img src={fAQ} alt="faq" />
                 </div>
+                <div className="text">
+                    <h1>FAQs</h1>
+                    <p>Here are some freqently asked questions about Tourify</p>
+                </div>
             </section>
         </main>
       </>
