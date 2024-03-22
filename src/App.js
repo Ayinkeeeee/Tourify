@@ -1,5 +1,5 @@
 import './css/App.css';
-import cityVideo from "./assets/city_gate.mp4"
+import cityVideo from "./assets/videos/city_gate.mp4"
 import LocationsHome from './components/sections/LocationsHome';
 import { useState, useRef } from "react";
 
