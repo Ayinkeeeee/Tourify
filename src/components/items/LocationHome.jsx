@@ -1,4 +1,5 @@
 import jlm from "../../assets/images/jlm.jpg";
+import star from "../../assets/icons/star.svg";
 
 function LocationHome({location}) {
   return (
@@ -8,7 +9,10 @@ function LocationHome({location}) {
         </div>
         <div className="text">
             <p className="name">{location.locationName}</p>
-            <p className="rating">{location.rating} / 5</p>
+            <div>
+                <p className="rating">{location.rating} / 5</p>
+                <img src={star} alt="star"/>
+            </div>
         </div>
     </div>
   )

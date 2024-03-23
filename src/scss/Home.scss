@@ -2,16 +2,31 @@
 
 .controls{
     background: transparent;
-    border: none;
+    border: solid 1px transparent;
     color: white;
     position: absolute;
     right: 2rem;
     bottom: 2rem;
     z-index: 5;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 0.5rem 1rem;
-    border-radius: 0.25re;
+    border-radius: 0.25rem;
     cursor: pointer;
+    transition: 100ms;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    text-shadow: 1px 4px 4px gray;
+
+    .pause{
+        width: 0.7rem;
+        height: auto;
+    }
+
+    .play{
+        width: 0.6rem;
+        height: auto;
+    }
 }
 
 .controls:hover{
@@ -54,6 +69,16 @@
             color: white;
             text-shadow: 1px 4px 4px gray;
         }
+    }
+}
+
+main{
+
+    > p::first-letter{
+        font-family: "Abril Fatface", serif;
+        line-height: 1;
+        font-size: 2rem;
+        font-weight: bold;
     }
 }
 
@@ -103,10 +128,23 @@
                     font-size: 1.15rem;
                 }
 
-                .rating{
-                    font-size: 1rem;
-                    font-weight: bold;
-                    color: $dark_blue;
+                > div{
+                    display: flex;
+                    align-items: start;
+                    column-gap: 0.5rem;
+                    height: fit-content;
+
+
+                    .rating{
+                        font-size: 1rem;
+                        font-weight: bold;
+                        color: $dark_blue;
+                    }
+
+                    img{
+                        width: 1rem;
+                        height: auto;
+                    }
                 }
             }
         }
@@ -120,6 +158,7 @@
         align-self: flex-end;
         cursor: pointer;
         text-decoration: underline;
+        text-underline-offset: 0.2rem;
     }
 
     .full_list:hover{
@@ -144,9 +183,11 @@
         width: 40%;
 
         ul{
+            padding-left: 1rem;
 
             li{
                 font-size: 1.1rem;
+                padding-left: 0.5rem;
             }
         }
     }
@@ -189,6 +230,7 @@
     
                 .answer{
                     border: solid 1px $dark_blue;
+                    background: $gray_card;
                     padding: 1rem;
                     font-size: 1.1rem;
                     border-bottom-right-radius: 0.5rem;

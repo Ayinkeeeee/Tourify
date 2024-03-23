@@ -1,6 +1,8 @@
 import cityVideo from "../assets/videos/city_gate.mp4"
 import fAQ from "../assets/images/faq.png"
 import tourBus from "../assets/images/tour_bus.jpeg"
+import play from "../assets/icons/play_arrow.svg"
+import pause from "../assets/icons/pause_white.svg"
 import FAQItem from "../components/items/FAQItem"
 import Review from "../components/items/Review"
 import LocationsHome from "../components/sections/LocationsHome"
@@ -34,8 +36,8 @@ function Home() {
             <button className="main">Explore Locations</button>
             </div>
             {isPlaying ?
-            <button className="controls" onClick={pauseVideo}>Pause Video</button> :
-            <button className="controls" onClick={playVideo}>Play Video</button>
+            <button className="controls" onClick={pauseVideo}><img className="pause" src={pause} alt="pause"/>Pause Video</button> :
+            <button className="controls" onClick={playVideo}><img className="play" src={play} alt="play"/>Play Video</button>
             }
         </div>
         <main>
