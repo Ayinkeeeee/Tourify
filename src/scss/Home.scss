@@ -292,11 +292,17 @@
 
     input{
         width: 40%;
-        margin: 1.5rem 0 3rem 0;
+        margin: 1.5rem 0 2.5rem 0;
         border: black 1px solid;
         text-align: center;
         font-size: 0.9rem;
         padding-block: 0.25rem;
+        border-radius: 0.25rem;
+        outline: none;
+    }
+
+    input:focus{
+        border: $mid_blue 1px solid;
     }
 
     button{

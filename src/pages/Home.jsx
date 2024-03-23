@@ -5,6 +5,7 @@ import FAQItem from "../components/items/FAQItem"
 import Review from "../components/items/Review"
 import LocationsHome from "../components/sections/LocationsHome"
 import NewsLetter from "../components/forms/NewsLetter"
+import { ToastContainer } from "react-toastify"
 import { useState, useRef } from "react"
 
 function Home() {
@@ -24,6 +25,7 @@ function Home() {
   
     return (
       <>
+        <ToastContainer/>
         <div className="hero">
             <video ref={videoRef} muted autoPlay loop width="1000px" height="1000px" src={cityVideo}></video>
             <div>
