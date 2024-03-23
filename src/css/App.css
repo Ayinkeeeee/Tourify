@@ -348,6 +348,7 @@ main > p::first-letter {
   border-radius: 0.25rem;
   color: white;
   cursor: pointer;
+  text-decoration: none;
 }
 #food main .categoriesBtns .categoryBtn.blue {
   background: #1F3B98;
@@ -367,8 +368,11 @@ main > p::first-letter {
 #food main .categoriesBtns .categoryBtn.black:active {
   background: black;
 }
+#food main .locationsGroup:first-of-type {
+  margin-top: 3rem;
+}
 #food main .locationsGroup {
-  margin: 3rem 0 0 0;
+  margin: 6rem 0 0 0;
   display: flex;
   flex-direction: column;
 }
@@ -435,6 +439,11 @@ main > p::first-letter {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
 }
 
 button {

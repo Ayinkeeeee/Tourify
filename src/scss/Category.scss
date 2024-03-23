@@ -54,6 +54,7 @@
                 border-radius: 0.25rem;
                 color: white;
                 cursor: pointer;
+                text-decoration: none;
             }
     
             .categoryBtn.blue{
@@ -81,8 +82,12 @@
             }
         }
     
+        .locationsGroup:first-of-type{
+            margin-top: 3rem;
+        }
+
         .locationsGroup{
-            margin: 3rem 0 0 0;
+            margin: 6rem 0 0 0;
             display: flex;
             flex-direction: column;
         

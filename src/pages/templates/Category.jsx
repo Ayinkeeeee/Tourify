@@ -13,12 +13,13 @@ function Category({category}) {
           <p>{category.introText}</p>
           <div className="categoriesBtns">
             {category.categories && category.categories.map((category, index) => (
-              <button key={index} className={`categoryBtn ${index % 2 === 0 ? 'blue' : 'black'}`}>
+              <a  href={`#${category}`} key={index} className={`categoryBtn ${index % 2 === 0 ? 'blue' : 'black'}`}>
                 {category}
-              </button>
+              </a>
             ))}
           </div>
-          <LocationsCategory />
+          {category.categories && category.categories.map((category, index)  =>     <LocationsCategory key={index} id={category}/>)
+          }
         </main>
     </div>
   )

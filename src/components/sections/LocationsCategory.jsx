@@ -1,13 +1,12 @@
 import LocationCategory from "../items/LocationCategory"
 
-function LocationsCategory({data}) {
+function LocationsCategory({data, id}) {
   return (
-    <section className="locationsGroup">
-      <h1>{data.header}</h1>
+    <section id={id} className="locationsGroup">
+      <h1>{id}</h1>
       <div className="locations">
         {data.locations && data.locations.map((location, index) => <LocationCategory key={index} />)}
       </div>
-      <p className="full_list">View Full List</p>
     </section>
   )
 }
