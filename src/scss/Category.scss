@@ -1,3 +1,5 @@
+@import "colours";
+
 #food{
     display: unset;
     height: 1000vh;
@@ -58,7 +60,7 @@
             }
     
             .categoryBtn.blue{
-                background: $dark_blue;
+                background: red;
             }
     
             .categoryBtn.blue:hover{

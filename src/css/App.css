@@ -351,7 +351,7 @@ main > p::first-letter {
   text-decoration: none;
 }
 #food main .categoriesBtns .categoryBtn.blue {
-  background: #1F3B98;
+  background: red;
 }
 #food main .categoriesBtns .categoryBtn.blue:hover {
   background: #2f55d5;
