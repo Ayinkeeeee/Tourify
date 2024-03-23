@@ -1,8 +1,7 @@
 @import "colours";
 
 .tour_guides{
-    margin: 8rem 0 0 0;
-    text-align: center;
+    margin: 6rem 0 0 0;
 
     > p {
         width: 70%;
@@ -16,7 +15,7 @@
         width: 100%;
         margin: 0 auto 4rem auto;
         flex-wrap: wrap;
-        row-gap: 4rem;
+        row-gap: 6rem;
 
         .tourGuideItem{
             background: $gray_card;
@@ -26,6 +25,7 @@
             border-radius: 1rem;
             max-width: 363px;
             height: 470px;
+            text-align: center;
 
             .person{
                 position: absolute;
@@ -45,6 +45,7 @@
                 margin: 2rem auto 0 auto;
                 font-size: 1.1rem;
                 width: 70%;
+                line-height: 1.4;
                 position: relative;
                 text-align: justify;
             }
@@ -70,8 +71,9 @@
 
             .specialty{
                 color: $dark_blue;
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 0.95rem;
+                margin-top: 1rem;
             }
         }
     }

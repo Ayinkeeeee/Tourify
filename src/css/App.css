@@ -435,8 +435,7 @@ main > p::first-letter {
 }
 
 .tour_guides {
-  margin: 8rem 0 0 0;
-  text-align: center;
+  margin: 6rem 0 0 0;
 }
 .tour_guides > p {
   width: 70%;
@@ -449,7 +448,7 @@ main > p::first-letter {
   width: 100%;
   margin: 0 auto 4rem auto;
   flex-wrap: wrap;
-  row-gap: 4rem;
+  row-gap: 6rem;
 }
 .tour_guides .guides .tourGuideItem {
   background: #FBFAFA;
@@ -459,6 +458,7 @@ main > p::first-letter {
   border-radius: 1rem;
   max-width: 363px;
   height: 470px;
+  text-align: center;
 }
 .tour_guides .guides .tourGuideItem .person {
   position: absolute;
@@ -476,6 +476,7 @@ main > p::first-letter {
   margin: 2rem auto 0 auto;
   font-size: 1.1rem;
   width: 70%;
+  line-height: 1.4;
   position: relative;
   text-align: justify;
 }
@@ -497,8 +498,9 @@ main > p::first-letter {
 }
 .tour_guides .guides .tourGuideItem .specialty {
   color: #1F3B98;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 0.95rem;
+  margin-top: 1rem;
 }
 
 * {
