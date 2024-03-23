@@ -228,6 +228,34 @@
   margin: 0.75rem 0;
 }
 
+#newsletter {
+  background: #FBFAFA;
+  border: solid 2px black;
+  margin: 8rem auto;
+  width: fit-content;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 5rem 3rem 5rem;
+  border-radius: 1rem;
+}
+#newsletter p {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+#newsletter input {
+  width: 40%;
+  margin: 1.5rem 0 3rem 0;
+  border: black 1px solid;
+  text-align: center;
+  font-size: 0.9rem;
+  padding-block: 0.25rem;
+}
+#newsletter button {
+  font-size: 1.05rem;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -258,6 +286,15 @@ button.main {
   width: fit-content;
   border-radius: 0.5rem;
   font-weight: 500;
+  cursor: pointer;
+}
+
+button.main:hover {
+  background: #1F83CB;
+}
+
+button.main:active {
+  background: black;
 }
 
 main {

@@ -4,6 +4,7 @@ import tourBus from "../assets/images/tour_bus.jpeg"
 import FAQItem from "../components/items/FAQItem"
 import Review from "../components/items/Review"
 import LocationsHome from "../components/sections/LocationsHome"
+import NewsLetter from "../components/forms/NewsLetter"
 import { useState, useRef } from "react"
 
 function Home() {
@@ -79,6 +80,7 @@ function Home() {
                 </div>
                 <button className="main">Get a Tour Guide</button>
             </section>
+            <NewsLetter/>
         </main>
       </>
     )
