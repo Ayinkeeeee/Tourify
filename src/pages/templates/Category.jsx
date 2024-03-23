@@ -1,3 +1,5 @@
+import LocationsCategory from "../../components/sections/LocationsCategory"
+
 function Category({category}) {
   const imagePath = `assets/images`
 
@@ -16,6 +18,7 @@ function Category({category}) {
               </button>
             ))}
           </div>
+          <LocationsCategory />
         </main>
     </div>
   )

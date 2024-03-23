@@ -21,7 +21,8 @@ function LocationHome({location}) {
 LocationHome.defaultProps = {
     location: {
         locationName: "Jabi Lake Mall",
-        rating: 4.5
+        rating: 4.5,
+        address: "Bala Sokoto Wy, Jabi, Abuja 900108, Federal Capital Territory"
     }
 }
 
