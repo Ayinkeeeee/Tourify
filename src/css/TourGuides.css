@@ -1,0 +1,68 @@
+.tour_guides {
+  margin: 8rem 0 0 0;
+  text-align: center;
+}
+.tour_guides > p {
+  width: 70%;
+  margin: 1rem auto 3.5rem auto;
+}
+.tour_guides .guides {
+  display: flex;
+  column-gap: 8rem;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto 4rem auto;
+  flex-wrap: wrap;
+  row-gap: 4rem;
+}
+.tour_guides .guides .tourGuideItem {
+  background: #FBFAFA;
+  border: solid 2px black;
+  position: relative;
+  padding: 4.5rem 0 4rem 0;
+  border-radius: 1rem;
+  max-width: 363px;
+  height: 470px;
+}
+.tour_guides .guides .tourGuideItem .person {
+  position: absolute;
+  width: 70px;
+  border: solid 2px #1F83CB;
+  border-radius: 50%;
+  top: -25px;
+  transform: translateX(-50%);
+}
+.tour_guides .guides .tourGuideItem .fname {
+  font-family: "Abril Fatface", serif;
+  font-size: 1.5rem;
+}
+.tour_guides .guides .tourGuideItem .statement {
+  margin: 2rem auto 0 auto;
+  font-size: 1.1rem;
+  width: 70%;
+  position: relative;
+  text-align: justify;
+}
+.tour_guides .guides .tourGuideItem .q1 {
+  position: absolute;
+  top: -1rem;
+  left: -2rem;
+}
+.tour_guides .guides .tourGuideItem .q2 {
+  position: absolute;
+  right: -2rem;
+  bottom: -1rem;
+}
+.tour_guides .guides .tourGuideItem .phone {
+  color: #1F3B98;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 3rem 0 0 0;
+}
+.tour_guides .guides .tourGuideItem .specialty {
+  color: #1F3B98;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/*# sourceMappingURL=TourGuides.css.map */

@@ -1,0 +1,78 @@
+@import "colours";
+
+.tour_guides{
+    margin: 8rem 0 0 0;
+    text-align: center;
+
+    > p {
+        width: 70%;
+        margin: 1rem auto 3.5rem auto;
+    }
+
+    .guides{
+        display: flex;
+        column-gap: 8rem;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto 4rem auto;
+        flex-wrap: wrap;
+        row-gap: 4rem;
+
+        .tourGuideItem{
+            background: $gray_card;
+            border: solid 2px black;
+            position: relative;
+            padding: 4.5rem 0 4rem 0;
+            border-radius: 1rem;
+            max-width: 363px;
+            height: 470px;
+
+            .person{
+                position: absolute;
+                width: 70px;
+                border: solid 2px $mid_blue;
+                border-radius: 50%;
+                top: -25px;
+                transform: translateX(-50%);
+            }
+
+            .fname{
+                font-family: "Abril Fatface", serif;
+                font-size: 1.5rem;
+            }
+
+            .statement{
+                margin: 2rem auto 0 auto;
+                font-size: 1.1rem;
+                width: 70%;
+                position: relative;
+                text-align: justify;
+            }
+
+            .q1{
+                position: absolute;
+                top: -1rem;
+                left: -2rem;
+            }
+
+            .q2{
+                position: absolute;
+                right: -2rem;
+                bottom: -1rem;
+            }
+
+            .phone{
+                color: $dark_blue;
+                font-weight: bold;
+                font-size: 1.5rem;
+                margin: 3rem 0 0 0;
+            }
+
+            .specialty{
+                color: $dark_blue;
+                font-weight: 500;
+                font-size: 0.95rem;
+            }
+        }
+    }
+}
