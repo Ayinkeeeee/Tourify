@@ -186,7 +186,7 @@ main > p::first-letter {
   padding: 0.5rem 0;
   font-size: 1.1rem;
   border-bottom: solid 1px #1F3B98;
-  cursor: default;
+  cursor: pointer;
 }
 .faq .text .faqs .faqItem .question.open {
   border-bottom: none;

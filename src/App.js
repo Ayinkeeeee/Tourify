@@ -1,7 +1,7 @@
 import './css/App.css';
 import 'react-toastify/dist/ReactToastify.css';
 import Home from './pages/Home';
-import Category from './pages/templates/Category';
+import Food from './pages/Food';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/food" element={<Category/>} />
+        <Route path="/food" element={<Food/>} />
       </Routes>
     </Router>
   );
