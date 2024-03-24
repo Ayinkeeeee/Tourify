@@ -7,6 +7,8 @@ import fb from "../../assets/icons/fb.png"
 import locationMarker from "../../assets/icons/location_blue.svg"
 import car from "../../assets/icons/car.svg"
 import star from "../../assets/icons/star.svg"
+import Reviews from "../../components/sections/Reviews"
+import LocationsHome from "../../components/sections/LocationsHome"
 import { useState } from "react"
 
 function LocationFull({full_location}) {
@@ -71,6 +73,8 @@ function LocationFull({full_location}) {
             </div>
             <button class="main">Submit</button>
         </form>
+        <Reviews/>
+        <LocationsHome />
     </div>
   )
 }

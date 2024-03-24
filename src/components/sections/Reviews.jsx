@@ -1,7 +1,11 @@
+import Review from "../items/Review"
+
 function Reviews({reviews}) {
   return (
     <section className="reviewsGroup">
         <h1>Reviews</h1>
+        {reviews && reviews.slice(0, 3).map((review, index) => <Review key={index}/>)}
+        <p>+{reviews.length - 3} More Reviews</p>
     </section>
   )
 }

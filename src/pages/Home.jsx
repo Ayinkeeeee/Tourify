@@ -4,7 +4,7 @@ import tourBus from "../assets/images/tour_bus.jpeg"
 import play from "../assets/icons/play_arrow.svg"
 import pause from "../assets/icons/pause_white.svg"
 import FAQItem from "../components/items/FAQItem"
-import Review from "../components/items/Testimonial"
+import Testimonial from "../components/items/Testimonial"
 import LocationsHome from "../components/sections/LocationsHome"
 import NewsLetter from "../components/forms/NewsLetter"
 import { ToastContainer } from "react-toastify"
@@ -77,10 +77,10 @@ function Home() {
                 <h1>Testimonials</h1>
                 <p>Don’t just take our word for it. Here are some reviews from satisfied our customers. We’d love to see a review from you too 🥹</p>
                 <div className="reviews">
-                    <Review/>
-                    <Review/>
-                    <Review/>
-                    <Review/>
+                    <Testimonial/>
+                    <Testimonial/>
+                    <Testimonial/>
+                    <Testimonial/>
                 </div>
                 <button className="main">Get a Tour Guide</button>
             </section>

@@ -2,7 +2,7 @@ import tomski from "../../assets/images/tomski.png"
 import quote from "../../assets/icons/quote.svg"
 import location from "../../assets/icons/location.svg"
 
-function Review() {
+function Testimonial() {
   return (
     <div className="reviewItem">
         <img className="person" src={tomski} alt="tomi" />
@@ -15,4 +15,4 @@ function Review() {
   )
 }
 
-export default Review
+export default Testimonial
