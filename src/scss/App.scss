@@ -23,6 +23,28 @@ button{
 h1{
     font-family: "Abril Fatface", serif;
     font-size: 2rem;
+    letter-spacing: 0.01rem;
+}
+
+select{
+    padding-right: 0;
+    background: url('../assets/icons/angle_down.svg') no-repeat 95% 55%;
+    -moz-appearance: none; 
+    -webkit-appearance: none; 
+    appearance: none;
+    background-size: 0.75rem;
+    position: relative !important;
+    background-color: white;
+
+    option{
+        background: white;
+        padding: 1rem;
+        color: white;
+    }
+
+    option::after{
+        display: none;
+    }
 }
 
 p{

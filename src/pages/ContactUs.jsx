@@ -4,8 +4,34 @@ import call from "../assets/icons/call.svg";
 import email from "../assets/icons/email.svg";
 import home from "../assets/icons/home.svg";
 import eggSauce from "../assets/images/egg-sauce.jpeg";
+import { toast, ToastContainer } from "react-toastify";
+import { useState } from "react";
 
 function ContactUs() {
+    const [form, setForm] = useState({
+        name: '',
+        institution: '',
+        email: '',
+        purpose: 0,
+        message: ''
+    });
+
+    const handleChange = (e) => {
+        setForm({...form, [e.target.name]: e.target.value})
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log({
+            name: form.name,
+            institution: form.institution,
+            email: form.email,
+            purpose: parseInt(form.purpose),
+            message: form.message
+        });
+        toast.success(`Thank you for reaching out 👍🏾`)
+    }
+
   return (
     <div id='contact'>
         <section className="start">
@@ -18,26 +44,37 @@ function ContactUs() {
                 <div className="contact">
                     <img src={phoneHand} alt="phone_hand" />
                 </div>
-                <form>
+                <form onSubmit={handleSubmit}>
                     <h1>Leave a Message</h1>
                     <p>Kindly fill out the form with your details or questions and we will get back to you shortly.</p>
-                    <label htmlFor="name">Name</label>
-                    <input id="name" name="name" type="text" placeholder="John Doe" required/>
-                    <label htmlFor="institution">Institution (Optional)</label>
-                    <input id="name" name="institution" type="institution" placeholder="John Doe’s Doors and Furniture"/>
-                    <label htmlFor="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="johndoe@email.com" required/>
-                    <label htmlFor="purpose">Purpose</label>
-                    <select name="purpose" id="purpose">
-                        <option value="question">Question</option>
-                        <option value="feedback">Feedback</option>
-                        <option value="complaint">Complaint</option>
-                        <option value="suggestion">Suggestion</option>
-                        <option value="feature">Request for Feature</option>
-                        <option value="others">Others</option>
-                    </select>
-                    <label htmlFor="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Message" required></textarea>
+                    <div className="inputItem">
+                        <label htmlFor="name">Name</label>
+                        <input id="name" name="name" onChange={handleChange} type="text" placeholder="John Doe" value={form.name || ''} required/>
+                    </div>
+                    <div className="inputItem">
+                        <label htmlFor="institution">Institution (Optional)</label>
+                        <input id="name" name="institution" onChange={handleChange} value={form.institution || ''} type="institution" placeholder="John Doe’s Doors and Furniture"/>
+                    </div>
+                    <div className="inputItem">
+                        <label htmlFor="email">Email (Optional)</label>
+                        <input type="email" name="email" id="email" onChange={handleChange} value={form.email || ''} placeholder="johndoe@email.com"/>
+                    </div>
+                    <div className="inputItem">
+                        <label htmlFor="purpose">Purpose</label>
+                        <select name="purpose" id="purpose" value={form.purpose}  onChange={handleChange} required>
+                            <option value="0">Please select an option</option>
+                            <option value="1">Question</option>
+                            <option value="2">Feedback</option>
+                            <option value="3">Complaint</option>
+                            <option value="4">Suggestion</option>
+                            <option value="5">Request for Feature</option>
+                            <option value="6">Other</option>
+                        </select>
+                    </div>
+                    <div className="inputItem">
+                        <label htmlFor="message">Message</label>
+                        <textarea id="message" rows="10" name="message" placeholder="Message" value={form.message || ''} onChange={handleChange} required></textarea>
+                    </div>
                     <button type="submit">Send Message</button>
                 </form>
             </section>
@@ -62,15 +99,28 @@ function ContactUs() {
                 <h1>Follow our instagram</h1>
                 <p>Check us out on Instagram @tourify. Here are some of our recent posts.</p>
                 <div className="posts">
-                    <img src={eggSauce} alt="egg_sauce" />
-                    <img src={eggSauce} alt="egg_sauce" />
-                    <img src={eggSauce} alt="egg_sauce" />
-                    <img src={eggSauce} alt="egg_sauce" />
-                    <img src={eggSauce} alt="egg_sauce" />
-                    <img src={eggSauce} alt="egg_sauce" />
+                    <div>
+                        <img src={eggSauce} alt="egg_sauce" />
+                    </div>
+                    <div>
+                        <img src={eggSauce} alt="egg_sauce" />
+                    </div>
+                    <div>
+                        <img src={eggSauce} alt="egg_sauce" />
+                    </div>
+                    <div>
+                        <img src={eggSauce} alt="egg_sauce" />
+                    </div>
+                    <div>
+                        <img src={eggSauce} alt="egg_sauce" />
+                    </div>
+                    <div>
+                        <img src={eggSauce} alt="egg_sauce" />
+                    </div>
                 </div>
             </section>
         </main>
+        <ToastContainer />
     </div>
   )
 }
