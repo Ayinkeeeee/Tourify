@@ -79,7 +79,7 @@
 #food main .locationsGroup .locations {
   margin-top: 2rem;
   display: flex;
-  row-gap: 3rem;
+  justify-content: space-between;
   column-gap: 64px;
   flex-wrap: wrap;
 }

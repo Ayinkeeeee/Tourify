@@ -7,6 +7,7 @@ function LocationCategory({location}) {
     <div className="locationItem">
         <div className="image-container">
             <img src={jlm} alt="jabi_lake_mall" />
+            <p>View Location</p>
         </div>
         <div className="text">
             <p className="name">{location.locationName}</p>
