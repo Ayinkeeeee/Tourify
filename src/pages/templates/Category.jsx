@@ -4,7 +4,7 @@ function Category({category}) {
   const imagePath = `assets/images`
 
   return (
-    <div sty className="category" id={`${category.categoryName}`}>
+    <div className="category" id={`${category.categoryName}`}>
         <section className="start">
             <img src={require(`../../${imagePath}/${category.categoryImage}.png`)} alt="food" />
             <h1>{category.headingText}</h1>

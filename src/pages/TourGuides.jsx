@@ -4,7 +4,7 @@ import GuideQnA from "../components/items/GuideQnA"
 
 function TourGuides() {
   return (
-    <>
+    <div id="tour_guides">
         <section className="start">
             <img src={tourGuides} alt="tour guides" />
             <h1>Tour Guides</h1>
@@ -29,16 +29,18 @@ function TourGuides() {
             </section>
             <section className="qna">
                 <h1>Why get a tour guide?</h1>
-                <GuideQnA/>
-                <GuideQnA/>
-                <GuideQnA/>
+                <div className="questions">
+                    <GuideQnA/>
+                    <GuideQnA/>
+                    <GuideQnA/>
+                </div>
             </section>
             <section className="how-to">
                 <h1>How to do I get a tour guide?</h1>
                 <p>Call the number for the tour guide you like and you’ll get a prompt response.</p>
             </section>
         </main>
-    </>
+    </div>
   )
 }
 
