@@ -1,5 +1,9 @@
 import contactTelephone from "../assets/images/telephone.png";
 import phoneHand from "../assets/images/phone_hand.png";
+import call from "../assets/icons/call.svg";
+import email from "../assets/icons/email.svg";
+import home from "../assets/icons/home.svg";
+import eggSauce from "../assets/images/egg-sauce.jpeg";
 
 function ContactUs() {
   return (
@@ -39,7 +43,32 @@ function ContactUs() {
             </section>
             <section className="contact_info">
                 <h1>CONTACT INFO</h1>
-                <div className="contacts"></div>
+                <div className="contacts">
+                    <div>
+                        <img src={call} alt="call"/>
+                        <p>0800-0000-0000</p>
+                    </div>
+                    <div>
+                        <img src={home} alt="home" />
+                        <p>Nile University, Abuja</p>
+                    </div>
+                    <div>
+                        <img src={email} alt="email"/>
+                        <p>tourify@contactus.com</p>
+                    </div>
+                </div>
+            </section>
+            <section className="instagram">
+                <h1>Follow our instagram</h1>
+                <p>Check us out on Instagram @tourify. Here are some of our recent posts.</p>
+                <div className="posts">
+                    <img src={eggSauce} alt="egg_sauce" />
+                    <img src={eggSauce} alt="egg_sauce" />
+                    <img src={eggSauce} alt="egg_sauce" />
+                    <img src={eggSauce} alt="egg_sauce" />
+                    <img src={eggSauce} alt="egg_sauce" />
+                    <img src={eggSauce} alt="egg_sauce" />
+                </div>
             </section>
         </main>
     </div>
