@@ -702,6 +702,10 @@ main > p::first-letter {
   height: 100%;
 }
 
+.rating svg {
+  fill: white !important;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

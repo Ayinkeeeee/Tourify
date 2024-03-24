@@ -12,6 +12,11 @@ import { useState } from "react"
 function LocationFull({full_location}) {
     const [ review, setReview ] = useState('')
 
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        alert("We got your review")
+    }
+
   return (
     <div className="full_location">
         <div className="img-container">
@@ -53,12 +58,19 @@ function LocationFull({full_location}) {
                 </div>
             </div>
         </div>
-        <p>Already visited here? <label htmlFor="review">Leave a Review</label></p>
-        <textarea name="review" id="review" cols="30" rows="10" placeholder="It was okay, I guess"></textarea>
-        <div className="rating">
-            <p>Rating: </p>
-            <img src={star} alt="star"/><img src={star} alt="star"/><img src={star} alt="star"/><img src={star} alt="star"/><img src={star} alt="star"/>
-        </div>
+        <form onSubmit={handleSubmit}>
+            <p>Already visited here? <label htmlFor="review">Leave a Review</label></p>
+            <textarea name="review" id="review" cols="30" rows="10" placeholder="It was okay, I guess"></textarea>
+            <div className="rating">
+                <p>Rating: </p>
+                <img src={star} alt="star"/>
+                <img src={star} alt="star"/>
+                <img src={star} alt="star"/>
+                <img src={star} alt="star"/>
+                <img src={star} alt="star"/>
+            </div>
+            <button class="main">Submit</button>
+        </form>
     </div>
   )
 }
