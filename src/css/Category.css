@@ -1,19 +1,20 @@
-#food {
+.category {
   display: unset;
   height: 1000vh;
 }
-#food .start {
+.category .start {
+  margin-top: 4rem;
   width: 100%;
   height: 65vh;
   position: relative;
 }
-#food .start img {
+.category .start img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: 1;
 }
-#food .start h1 {
+.category .start h1 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -25,10 +26,10 @@
   text-align: center;
   text-shadow: 1px 4px 4px black;
 }
-#food main > p {
+.category main > p {
   margin-bottom: 1rem;
 }
-#food main .categoriesBtns {
+.category main .categoriesBtns {
   display: flex;
   column-gap: 1rem;
   row-gap: 1rem;
@@ -39,10 +40,10 @@
   padding: 1rem 0 1rem 0;
   background: white;
   z-index: 10;
-  width: 100vw;
+  width: 100%;
   margin-block: 0;
 }
-#food main .categoriesBtns .categoryBtn {
+.category main .categoriesBtns .categoryBtn {
   outline: none;
   border: none;
   padding: 0.45rem 1rem;
@@ -53,87 +54,87 @@
   cursor: pointer;
   text-decoration: none;
 }
-#food main .categoriesBtns .categoryBtn.blue {
+.category main .categoriesBtns .categoryBtn.blue {
   background: #1F3B98;
 }
-#food main .categoriesBtns .categoryBtn.blue:hover {
+.category main .categoriesBtns .categoryBtn.blue:hover {
   background: #2f55d5;
 }
-#food main .categoriesBtns .categoryBtn.blue:active {
+.category main .categoriesBtns .categoryBtn.blue:active {
   background: #1b3383;
 }
-#food main .categoriesBtns .categoryBtn.black {
+.category main .categoriesBtns .categoryBtn.black {
   background: black;
 }
-#food main .categoriesBtns .categoryBtn.black:hover {
+.category main .categoriesBtns .categoryBtn.black:hover {
   background: #333333;
 }
-#food main .categoriesBtns .categoryBtn.black:active {
+.category main .categoriesBtns .categoryBtn.black:active {
   background: black;
 }
-#food main .locationsGroup:first-of-type {
+.category main .locationsGroup:first-of-type {
   margin-top: 3rem;
 }
-#food main .locationsGroup {
+.category main .locationsGroup {
   margin: 6rem 0 0 0;
   display: flex;
   flex-direction: column;
 }
-#food main .locationsGroup .locations {
+.category main .locationsGroup .locations {
   margin-top: 2rem;
   display: flex;
   justify-content: space-between;
   column-gap: 64px;
   flex-wrap: wrap;
 }
-#food main .locationsGroup .locations .locationItem {
+.category main .locationsGroup .locations .locationItem {
   display: flex;
   flex-direction: column;
   row-gap: 0.75rem;
   width: 385px;
 }
-#food main .locationsGroup .locations .locationItem .image-container {
+.category main .locationsGroup .locations .locationItem .image-container {
   width: 385px;
   height: 230px;
 }
-#food main .locationsGroup .locations .locationItem .image-container img {
+.category main .locationsGroup .locations .locationItem .image-container img {
   width: 100%;
   height: 100%;
   border-radius: 1rem;
   border: solid 1px black;
 }
-#food main .locationsGroup .locations .locationItem .text {
+.category main .locationsGroup .locations .locationItem .text {
   display: flex;
   flex-direction: column;
   row-gap: 0.25rem;
   padding-left: 1rem;
 }
-#food main .locationsGroup .locations .locationItem .text .name {
+.category main .locationsGroup .locations .locationItem .text .name {
   font-weight: bold;
   font-size: 1.15rem;
 }
-#food main .locationsGroup .locations .locationItem .text > div {
+.category main .locationsGroup .locations .locationItem .text > div {
   display: flex;
   align-items: start;
   column-gap: 0.5rem;
   height: fit-content;
 }
-#food main .locationsGroup .locations .locationItem .text > div .rating {
+.category main .locationsGroup .locations .locationItem .text > div .rating {
   font-size: 1rem;
   font-weight: bold;
   color: #1F3B98;
 }
-#food main .locationsGroup .locations .locationItem .text > div img {
+.category main .locationsGroup .locations .locationItem .text > div img {
   width: 1rem;
   height: auto;
 }
-#food main .locationsGroup .locations .locationItem .text .location {
+.category main .locationsGroup .locations .locationItem .text .location {
   column-gap: 0.25rem;
 }
-#food main .locationsGroup .locations .locationItem .text .location p {
+.category main .locationsGroup .locations .locationItem .text .location p {
   font-size: 0.95rem;
 }
-#food main .locationsGroup .locations .locationItem .text .location img {
+.category main .locationsGroup .locations .locationItem .text .location img {
   padding: 0.25rem;
 }
 
