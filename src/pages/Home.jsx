@@ -7,12 +7,14 @@ import FAQItem from "../components/items/FAQItem"
 import Testimonial from "../components/items/Testimonial"
 import LocationsHome from "../components/sections/LocationsHome"
 import NewsLetter from "../components/forms/NewsLetter"
+import { useNavigate } from "react-router-dom"
 import { ToastContainer } from "react-toastify"
 import { useState, useRef } from "react"
 
 function Home() {
     const [isPlaying, setIsPlaying] = useState(true)
     const videoRef = useRef()
+    const mover = useNavigate()
   
     let pauseVideo = () => {
         videoRef.current.pause()
@@ -27,7 +29,6 @@ function Home() {
   
     return (
       <>
-        <ToastContainer/>
         <div className="hero">
             <video ref={videoRef} muted autoPlay loop width="1000px" height="1000px" src={cityVideo}></video>
             <div>
@@ -82,10 +83,11 @@ function Home() {
                     <Testimonial/>
                     <Testimonial/>
                 </div>
-                <button className="main">Get a Tour Guide</button>
+                <button className="main" onClick={() => mover('/tour_guides')}>Get a Tour Guide</button>
             </section>
             <NewsLetter/>
         </main>
+        <ToastContainer/>
       </>
     )
 }

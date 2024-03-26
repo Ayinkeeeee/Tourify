@@ -4,7 +4,9 @@ function Reviews({reviews}) {
   return (
     <section className="reviewsGroup">
         <h1>Reviews</h1>
-        {reviews && reviews.slice(0, 3).map((review, index) => <Review key={index}/>)}
+        <div className="reviews">
+          {reviews && reviews.slice(0, 3).map((review, index) => <Review key={index}/>)}
+        </div>
         <p>+{reviews.length - 3} More Reviews</p>
     </section>
   )

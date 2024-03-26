@@ -69,44 +69,43 @@ main > p::first-letter {
   font-size: 2rem;
   font-weight: bold;
 }
-
-.locationsGroup {
+main .locationsGroup {
   margin: 6rem 0 0 0;
   display: flex;
   flex-direction: column;
 }
-.locationsGroup > p {
+main .locationsGroup > p {
   margin-top: 1.5rem;
   font-size: 1.1rem;
   width: 55%;
 }
-.locationsGroup .locations {
+main .locationsGroup .locations {
   margin-top: 3rem;
   display: flex;
   row-gap: 36px;
   column-gap: 64px;
   flex-wrap: wrap;
 }
-.locationsGroup .locations .locationItem {
+main .locationsGroup .locations .locationItem {
   display: flex;
   flex-direction: column;
   row-gap: 0.75rem;
   width: 385px;
   cursor: pointer;
 }
-.locationsGroup .locations .locationItem .image-container {
+main .locationsGroup .locations .locationItem .image-container {
   width: 385px;
   height: 230px;
   position: relative;
 }
-.locationsGroup .locations .locationItem .image-container img {
+main .locationsGroup .locations .locationItem .image-container img {
   width: 100%;
   height: 100%;
   border-radius: 1rem;
   border: solid 1px black;
   transition: all ease 100ms;
 }
-.locationsGroup .locations .locationItem .image-container p {
+main .locationsGroup .locations .locationItem .image-container p {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -118,41 +117,40 @@ main > p::first-letter {
   transition: all ease 100ms;
   cursor: pointer;
 }
-.locationsGroup .locations .locationItem .text {
+main .locationsGroup .locations .locationItem .text {
   display: flex;
   flex-direction: column;
   row-gap: 0.25rem;
   padding-left: 1rem;
 }
-.locationsGroup .locations .locationItem .text .name {
+main .locationsGroup .locations .locationItem .text .name {
   font-weight: bold;
   font-size: 1.15rem;
 }
-.locationsGroup .locations .locationItem .text > div {
+main .locationsGroup .locations .locationItem .text > div {
   display: flex;
-  align-items: start;
   column-gap: 0.5rem;
   height: fit-content;
 }
-.locationsGroup .locations .locationItem .text > div .rating {
+main .locationsGroup .locations .locationItem .text > div .rating {
   font-size: 1rem;
   font-weight: bold;
   color: #1F3B98;
 }
-.locationsGroup .locations .locationItem .text > div img {
+main .locationsGroup .locations .locationItem .text > div img {
   width: 1rem;
   height: auto;
 }
-.locationsGroup .locations .locationItem:hover .image-container img {
+main .locationsGroup .locations .locationItem:hover .image-container img {
   filter: brightness(0.45);
 }
-.locationsGroup .locations .locationItem:hover .image-container p {
+main .locationsGroup .locations .locationItem:hover .image-container p {
   display: block;
 }
-.locationsGroup .locations .locationItem:hover .text .name {
+main .locationsGroup .locations .locationItem:hover .text .name {
   text-decoration: underline;
 }
-.locationsGroup .full_list {
+main .locationsGroup .full_list {
   font-size: 1rem;
   width: fit-content;
   text-align: right;
@@ -162,49 +160,47 @@ main > p::first-letter {
   text-decoration: underline;
   text-underline-offset: 0.2rem;
 }
-.locationsGroup .full_list:hover {
+main .locationsGroup .full_list:hover {
   color: #1F83CB;
 }
-.locationsGroup .full_list:active {
+main .locationsGroup .full_list:active {
   color: #1F3B98;
 }
-
-.about, .faq {
+main .about, main .faq {
   display: flex;
   justify-content: space-between;
   margin: 10rem 0 0 0;
 }
-.about .text, .faq .text {
+main .about .text, main .faq .text {
   text-align: justify;
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
   width: 40%;
 }
-.about .text ul, .faq .text ul {
+main .about .text ul, main .faq .text ul {
   padding-left: 1rem;
 }
-.about .text ul li, .faq .text ul li {
+main .about .text ul li, main .faq .text ul li {
   font-size: 1.1rem;
   padding-left: 0.5rem;
 }
-.about .image-container img, .faq .image-container img {
+main .about .image-container img, main .faq .image-container img {
   width: 549px;
   height: 300px;
   border-radius: 1.5rem;
 }
-
-.faq {
+main .faq {
   margin: 8rem 0 0 0;
 }
-.faq .text {
+main .faq .text {
   width: 45%;
 }
-.faq .text .faqs .faqItem {
+main .faq .text .faqs .faqItem {
   display: flex;
   flex-direction: column;
 }
-.faq .text .faqs .faqItem .question {
+main .faq .text .faqs .faqItem .question {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 0;
@@ -212,10 +208,10 @@ main > p::first-letter {
   border-bottom: solid 1px #1F3B98;
   cursor: pointer;
 }
-.faq .text .faqs .faqItem .question.open {
+main .faq .text .faqs .faqItem .question.open {
   border-bottom: none;
 }
-.faq .text .faqs .faqItem .answer {
+main .faq .text .faqs .faqItem .answer {
   border: solid 1px #1F3B98;
   background: #FBFAFA;
   padding: 1rem;
@@ -223,16 +219,15 @@ main > p::first-letter {
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
 }
-
-.testimonials {
+main .testimonials {
   margin: 8rem 0 0 0;
   text-align: center;
 }
-.testimonials > p {
+main .testimonials > p {
   width: 70%;
   margin: 1rem auto 3.5rem auto;
 }
-.testimonials .reviews {
+main .testimonials .reviews {
   display: flex;
   column-gap: 2.5rem;
   justify-content: center;
@@ -241,7 +236,7 @@ main > p::first-letter {
   flex-wrap: wrap;
   row-gap: 4rem;
 }
-.testimonials .reviews .reviewItem {
+main .testimonials .reviews .reviewItem {
   background: #FBFAFA;
   border: solid 2px black;
   position: relative;
@@ -250,7 +245,7 @@ main > p::first-letter {
   max-width: 290px;
   height: 300px;
 }
-.testimonials .reviews .reviewItem .person {
+main .testimonials .reviews .reviewItem .person {
   position: absolute;
   width: 70px;
   border: solid 2px #1F83CB;
@@ -258,27 +253,27 @@ main > p::first-letter {
   top: -25px;
   transform: translateX(-50%);
 }
-.testimonials .reviews .reviewItem .fname {
+main .testimonials .reviews .reviewItem .fname {
   font-family: "Abril Fatface", serif;
   font-size: 1.5rem;
 }
-.testimonials .reviews .reviewItem .review {
+main .testimonials .reviews .reviewItem .review {
   margin: 2rem auto 0 auto;
   font-size: 0.95rem;
   width: 65%;
   position: relative;
 }
-.testimonials .reviews .reviewItem .q1 {
+main .testimonials .reviews .reviewItem .q1 {
   position: absolute;
   top: -1rem;
   left: -2rem;
 }
-.testimonials .reviews .reviewItem .q2 {
+main .testimonials .reviews .reviewItem .q2 {
   position: absolute;
   right: -2rem;
   bottom: -1rem;
 }
-.testimonials .reviews .reviewItem .location {
+main .testimonials .reviews .reviewItem .location {
   color: #1F3B98;
   font-size: 0.85rem;
   font-weight: 600;
@@ -288,8 +283,7 @@ main > p::first-letter {
   column-gap: 0.5rem;
   margin: 0.75rem 0;
 }
-
-#newsletter {
+main #newsletter {
   background: #FBFAFA;
   border: solid 2px black;
   margin: 8rem auto;
@@ -301,11 +295,11 @@ main > p::first-letter {
   padding: 4rem 5rem 3rem 5rem;
   border-radius: 1rem;
 }
-#newsletter p {
+main #newsletter p {
   font-size: 1.1rem;
   margin-top: 1rem;
 }
-#newsletter input {
+main #newsletter input {
   width: 40%;
   margin: 1.5rem 0 2.5rem 0;
   border: black 1px solid;
@@ -315,10 +309,10 @@ main > p::first-letter {
   border-radius: 0.25rem;
   outline: none;
 }
-#newsletter input:focus {
+main #newsletter input:focus {
   border: #1F83CB 1px solid;
 }
-#newsletter button {
+main #newsletter button {
   font-size: 1.05rem;
 }
 
@@ -700,10 +694,6 @@ main > p::first-letter {
 #contact .instagram .posts > div img {
   width: 100%;
   height: 100%;
-}
-
-.rating svg {
-  fill: white !important;
 }
 
 * {
