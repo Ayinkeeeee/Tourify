@@ -1,21 +1,27 @@
-import {ReactComponent as Star} from "../../assets/icons/star.svg"
+import star from "../../assets/icons/star.svg"
+import { motion } from 'framer-motion'
 
 function Review({review}) {
 
   return (
-    <div className="reviewItem">
-        <div className="person">
-          <img src={require(`../../assets/images/${review.pic}`)} alt="" />
-          <div className="name_rating">
-            <div className="fname">{review.fname}</div>
-            <div className="rating"><Star/><Star/><Star/><Star/><Star/> <p>{review.rating}</p></div>
-          </div>
+    <motion.div 
+      className="reviewItem"
+      initial={{opacity: 0}}
+      whileInView={{opacity: 1, transition: {duration: 0.5}}}
+      viewport={{once: true, amount: 1 }}
+    >
+      <div className="person">
+        <img src={require(`../../assets/images/${review.pic}`)} alt="person-image" />
+        <div className="name_rating">
+          <div className="fname">{review.fname}</div>
+          <div className="rating"><img src={star} alt="star" /><img src={star} alt="star" /> <img src={star} alt="star" /> <img src={star} alt="star" /> <img src={star} alt="star" />  <p>{review.rating}</p></div>
         </div>
-        <p>{review.review}</p>
-        <div className="time">
-          {review.time}
-        </div>
-    </div>
+      </div>
+      <p>{review.review}</p>
+      <div className="time">
+        {review.time}
+      </div>
+    </motion.div>
   )
 }
 

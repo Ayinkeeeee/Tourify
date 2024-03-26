@@ -147,7 +147,19 @@
   column-gap: 0.5rem;
 }
 .full_location form .rating .stars {
-  margin-top: 0.25rem;
+  display: flex;
+}
+.full_location form .rating .stars > div {
+  background-image: url("../assets/icons/star_gray.svg");
+  background-size: 15px;
+  width: 15px;
+  height: 15px;
+}
+.full_location form .rating .stars > div:hover {
+  background-image: url("../assets/icons/star.svg");
+  background-size: 15px;
+  width: 15px;
+  height: 15px;
 }
 .full_location form .rating .stars img {
   width: 15px;
@@ -197,6 +209,9 @@
 .full_location .reviewsGroup .reviews .reviewItem .person .name_rating .fname {
   font-weight: 600;
   font-size: 1.1rem;
+}
+.full_location .reviewsGroup .reviews .reviewItem .person .name_rating img {
+  width: 13px;
 }
 .full_location .reviewsGroup .reviews .reviewItem .person .name_rating .rating {
   font-size: 0.8rem;

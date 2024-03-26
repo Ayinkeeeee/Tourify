@@ -17,22 +17,40 @@ import { toast, ToastContainer } from "react-toastify"
 import { useState, useContext } from "react"
 
 function LocationFull({full_location}) {
+    const [rating, setRating] = useState(0)
     const [ review, setReview ] = useState('')
     const { showReviews } = useContext(ModalContext)
     const mapsAPIKey = process.env.REACT_APP_MAPS_API_KEY
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        if(review !== ''){
-            toast.success("We got your review")
-        }else{
-            toast.error("Please enter some text")
+
+        if(rating === 0){
+            toast.error("Please give a rating")
         }
-        setReview('')
+
+        if(review === ''){
+            toast.error("Please enter your review")
+        }
+            
+        if(review !== '' & rating > 0){
+            toast.success("We got your review")
+            console.log({
+                rating,
+                review
+            })
+            setReview('')
+            setRating(0)
+        }
+        
     }
 
     const handleChange = (e) => {
         setReview(e.target.value);
+    }
+
+    const updateRating = (val) => {
+        setRating(val);
     }
 
   return (
@@ -47,7 +65,7 @@ function LocationFull({full_location}) {
                 <div className="rating">{full_location.rating} / 5 <img src={star} alt="star"/> </div>
                 <div className="budgetItems">
                     {full_location.budget ? full_location.budget.map((budgetItem, index) => 
-                    <p className={`budget ${index % 2 === 0 ? "blue" : 'black'}`}>{budgetItem}</p>) : <p className="budget red">Budget unavailable</p>}
+                    <p key={index} className={`budget ${index % 2 === 0 ? "blue" : 'black'}`}>{budgetItem}</p>) : <p className="budget red">Budget unavailable</p>}
                 </div>
                 <h3>Location</h3>
                 <div className="map">
@@ -56,8 +74,8 @@ function LocationFull({full_location}) {
                         title="Google Map"
                         height='900'
                         loading="lazy"
-                        allowfullscreen
-                        referrerpolicy="no-referrer-when-downgrade"
+                        allowFullScreen
+                        referrerPolicy="no-referrer-when-downgrade"
                         src={`https://www.google.com/maps/embed/v1/place?key=${mapsAPIKey}
                         &q=${full_location.locationName}`}>
             </iframe>
@@ -96,16 +114,16 @@ function LocationFull({full_location}) {
                     <p>Already visited here? <label htmlFor="review">Leave a Review</label></p>
                     <textarea name="review" id="review" cols="30" rows="10" placeholder="It was okay, I guess" value={review} onChange={handleChange}></textarea>
                     <div className="rating">
-                        <p>Rating: </p>
+                        <p>Rating: {rating} / 5</p>
                         <div className="stars">
-                            <img src={greyStar} alt="star"/>
-                            <img src={greyStar} alt="star"/>
-                            <img src={greyStar} alt="star"/>
-                            <img src={greyStar} alt="star"/>
-                            <img src={greyStar} alt="star"/>
+                            <div className="star" onClick={() => updateRating(1)}></div>
+                            <div className="star" onClick={() => updateRating(2)}></div>
+                            <div className="star" onClick={() => updateRating(3)}></div>
+                            <div className="star" onClick={() => updateRating(4)}></div>
+                            <div className="star" onClick={() => updateRating(5)}></div>
                         </div>
                     </div>
-                    <button class="main">Submit</button>
+                    <button className="main">Submit</button>
                 </form>
                 <Reviews/>
                 <RelatedLocations/>
