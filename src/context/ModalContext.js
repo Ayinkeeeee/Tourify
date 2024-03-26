@@ -5,10 +5,20 @@ const ModalContext = createContext()
 export default ModalContext
 
 export const ModalProvider = ({children}) => {
-    const [ showReviews, setShowReviews ] = useState(true)
+    const [ showReviews, setShowReviews ] = useState()
+
+    const closeReviews = () => {
+        setShowReviews(false)
+    }
+
+    const openReviews = () => {
+        setShowReviews(true)
+    }
 
     const contextData = {
-        showReviews
+        showReviews,
+        openReviews,
+        closeReviews,
     }
 
     return(

@@ -35,7 +35,7 @@ function LocationFull({full_location}) {
     }
 
   return (
-        <div className="full_location">
+        <div className={`full_location ${showReviews ? 'modal' : ''}`}>
             <ToastContainer/>
             <div className="img-container">
                 <img src={jlm} alt="Jabi lake mall" />

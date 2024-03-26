@@ -3,11 +3,6 @@
 .full_location{
     margin-top: 4rem;
 
-    main, .img-container{
-        filter: brightness(0.65) blur(2px);
-        pointer-events: none;
-    }
-
     .img-container{
         width: 100%;
         height: 70vh;
@@ -96,6 +91,7 @@
         .contact{
             display: flex;
             column-gap: 3rem;
+            row-gap: 0.25rem;
             flex-wrap: wrap;
     
             > div{
@@ -360,9 +356,17 @@
 
 }
 
+.full_location.modal{
+
+    main, .img-container{
+        filter: brightness(0.65) blur(2px);
+        pointer-events: none;
+    }
+}
+
 .all_reviews{
     padding: 2rem;
-    width: 50%;
+    width: 45%;
     height: 70%;
     position: fixed;
     top: 40%;
@@ -373,4 +377,16 @@
     border: solid 1px black;
     box-shadow: 2px 2px 2px gray;
     border-radius: 1rem;
+
+    button{
+        align-self: end;
+        font-size: 1rem;
+        padding-block: 0.25rem;
+        margin-top: 2rem;
+    }
+
+    .reviews{
+        flex-direction: column;
+        justify-content: center;
+    }
 }

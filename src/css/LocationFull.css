@@ -1,10 +1,6 @@
 .full_location {
   margin-top: 4rem;
 }
-.full_location main, .full_location .img-container {
-  filter: brightness(0.65) blur(2px);
-  pointer-events: none;
-}
 .full_location .img-container {
   width: 100%;
   height: 70vh;
@@ -79,6 +75,7 @@
 .full_location .contact_trip .contact {
   display: flex;
   column-gap: 3rem;
+  row-gap: 0.25rem;
   flex-wrap: wrap;
 }
 .full_location .contact_trip .contact > div {
@@ -294,9 +291,14 @@
   padding: 0.25rem;
 }
 
+.full_location.modal main, .full_location.modal .img-container {
+  filter: brightness(0.65) blur(2px);
+  pointer-events: none;
+}
+
 .all_reviews {
   padding: 2rem;
-  width: 50%;
+  width: 45%;
   height: 70%;
   position: fixed;
   top: 40%;
@@ -307,6 +309,16 @@
   border: solid 1px black;
   box-shadow: 2px 2px 2px gray;
   border-radius: 1rem;
+}
+.all_reviews button {
+  align-self: end;
+  font-size: 1rem;
+  padding-block: 0.25rem;
+  margin-top: 2rem;
+}
+.all_reviews .reviews {
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=LocationFull.css.map */
