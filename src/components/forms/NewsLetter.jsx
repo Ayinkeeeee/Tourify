@@ -10,7 +10,7 @@ function NewsLetter() {
 
     const onSubmit = (e) => {
         e.preventDefault()
-        if(email == ''){
+        if(email === ''){
             toast.error(`Please enter your email`)
         }else{
             toast.success(`Thank you for subscribing`)

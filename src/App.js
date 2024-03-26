@@ -5,6 +5,7 @@ import Food from './pages/Food';
 import TourGuides from './pages/TourGuides';
 import ContactUs from './pages/ContactUs';
 import LocationFull from './pages/templates/LocationFull';
+import ScrollToTop from './utils/ScrollToTop';
 import { ModalProvider } from './context/ModalContext';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop/>
       <ModalProvider>
       <Routes>
         <Route path="/" element={<Home />} />

@@ -1,6 +1,5 @@
 import "../../css/LocationFull.css"
 import jlm from "../../assets/images/jlm.jpg"
-import map from "../../assets/images/map.png"
 import email from "../../assets/icons/email.svg"
 import call from "../../assets/icons/call.svg"
 import instagram from "../../assets/icons/instagram.png"
@@ -13,12 +12,14 @@ import Reviews from "../../components/sections/Reviews"
 import ReviewsModal from "../../components/sections/ReviewsModal"
 import RelatedLocations from "../../components/sections/RelatedLocations"
 import ModalContext from "../../context/ModalContext"
+import { Link } from "react-router-dom"
 import { toast, ToastContainer } from "react-toastify"
 import { useState, useContext } from "react"
 
 function LocationFull({full_location}) {
     const [ review, setReview ] = useState('')
     const { showReviews } = useContext(ModalContext)
+    const mapsAPIKey = process.env.REACT_APP_MAPS_API_KEY
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -50,7 +51,16 @@ function LocationFull({full_location}) {
                 </div>
                 <h3>Location</h3>
                 <div className="map">
-                    <img src={map} alt="Map" />
+                    <iframe
+                        width="auto"
+                        title="Google Map"
+                        height='900'
+                        loading="lazy"
+                        allowfullscreen
+                        referrerpolicy="no-referrer-when-downgrade"
+                        src={`https://www.google.com/maps/embed/v1/place?key=${mapsAPIKey}
+                        &q=${full_location.locationName}`}>
+            </iframe>
                 </div>
                 <div className="contact_trip">
                     <div className="contact">
@@ -74,11 +84,11 @@ function LocationFull({full_location}) {
                     <div className="trip">
                         <div className="maps">
                             <img src={locationMarker} alt="location" />
-                            <p>Open in Google Maps</p>
+                            <Link to={`https://www.google.com/maps/search/?api=1&query=${full_location.locationName}`}>Open in Google Maps</Link>
                         </div>
                         <div className="bolt">
                             <img src={car} alt="car" />
-                            <p>Book a Bolt</p>
+                            <Link to="https://bolt.eu/en-ng/">Book a Bolt</Link>
                         </div>
                     </div>
                 </div>

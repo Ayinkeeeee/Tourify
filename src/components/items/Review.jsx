@@ -1,6 +1,7 @@
 import {ReactComponent as Star} from "../../assets/icons/star.svg"
 
 function Review({review}) {
+
   return (
     <div className="reviewItem">
         <div className="person">

@@ -61,10 +61,11 @@
   width: 100%;
   height: fit-content;
 }
-.full_location .map img {
+.full_location .map iframe {
   width: 100%;
-  height: auto;
+  height: 500px;
   object-fit: cover;
+  border: none;
 }
 .full_location .contact_trip {
   display: flex;
@@ -101,9 +102,12 @@
   column-gap: 0.5rem;
   align-items: center;
 }
-.full_location .contact_trip .trip > div p {
+.full_location .contact_trip .trip > div p, .full_location .contact_trip .trip > div a {
   font-weight: 600;
   font-size: 1rem;
+}
+.full_location .contact_trip .trip > div a {
+  text-decoration: none;
 }
 .full_location .contact_trip .trip .maps {
   color: #1F3B98;
@@ -113,6 +117,9 @@
   width: auto;
 }
 .full_location .contact_trip .trip .bolt {
+  color: #057647;
+}
+.full_location .contact_trip .trip .bolt a {
   color: #057647;
 }
 .full_location form > p {

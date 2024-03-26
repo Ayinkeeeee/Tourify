@@ -75,10 +75,11 @@
         width: 100%;
         height: fit-content;
 
-        img{
+        iframe{
             width: 100%;
-            height: auto;
+            height: 500px;
             object-fit: cover;
+            border: none;
         }
     }
     
@@ -121,9 +122,13 @@
                 column-gap: 0.5rem;
                 align-items: center;
     
-                p{
+                p, a{
                     font-weight: 600;
                     font-size: 1rem;
+                }
+
+                a{
+                    text-decoration: none;
                 }
             }
     
@@ -138,6 +143,10 @@
     
             .bolt{
                 color: $green;
+
+                a{
+                    color: $green;
+                }
             }
         }
     }
