@@ -10,12 +10,15 @@ import car from "../../assets/icons/car.svg"
 import star from "../../assets/icons/star.svg"
 import greyStar from "../../assets/icons/star_gray.svg"
 import Reviews from "../../components/sections/Reviews"
+import ReviewsModal from "../../components/sections/ReviewsModal"
 import RelatedLocations from "../../components/sections/RelatedLocations"
+import ModalContext from "../../context/ModalContext"
 import { toast, ToastContainer } from "react-toastify"
-import { useState } from "react"
+import { useState, useContext } from "react"
 
 function LocationFull({full_location}) {
     const [ review, setReview ] = useState('')
+    const { showReviews } = useContext(ModalContext)
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -24,6 +27,7 @@ function LocationFull({full_location}) {
         }else{
             toast.error("Please enter some text")
         }
+        setReview('')
     }
 
     const handleChange = (e) => {
@@ -96,6 +100,7 @@ function LocationFull({full_location}) {
                 <Reviews/>
                 <RelatedLocations/>
             </main>
+            {showReviews && <ReviewsModal reviews={[0, 0, 0, 0, 0]}/>}
         </div>
   )
 }

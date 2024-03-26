@@ -1,6 +1,10 @@
-function ReviewsModal() {
+import Review from "../items/Review"
+
+function ReviewsModal({reviews}) {
   return (
-    <div></div>
+    <div className="all_reviews">
+        {reviews && reviews.map((review, index) => <Review/> )}
+    </div>
   )
 }
 

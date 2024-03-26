@@ -7,7 +7,7 @@ function Reviews({reviews}) {
         <div className="reviews">
           {reviews && reviews.slice(0, 3).map((review, index) => <Review key={index}/>)}
         </div>
-        <p>+{reviews.length - 3} More Reviews</p>
+        {reviews.length > 3 && <p>+{reviews.length - 3} More Reviews</p>}
     </section>
   )
 }

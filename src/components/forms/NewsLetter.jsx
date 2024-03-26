@@ -15,6 +15,7 @@ function NewsLetter() {
         }else{
             toast.success(`Thank you for subscribing`)
         }
+        setEmail('')
     }
 
     return (
