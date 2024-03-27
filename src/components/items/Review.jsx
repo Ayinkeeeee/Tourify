@@ -8,7 +8,7 @@ function Review({review}) {
       className="reviewItem"
       initial={{opacity: 0}}
       whileInView={{opacity: 1, transition: {duration: 0.5}}}
-      viewport={{once: true, amount: 1 }}
+      viewport={{once: true, amount: 0.5 }}
     >
       <div className="person">
         <img src={require(`../../assets/images/${review.pic}`)} alt="person-image" />

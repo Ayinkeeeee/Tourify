@@ -1,17 +1,23 @@
 import tomski from "../../assets/images/tomski.png"
 import quote from "../../assets/icons/quote.svg"
 import location from "../../assets/icons/location.svg"
+import { motion } from "framer-motion"
 
 function Testimonial() {
   return (
-    <div className="reviewItem">
+    <motion.div 
+      className="reviewItem"
+      initial={{opacity: 0, y: 100}}
+      whileInView={{opacity: 1, y: 0, transition: {duration: 0.45}}}
+      viewport={{once: true, amount: 0.5 }}
+    >
         <img className="person" src={tomski} alt="tomi" />
         <p className="fname">Tomi</p>
         <p className="location"><img src={location} alt="location marker" />Digital Nomad</p>
         <p className="review">Tourify gave me a warm welcome to the city of Abuja and let me know the best places to go to.
         <img className="q1" src={quote} alt="quote" />
         <img className="q2" src={quote} alt="quote" /></p>
-    </div>
+    </motion.div>
   )
 }
 

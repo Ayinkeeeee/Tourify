@@ -1,10 +1,16 @@
 import jlm from "../../assets/images/jlm.jpg";
 import star from "../../assets/icons/star.svg";
 import locationMarker from "../../assets/icons/location.svg"
+import { motion } from "framer-motion";
 
 function LocationCategory({location}) {
   return (
-    <div className="locationItem">
+    <motion.div 
+        className="locationItem"
+        initial={{opacity: 0, x: -100}}
+        whileInView={{opacity: 1, x: 0, transition: {duration: 0.45}}}
+        viewport={{once: true, amount: 0.5 }}
+    >
         <div className="image-container">
             <img src={jlm} alt="jabi_lake_mall" />
             <p>View Location</p>
@@ -20,7 +26,7 @@ function LocationCategory({location}) {
                 <p className="address">{location.address}</p>
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

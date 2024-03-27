@@ -18,7 +18,7 @@ function Category({category}) {
               </a>
             ))}
           </div>
-          {category.categories && category.categories.map((categoryItem, index)  =>     <LocationsCategory key={index} categoryName={categoryItem} id={category.categoriesIDs[index]}/>)
+          {category.categories && category.categories.map((categoryItem, index)  =>     <LocationsCategory key={index} categoryName={categoryItem} id={category.categoriesIDs[index]} stagger={index}/>)
           }
         </main>
     </div>
