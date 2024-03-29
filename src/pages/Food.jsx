@@ -1,8 +1,14 @@
+import Footer from "../components/layouts/Footer"
 import Category from "./templates/Category"
 
 function Food() {
   return (
-    <Category/>
+    <div>
+      <Category/>
+      
+      <Footer/>
+    </div>
+    
   )
 }
 

@@ -9,6 +9,7 @@ import LocationsHome from "../components/sections/LocationsHome"
 import NewsLetter from "../components/forms/NewsLetter"
 import { ToastContainer } from "react-toastify"
 import { useState, useRef } from "react"
+import Footer from "../components/layouts/Footer"
 
 function Home() {
     const [isPlaying, setIsPlaying] = useState(true)
@@ -85,7 +86,9 @@ function Home() {
                 <button className="main">Get a Tour Guide</button>
             </section>
             <NewsLetter/>
+            
         </main>
+        <Footer/>
       </>
     )
 }

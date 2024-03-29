@@ -1,0 +1,276 @@
+@import "colours";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.signup-form, .login-form{
+    background-color: whitesmoke;
+    max-width: 35%;
+    margin: 130px auto;
+    padding: 60px 30px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px lightgray;
+    
+    h1{
+        margin-bottom: 20px;
+        text-align: center;
+        font-family: 'Abril Fatface';
+    }
+    label{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    input{
+        width: 98%;
+        border-radius: 6px;
+        border: 1px solid darkgray;
+        padding: 10px;
+        margin-top: 8px;
+        margin-bottom: 20px;
+        box-shadow: 1px 1px 5px lightgray;
+    }
+
+    input:focus{
+        outline: none;
+        border: 2px solid $dark_blue;
+    }
+
+    div{
+        text-align: center;
+
+        button{
+            width: 50%;
+            margin: 10px auto;
+            padding: 8px;
+            border-radius: 6px;
+            border: none;
+            background-color: $dark_blue;
+            color: white;
+            font-weight: bold;
+            box-shadow: 1px 1px 5px lightgray;
+            transition: transform 1s;
+        }
+    
+        button:hover{
+            opacity: .9;
+            transform: scale(0.95);
+        }
+
+        p{
+            font-size: 13px;
+            font-weight: 500;
+            margin-top: 5px;
+
+            a{
+                color: $dark_blue;
+            }
+            a:hover{
+                opacity: 0.75;
+            }
+        }
+    }
+
+    
+}
+
+@media only screen and (max-width: 399px) {
+    .signup-form, .login-form{
+        max-width: 90%;
+        margin: 130px auto 70px auto;
+        padding: 25px 30px;
+        
+        h1{
+            margin-bottom: 15px;
+            font-size: 25px;
+        }
+        label{
+            font-size: 12px;
+            font-weight: bold;
+        }
+        input{
+            width: 100%;
+            padding: 6px;
+            margin-top: 6px;
+            margin-bottom: 10px;
+        }
+
+        div{
+            text-align: center;
+    
+            button{
+                width: 50%;
+                margin: 10px auto;
+                transition: transform 1s;
+            }
+        
+            button:hover{
+                opacity: .9;
+                transform: scale(0.95);
+            }
+    
+            p{
+                font-size: 10px;
+                font-weight: 550;
+                margin-top: 3px;
+    
+            }
+        }  
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+    .signup-form, .login-form{
+        max-width: 83%;
+        margin: 150px auto 90px auto;
+        padding: 40px 30px;
+        
+        h1{
+            margin-bottom: 15px;
+        }
+        label{
+            font-size: 14px;
+            font-weight: bold;
+        }
+        input{
+            width: 99%;
+            padding: 8px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+        }
+
+        div{
+            text-align: center;
+    
+            button{
+                width: 40%;
+                margin: 10px auto;
+                transition: transform 1s;
+            }
+        
+            button:hover{
+                opacity: .9;
+                transform: scale(0.95);
+            }
+    
+            p{
+                font-size: 13px;
+                font-weight: 500;
+                margin-top: 5px;
+    
+                a{
+                    color: $dark_blue;
+                }
+                a:hover{
+                    opacity: 0.75;
+                }
+            }
+        }
+    
+        
+    }
+}
+
+@media only screen and (min-width: 610px) and (max-width: 860px) {
+    .signup-form, .login-form{
+        max-width: 55%;
+        margin: 90px auto;
+        padding: 40px 30px;
+        
+        h1{
+            margin-bottom: 15px;
+        }
+        label{
+            font-size: 14px;
+            font-weight: bold;
+        }
+        input{
+            width: 99%;
+            padding: 8px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+        }
+
+        div{
+            text-align: center;
+    
+            button{
+                width: 40%;
+                margin: 10px auto;
+                transition: transform 1s;
+            }
+        
+            button:hover{
+                opacity: .9;
+                transform: scale(0.95);
+            }
+    
+            p{
+                font-size: 13px;
+                font-weight: 500;
+                margin-top: 5px;
+    
+                a{
+                    color: $dark_blue;
+                }
+                a:hover{
+                    opacity: 0.75;
+                }
+            }
+        }
+    
+        
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
+    .signup-form, .login-form{
+        max-width: 45%;
+        margin: 100px auto 0 auto;
+        padding: 40px 30px;
+
+        div{
+            button{
+                width: 35%;
+                margin: 10px auto;
+                transition: transform 1s;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1800px){
+    .signup-form, .login-form{
+        max-width: 24%;
+        margin: 170px auto 0 auto;
+        padding: 70px 40px;
+
+        h1{
+            font-size: 42px;
+            margin-bottom: 40px;
+        }
+        label{
+            font-size: 20px;
+        }
+        input{
+            width: 99%;
+            padding: 15px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+        }
+    
+        div{
+            button{
+                width: 50%;
+                margin: 13px auto;
+                padding: 12px;
+                font-size: 20px;
+            }
+        
+            p{
+                font-size: 18px;
+                font-weight: 650;
+                margin-top: 8px;
+            }
+        }   
+    }
+  }
