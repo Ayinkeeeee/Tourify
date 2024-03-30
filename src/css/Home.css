@@ -168,8 +168,10 @@ main .locationsGroup .full_list:active {
 }
 main .about, main .faq {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 10rem 0 0 0;
+  row-gap: 4rem;
 }
 main .about .text, main .faq .text {
   text-align: justify;
@@ -186,11 +188,12 @@ main .about .text ul li, main .faq .text ul li {
   padding-left: 0.5rem;
 }
 main .about .image-container img, main .faq .image-container img {
-  width: 549px;
+  width: 100%;
   height: 300px;
   border-radius: 1.5rem;
 }
 main .faq {
+  flex-wrap: wrap-reverse;
   margin: 8rem 0 0 0;
 }
 main .faq .text {
