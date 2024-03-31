@@ -126,4 +126,32 @@
   margin: 2rem auto 8rem auto;
 }
 
+@media screen and (max-width: 600px) {
+  #tour_guides .start {
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 420px) {
+  .qna .questions .qnaItem {
+    padding: 4.5rem 2rem 2.5rem 2rem;
+    width: 100%;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 340px) {
+  #tour_guides .guides .tourGuideItem {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #tour_guides .guides .tourGuideItem {
+    height: 520px;
+  }
+  .qna .questions .qnaItem {
+    padding: 4.5rem 1.5rem 3rem 1.5rem;
+    width: 100%;
+    height: 450px;
+  }
+}
+
 /*# sourceMappingURL=TourGuides.css.map */
