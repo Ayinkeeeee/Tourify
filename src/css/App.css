@@ -773,4 +773,15 @@ main > p:nth-of-type(1) {
   margin-top: 3rem;
 }
 
+@media screen and (max-width: 600px) {
+  main {
+    padding: 0 1rem;
+  }
+}
+@media screen and (max-width: 365px) {
+  main {
+    padding: 0 0.5rem;
+  }
+}
+
 /*# sourceMappingURL=App.css.map */

@@ -72,6 +72,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 1rem;
+  column-gap: 2rem;
 }
 .full_location .contact_trip .contact {
   display: flex;
@@ -95,6 +96,7 @@
 .full_location .contact_trip .trip {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   row-gap: 0.5rem;
 }
 .full_location .contact_trip .trip > div {
@@ -341,6 +343,179 @@
 .all_reviews .reviews {
   flex-direction: column;
   justify-content: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .full_location .reviewsGroup .reviews {
+    column-gap: 3rem;
+  }
+  .all_reviews {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .full_location .contact_trip {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    column-gap: 2rem;
+    row-gap: 1rem;
+  }
+  .full_location .contact_trip .contact {
+    display: flex;
+    column-gap: 3rem;
+    row-gap: 0.25rem;
+    flex-wrap: wrap;
+  }
+  .full_location .contact_trip .contact > div {
+    display: flex;
+    column-gap: 0.5rem;
+    height: fit-content;
+    align-items: center;
+  }
+  .full_location .contact_trip .contact > div img {
+    width: 15px;
+  }
+  .full_location .contact_trip .contact > div p {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .full_location .contact_trip .trip {
+    display: flex;
+    flex-direction: row;
+    row-gap: 0.5rem;
+    column-gap: 2rem;
+  }
+  .full_location .contact_trip .trip > div {
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: center;
+  }
+  .full_location form textarea {
+    width: 75%;
+  }
+  .all_reviews {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .all_reviews {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .full_location form textarea {
+    width: 90%;
+  }
+  .all_reviews {
+    padding: 2rem 1rem;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .full_location .img-container {
+    height: 60vh;
+  }
+  .full_location .map iframe {
+    height: 400px;
+  }
+  .full_location .contact_trip .trip {
+    row-gap: 0.25rem;
+  }
+  .full_location form textarea {
+    width: 100%;
+  }
+  .all_reviews {
+    padding: 2rem 1rem;
+    width: 95%;
+  }
+  .all_reviews .reviewItem {
+    width: 360px !important;
+  }
+}
+@media screen and (max-width: 412px) {
+  .full_location .locationsGroup .locations .locationItem {
+    width: 350px;
+  }
+  .full_location .locationsGroup .locations .locationItem .image-container {
+    width: 350px;
+    height: 200px;
+  }
+  .all_reviews {
+    padding: 2rem 1rem;
+    width: 95%;
+  }
+  .all_reviews .reviewItem {
+    width: 340px !important;
+  }
+}
+@media screen and (max-width: 390px) {
+  .full_location .locationsGroup .locations .locationItem {
+    width: 330px;
+  }
+  .full_location .locationsGroup .locations .locationItem .image-container {
+    width: 330px;
+    height: 200px;
+  }
+  .all_reviews {
+    padding: 2rem 1rem;
+    width: 95%;
+  }
+  .all_reviews .reviewItem {
+    width: 300px !important;
+  }
+}
+@media screen and (max-width: 365px) {
+  .full_location .locationsGroup .locations .locationItem {
+    width: 300px;
+  }
+  .full_location .locationsGroup .locations .locationItem .image-container {
+    width: 300px;
+    height: 190px;
+  }
+  .all_reviews {
+    padding: 2rem 1rem;
+    width: 95%;
+  }
+  .all_reviews .reviewItem {
+    width: 280px !important;
+  }
+}
+@media screen and (max-width: 335px) {
+  .full_location .locationsGroup .locations .locationItem {
+    width: 280px;
+  }
+  .full_location .locationsGroup .locations .locationItem .image-container {
+    width: 280px;
+    height: 180px;
+  }
+  .all_reviews {
+    padding: 2rem 1rem;
+    width: 95%;
+  }
+  .all_reviews .reviewItem {
+    width: 260px !important;
+  }
+}
+@media screen and (max-width: 310px) {
+  .all_reviews {
+    padding: 2rem 1rem;
+    width: 95%;
+  }
+  .all_reviews .reviewItem {
+    width: 240px !important;
+  }
+}
+@media screen and (max-width: 300px) {
+  .full_location .locationsGroup .locations .locationItem {
+    width: 250px;
+  }
+  .full_location .locationsGroup .locations .locationItem .image-container {
+    width: 250px;
+    height: 150px;
+  }
 }
 
 /*# sourceMappingURL=LocationFull.css.map */
