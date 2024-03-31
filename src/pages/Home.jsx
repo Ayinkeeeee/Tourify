@@ -87,7 +87,6 @@ function Home() {
             </section>
             <NewsLetter/>
         </main>
-        <ToastContainer/>
       </>
     )
 }

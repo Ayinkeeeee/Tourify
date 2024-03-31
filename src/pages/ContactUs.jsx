@@ -120,7 +120,6 @@ function ContactUs() {
                 </div>
             </section>
         </main>
-        <ToastContainer />
     </div>
   )
 }
