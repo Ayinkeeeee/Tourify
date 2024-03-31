@@ -16,21 +16,35 @@
   font-size: 1rem;
   font-weight: 450;
 }
+.signup-form > div, .login-form > div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  row-gap: 0.75rem;
+}
+.signup-form .passwordInput > div, .login-form .passwordInput > div {
+  position: relative;
+}
+.signup-form .passwordInput > div img, .login-form .passwordInput > div img {
+  cursor: pointer;
+  position: absolute;
+  top: 0.75rem;
+  right: 1.5rem;
+}
 .signup-form input, .login-form input {
   width: 98%;
   border-radius: 0.5rem;
   border: 1px solid darkgray;
   padding: 0.5rem 1rem;
-  margin-top: 0.75rem;
   margin-bottom: 1.25rem;
   border: solid 1px black;
   box-shadow: 1px 1px 5px lightgray;
   font-size: 0.9rem;
 }
-.signup-form div, .login-form div {
+.signup-form .account, .login-form .account {
   text-align: center;
 }
-.signup-form div button, .login-form div button {
+.signup-form .account button, .login-form .account button {
   margin: 3rem auto 2rem auto;
   padding: 0.35rem 3rem;
   border-radius: 0.25rem;
@@ -42,16 +56,16 @@
   font-size: 1rem;
   font-weight: 500;
 }
-.signup-form div p, .login-form div p {
+.signup-form .account p, .login-form .account p {
   font-size: 0.8rem;
   font-weight: 400;
   margin-top: 0;
 }
-.signup-form div p a, .login-form div p a {
+.signup-form .account p a, .login-form .account p a {
   color: #1F3B98;
   text-underline-offset: 0.1rem;
 }
-.signup-form div p a:hover, .login-form div p a:hover {
+.signup-form .account p a:hover, .login-form .account p a:hover {
   opacity: 0.75;
 }
 
