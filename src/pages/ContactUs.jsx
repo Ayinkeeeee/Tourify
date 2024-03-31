@@ -4,7 +4,7 @@ import call from "../assets/icons/call.svg";
 import email from "../assets/icons/email.svg";
 import home from "../assets/icons/home.svg";
 import eggSauce from "../assets/images/egg-sauce.jpeg";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import { useState } from "react";
 
 function ContactUs() {

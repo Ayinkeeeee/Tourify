@@ -1,13 +1,12 @@
-import { NavLink } from "react-router-dom";
-import tourifyLogoWhite from "../../assets/images/tourifyLogoWhite.png"
-import instaLogo from "../../assets/images/instaLogo.svg"
-import fbLogo from "../../assets/images/fbLogo.svg"
-import linkedInLogo from "../../assets/images/linkedInLogo.svg"
-import xLogo from "../../assets/images/xLogo.svg"
-import phoneIcon from "../../assets/images/phoneIcon.svg"
-import emailIcon from "../../assets/images/emailIcon.svg"
-import locationWhiteIcon from "../../assets/images/locationWhiteIcon.svg"
-import '../../css/index.css'
+import tourifyLogo from "../../assets/icons/logo_footer.png"
+import instaLogo from "../../assets/icons/ig_white.png"
+import fbLogo from "../../assets/icons/fb_white.svg"
+import linkedInLogo from "../../assets/icons/linkedin_white.svg"
+import xLogo from "../../assets/icons/twitter_white.png"
+import phoneIcon from "../../assets/icons/phone_white.svg"
+import emailIcon from "../../assets/icons/email_white.svg"
+import locationWhiteIcon from "../../assets/icons/location_white.svg"
+import { Link } from "react-router-dom";
 
 
 export default function() {
@@ -15,32 +14,31 @@ export default function() {
         <div className="footer">
             <div className="footer-flex">
                 <div className="footer-start">
-                    <img src={tourifyLogoWhite} alt="tourify" className="footer-logo"/>
-                    <p className="logo-subtext">Where your journey begins</p>
+                    <img src={tourifyLogo} alt="tourify" className="footer-logo"/>
                 </div>
                 <div className="links footer-column">
                     <h3>LINKS</h3>
                     <ul>
-                        <li><NavLink to="/">Home</NavLink></li>
-                        <li><NavLink to="tour-guides">Tour Guides</NavLink></li>
-                        <li><NavLink to="contact">Contact Us</NavLink></li>
-                        <li><NavLink to="sign-up">Sign Up</NavLink></li>
-                        <li><NavLink to="log-in">Log In</NavLink></li>
-                        <li><NavLink to="coming-soon">Coming Soon</NavLink></li>
-                        <li><NavLink to="privacy">Privacy Policy</NavLink></li>
-                        <li><NavLink to="terms">Terms of Use</NavLink></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="tour_guides">Tour Guides</Link></li>
+                        <li><Link to="contact_us">Contact Us</Link></li>
+                        <li><Link to="sign_up">Sign Up</Link></li>
+                        <li><Link to="log_in">Log In</Link></li>
+                        <li><Link to="coming-soon">Coming Soon</Link></li>
+                        <li><Link to="privacy">Privacy Policy</Link></li>
+                        <li><Link to="terms">Terms of Use</Link></li>
                     </ul>
                 </div>
                 <div className="categories footer-column">
                     <h3>CATEGORIES</h3>
                     <ul>
-                        <li><NavLink to="explore">Explore All</NavLink></li>
-                        <li><NavLink to="popular">Popular Places</NavLink></li>
-                        <li><NavLink to="for-kids">For Kids</NavLink></li>
-                        <li><NavLink to="recreation">Recreation</NavLink></li>
-                        <li><NavLink to="healthcare">Healthcare</NavLink></li>
-                        <li><NavLink to="accomodation">Accomodation</NavLink></li>
-                        <li><NavLink to="commercial">Commercial</NavLink></li>
+                        <li><Link to="explore">Explore All</Link></li>
+                        <li><Link to="popular">Popular Places</Link></li>
+                        <li><Link to="for-kids">For Kids</Link></li>
+                        <li><Link to="recreation">Recreation</Link></li>
+                        <li><Link to="healthcare">Healthcare</Link></li>
+                        <li><Link to="accomodation">Accomodation</Link></li>
+                        <li><Link to="commercial">Commercial</Link></li>
                     </ul>
                 </div>
                 <div className="footer-contact footer-column" style={{marginTop: 0}}>
@@ -49,7 +47,7 @@ export default function() {
                     <ul>
                         <li><a href="tel:08000000000"><img src={phoneIcon} alt=""/>080-0000-0000</a></li>
                         <li><a href="mailto:tourify@gmail.com"><img src={emailIcon} alt=""/>tourify@gmail.com</a></li>
-                        <li><NavLink to=""><img src={locationWhiteIcon} alt=""/>29 Boulevard, Garki, Abuja</NavLink></li>
+                        <li><Link to=""><img src={locationWhiteIcon} alt=""/>29 Boulevard, Garki, Abuja</Link></li>
                     </ul>
                     </div>
                     <div className="socials">

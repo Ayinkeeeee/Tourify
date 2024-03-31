@@ -7,8 +7,8 @@ import FAQItem from "../components/items/FAQItem"
 import Testimonial from "../components/items/Testimonial"
 import LocationsHome from "../components/sections/LocationsHome"
 import NewsLetter from "../components/forms/NewsLetter"
+import Footer from "../components/sections/Footer"
 import { useNavigate } from "react-router-dom"
-import { ToastContainer } from "react-toastify"
 import { useState, useRef } from "react"
 
 function Home() {
@@ -87,6 +87,7 @@ function Home() {
             </section>
             <NewsLetter/>
         </main>
+        <Footer/>
       </>
     )
 }
