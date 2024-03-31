@@ -321,7 +321,6 @@ main #newsletter button {
 
 .category {
   display: unset;
-  height: 1000vh;
 }
 .category .start {
   margin-top: 4rem;
@@ -459,6 +458,66 @@ main #newsletter button {
   padding: 0.25rem;
 }
 
+@media screen and (max-width: 600px) {
+  .category .start {
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 422px) {
+  .category main .locationsGroup .locations .locationItem {
+    width: 350px;
+  }
+  .category main .locationsGroup .locations .locationItem .image-container {
+    width: 350px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .category main .locationsGroup .locations .locationItem {
+    width: 330px;
+  }
+  .category main .locationsGroup .locations .locationItem .image-container {
+    width: 330px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 365px) {
+  .category main .locationsGroup .locations .locationItem {
+    width: 300px;
+  }
+  .category main .locationsGroup .locations .locationItem .image-container {
+    width: 300px;
+    height: 190px;
+  }
+}
+@media screen and (max-width: 335px) {
+  .category main .locationsGroup .locations .locationItem {
+    width: 280px;
+  }
+  .category main .locationsGroup .locations .locationItem .image-container {
+    width: 280px;
+    height: 180px;
+  }
+  .all_reviews {
+    padding: 2rem 1rem;
+    width: 95%;
+  }
+  .all_reviews .reviewItem {
+    width: 260px !important;
+  }
+}
+@media screen and (max-width: 300px) {
+  .category .start h1 {
+    font-size: 4rem;
+  }
+  .category main .locationsGroup .locations .locationItem {
+    width: 250px;
+  }
+  .category main .locationsGroup .locations .locationItem .image-container {
+    width: 250px;
+    height: 150px;
+  }
+}
 #tour_guides .start {
   width: 100%;
   height: 65vh;

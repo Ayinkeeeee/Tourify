@@ -2,7 +2,6 @@
 
 .category{
     display: unset;
-    height: 1000vh;
 
     .start{
         margin-top: 4rem;
@@ -162,6 +161,147 @@
                             img{
                                 padding: 0.25rem;
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .category{
+
+        .start{
+            height: 60vh;
+        }
+    }
+}
+
+@media screen and (max-width: 422px) {
+    .category{
+
+        main{
+
+            .locationsGroup{
+        
+                .locations{
+            
+                    .locationItem{
+                        width: 350px;
+            
+                        .image-container{
+                            width: 350px;
+                            height: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .category{
+
+        main{
+
+            .locationsGroup{
+        
+                .locations{
+            
+                    .locationItem{
+                        width: 330px;
+            
+                        .image-container{
+                            width: 330px;
+                            height: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .category{
+
+        main{
+
+            .locationsGroup{
+        
+                .locations{
+            
+                    .locationItem{
+                        width: 300px;
+            
+                        .image-container{
+                            width: 300px;
+                            height: 190px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 335px) {
+    .category{
+
+        main{
+
+            .locationsGroup{
+        
+                .locations{
+            
+                    .locationItem{
+                        width: 280px;
+            
+                        .image-container{
+                            width: 280px;
+                            height: 180px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .all_reviews{
+        padding: 2rem 1rem;
+        width: 95%;
+
+        .reviewItem{
+            width: 260px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    .category{
+
+        .start{
+            
+            h1{
+                font-size: 4rem;
+            }
+        }
+
+        main{
+
+            .locationsGroup{
+        
+                .locations{
+            
+                    .locationItem{
+                        width: 250px;
+            
+                        .image-container{
+                            width: 250px;
+                            height: 150px;
                         }
                     }
                 }
