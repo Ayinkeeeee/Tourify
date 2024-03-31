@@ -110,4 +110,133 @@
   height: 100%;
 }
 
+@media screen and (max-width: 900px) {
+  #contact .contact_form {
+    flex-direction: column;
+    row-gap: 0;
+    align-items: center;
+  }
+  #contact .contact_form .contact {
+    width: 80%;
+  }
+  #contact .contact_form .contact img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  #contact .contact_form form {
+    width: 80%;
+    padding: 4rem 2rem;
+  }
+  #contact .instagram .posts {
+    column-gap: 1rem;
+    row-gap: 1rem;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 750px) {
+  #contact .contact_form {
+    flex-direction: column;
+    row-gap: 0;
+    align-items: center;
+  }
+  #contact .contact_form .contact {
+    width: 90%;
+  }
+  #contact .contact_form .contact img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  #contact .contact_form form {
+    width: 90%;
+    padding: 4rem 2rem;
+  }
+  #contact .instagram .posts {
+    column-gap: 1rem;
+    row-gap: 1rem;
+    width: 85%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #contact .contact_form {
+    flex-direction: column;
+    row-gap: 0;
+    align-items: center;
+  }
+  #contact .contact_form .contact {
+    width: 95%;
+  }
+  #contact .contact_form .contact img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  #contact .contact_form form {
+    width: 95%;
+    padding: 4rem 2rem;
+  }
+  #contact .instagram .posts {
+    column-gap: 1rem;
+    row-gap: 1rem;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #contact .start {
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 430px) {
+  #contact .contact_form {
+    flex-direction: column;
+    row-gap: 0;
+    align-items: center;
+  }
+  #contact .contact_form .contact {
+    width: 100%;
+  }
+  #contact .contact_form .contact img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  #contact .contact_form form {
+    width: 100%;
+    padding: 4rem 1rem;
+  }
+  #contact .instagram .posts {
+    column-gap: 1rem;
+    row-gap: 1rem;
+    width: 95%;
+  }
+}
+@media screen and (max-width: 365px) {
+  #contact .contact_form {
+    flex-direction: column;
+    row-gap: 0;
+    align-items: center;
+  }
+  #contact .contact_form .contact {
+    width: 100%;
+  }
+  #contact .contact_form .contact img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  #contact .contact_form form {
+    width: 100%;
+    padding: 4rem 1rem;
+  }
+  #contact .contact_form form .inputItem input, #contact .contact_form form .inputItem select, #contact .contact_form form .inputItem textarea {
+    padding: 0.5rem 1rem;
+  }
+  #contact .instagram .posts {
+    column-gap: 1rem;
+    row-gap: 1rem;
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=ContactUs.css.map */
