@@ -2,6 +2,7 @@ import eyeSlash from '../assets/icons/visibility_off.svg'
 import eye from '../assets/icons/eye.svg'
 import Header from '../components/sections/Header'
 import Footer from '../components/sections/Footer'
+import { motion } from 'framer-motion'
 import { toast } from 'react-toastify'
 import { useState } from "react"
 import { Link } from "react-router-dom"
@@ -29,7 +30,11 @@ export default function LogIn() {
     }
 
     return(
-        <>
+        <motion.div 
+            initial={{width: 0}}
+            animate={{width: '100%'}}
+            exit={{x: window.innerWidth, transition: { duration: 0.1 }}}
+        >
             <Header/>
             <main>
                 <form id="login-form" className="login-form" onSubmit={handleSubmit}>
@@ -52,6 +57,6 @@ export default function LogIn() {
                 </form>
             </main>
             <Footer/>
-        </>
+        </motion.div>
     )
 }

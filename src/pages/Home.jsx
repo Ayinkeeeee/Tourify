@@ -9,6 +9,7 @@ import LocationsHome from "../components/sections/LocationsHome"
 import NewsLetter from "../components/forms/NewsLetter"
 import Header from "../components/sections/Header"
 import Footer from "../components/sections/Footer"
+import { motion } from "framer-motion"
 import { useNavigate } from "react-router-dom"
 import { useState, useRef } from "react"
 
@@ -29,7 +30,11 @@ function Home() {
   
   
     return (
-      <>
+      <motion.div
+        initial={{width: 0}}
+        animate={{width: '100%'}}
+        exit={{x: window.innerWidth, transition: { duration: 0.1 }}}
+      >
         <Header/>
         <a href='top'></a>
         <div className="hero">
@@ -91,7 +96,7 @@ function Home() {
             <NewsLetter/>
         </main>
         <Footer/>
-      </>
+      </motion.div>
     )
 }
 
