@@ -60,14 +60,14 @@
             color: white;
             font-size: 1.2rem;
             font-weight: 400;
-            text-shadow: 1px 4px 4px gray;
+            text-shadow: 1px 4px 8px black;
         }
 
         .large_text{
             font-size: 9rem;
             font-weight: bold;
             color: white;
-            text-shadow: 1px 4px 4px gray;
+            text-shadow: 1px 4px 8px black;
         }
     }
 }
@@ -515,6 +515,7 @@ main{
 }
 
 @media screen and (max-width: 650px) {
+
     main{
 
         .locationsGroup{

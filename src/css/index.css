@@ -234,7 +234,7 @@ nav.opaque {
     flex-basis: 100%;
   }
   .footer-logo {
-    width: 150px;
+    width: 200px;
     height: auto;
   }
   .footer-flex {
@@ -352,9 +352,10 @@ nav.opaque {
     flex-basis: 100%;
   }
   .footer-logo {
-    width: 161px;
+    width: 180px;
     height: auto;
     margin-left: 20px;
+    margin-bottom: 1rem;
   }
   .logo-subtext {
     font-size: 9px;
@@ -366,7 +367,7 @@ nav.opaque {
   .footer-flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: stretch;
     margin: auto;
     font-size: 13px;
@@ -384,7 +385,7 @@ nav.opaque {
   .footer-contact {
     display: flex;
     flex-basis: 100%;
-    gap: 86px;
+    gap: 4rem;
     margin-right: 60px;
   }
   .footer-contact .contact-info {

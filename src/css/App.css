@@ -234,7 +234,7 @@ nav.opaque {
     flex-basis: 100%;
   }
   .footer-logo {
-    width: 150px;
+    width: 200px;
     height: auto;
   }
   .footer-flex {
@@ -352,9 +352,10 @@ nav.opaque {
     flex-basis: 100%;
   }
   .footer-logo {
-    width: 161px;
+    width: 180px;
     height: auto;
     margin-left: 20px;
+    margin-bottom: 1rem;
   }
   .logo-subtext {
     font-size: 9px;
@@ -366,7 +367,7 @@ nav.opaque {
   .footer-flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: stretch;
     margin: auto;
     font-size: 13px;
@@ -384,7 +385,7 @@ nav.opaque {
   .footer-contact {
     display: flex;
     flex-basis: 100%;
-    gap: 86px;
+    gap: 4rem;
     margin-right: 60px;
   }
   .footer-contact .contact-info {
@@ -553,13 +554,13 @@ nav.opaque {
   color: white;
   font-size: 1.2rem;
   font-weight: 400;
-  text-shadow: 1px 4px 4px gray;
+  text-shadow: 1px 4px 8px black;
 }
 .hero div .large_text {
   font-size: 9rem;
   font-weight: bold;
   color: white;
-  text-shadow: 1px 4px 4px gray;
+  text-shadow: 1px 4px 8px black;
 }
 
 main > p::first-letter {
