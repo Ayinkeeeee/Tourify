@@ -20,38 +20,38 @@ export default function() {
                     <h3>LINKS</h3>
                     <ul>
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="tour_guides">Tour Guides</Link></li>
-                        <li><Link to="contact_us">Contact Us</Link></li>
-                        <li><Link to="sign_up">Sign Up</Link></li>
-                        <li><Link to="log_in">Log In</Link></li>
-                        <li><Link to="coming-soon">Coming Soon</Link></li>
-                        <li><Link to="privacy">Privacy Policy</Link></li>
-                        <li><Link to="terms">Terms of Use</Link></li>
+                        <li><Link to="/tour_guides">Tour Guides</Link></li>
+                        <li><Link to="/contact_us">Contact Us</Link></li>
+                        <li><Link to="/sign_up">Sign Up</Link></li>
+                        <li><Link to="/log_in">Log In</Link></li>
+                        <li><Link to="/coming_soon">Coming Soon</Link></li>
+                        <li><Link to="/privacy">Privacy Policy</Link></li>
+                        <li><Link to="/terms">Terms of Use</Link></li>
                     </ul>
                 </div>
                 <div className="categories footer-column">
                     <h3>CATEGORIES</h3>
                     <ul>
-                        <li><Link to="explore">Explore All</Link></li>
-                        <li><Link to="popular">Popular Places</Link></li>
-                        <li><Link to="for-kids">For Kids</Link></li>
-                        <li><Link to="recreation">Recreation</Link></li>
-                        <li><Link to="healthcare">Healthcare</Link></li>
-                        <li><Link to="accomodation">Accomodation</Link></li>
-                        <li><Link to="commercial">Commercial</Link></li>
+                        <li><Link to="/explore">Explore All</Link></li>
+                        <li><Link to="/popular">Popular Places</Link></li>
+                        <li><Link to="/for_kids">For Kids</Link></li>
+                        <li><Link to="/recreation">Recreation</Link></li>
+                        <li><Link to="/healthcare">Healthcare</Link></li>
+                        <li><Link to="/accomodation">Accomodation</Link></li>
+                        <li><Link to="/commercial">Commercial</Link></li>
                     </ul>
                 </div>
                 <div className="footer-contact footer-column" style={{marginTop: 0}}>
                     <div className="contact-info">
-                    <h3>CONTACT INFO</h3>
-                    <ul>
-                        <li><a href="tel:08000000000"><img src={phoneIcon} alt=""/>080-0000-0000</a></li>
-                        <li><a href="mailto:tourify@gmail.com"><img src={emailIcon} alt=""/>tourify@gmail.com</a></li>
-                        <li><Link to=""><img src={locationWhiteIcon} alt=""/>29 Boulevard, Garki, Abuja</Link></li>
-                    </ul>
+                        <h3>CONTACT INFO</h3>
+                        <ul>
+                            <li><a href="tel:08000000000"><img src={phoneIcon} alt=""/>080-0000-0000</a></li>
+                            <li><a href="mailto:tourify@gmail.com"><img src={emailIcon} alt=""/>tourify@gmail.com</a></li>
+                            <li><Link to=""><img src={locationWhiteIcon} alt=""/>29 Boulevard, Garki, Abuja</Link></li>
+                        </ul>
                     </div>
                     <div className="socials">
-                    <h3 style={{marginTop: "25px"}}>SOCIALS</h3>
+                        <h3 style={{marginTop: "25px"}}>SOCIALS</h3>
                         <a href="https://www.instagram.com" className="footer-social"><img src={instaLogo} alt="IG"/></a>
                         <a href="https://twitter.com" className="footer-social"><img src={xLogo} alt="X"/></a>
                         <a href="https://www.linkedin.com" className="footer-social"><img src={linkedInLogo} alt="IN"/></a>
@@ -60,10 +60,10 @@ export default function() {
                 </div>
             </div>
             <div style={{textAlign: "center", marginTop: "35px"}}>
-                <a href="#top" className="back" style={{fontSize: "13px", color:"#FF9C54", textShadow:"1px 1px 3px darkblue"}}>
-                    Back to Top
+                <a href="#top" className="back" style={{fontSize: "0.85rem", color:"#FF9C54", textShadow:"1px 1px 3px darkblue"}}>
+                ↑ Back to Top
                 </a>
-                <p className="copyright" style={{fontSize: "12px", marginTop:"8px"}}>
+                <p className="copyright" style={{fontSize: "0.65rem", marginTop:"0.5rem"}}>
                     Copyright © Tourify 2024
                 </p>
             </div>

@@ -29,6 +29,7 @@ function Home() {
   
     return (
       <>
+        <a href='top'></a>
         <div className="hero">
             <video ref={videoRef} muted autoPlay loop width="1000px" height="1000px" src={cityVideo}></video>
             <div>
