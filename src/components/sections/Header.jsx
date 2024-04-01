@@ -1,84 +1,124 @@
-import { NavLink, Outlet } from "react-router-dom";
-import tourifyLogoBlue from "../../assets/images/tourifyLogoBlue.png";
+import tourifyLogoBlue from "../../assets/icons/logo_blue.png";
 import MenuIcon from "../../assets/icons/menu.svg"
-import BackBtn from "../../assets/icons/backBtn.png"
+import closeBtn from "../../assets/icons/close_x.svg"
+import { useState, useEffect } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
-export default function RootLayout() {
-    const handleOpenMenu = () => {
-        const displayMenu = document.getElementById('mob-menu');
-        const menuBtn = document.getElementById('menu-btn');
-        const backBtn = document.getElementById('back-btn');
+export default function Header() {
+    const [isScrolled, setIsScrolled] = useState(false)
+    const [menuOpen, setMenuOpen] = useState(false)
+    const navigator = useNavigate()
+    const { pathname } = useLocation()
 
-        displayMenu.style.position = 'fixed';
-        displayMenu.style.display = 'block';
-        menuBtn.style.display = 'none';
-        backBtn.style.display = 'block';
-
-
-        console.log('Clicked');
+    const openMenu = () => {
+        setMenuOpen(true)
+    }
+    
+    const closeMenu = () => {
+        setMenuOpen(false)
     }
 
-    const handleCloseMenu = () => {
-        const displayMenu = document.getElementById('mob-menu');
-        const menuBtn = document.getElementById('menu-btn');
-        const backBtn = document.getElementById('back-btn');
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY;
+            if(scrollPosition > 300){
+                setIsScrolled(true);
+            }else{
+                setIsScrolled(false);
+            }
+        }
 
-        displayMenu.style.display = 'none';
-        menuBtn.style.display = 'block';
-        backBtn.style.display = 'none';
-    }
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        }
+    }, [])
 
     return(
-        <div>
-            <header id="top">
-                <nav id="nav">
-                    <img src={tourifyLogoBlue} alt="logo"/>
-                    <div className="nav-mobile">
-                        <div className="nav-section1">
-                            <NavLink to="/">Home</NavLink>
-                            <NavLink to="restaurants">Restaurants</NavLink>
-                            <NavLink to="commercial">Commercial</NavLink>
-                            <NavLink to="healthcare">Healthcare</NavLink>
-                        </div>
-                        <div className="nav-section2">
-                            <NavLink to="tour-guides">Tour Guides</NavLink>
-                            <NavLink to="contact">Contact Us</NavLink>
-                            <NavLink to="sign-up" className="signupBtn">Sign Up</NavLink>
-
-                        </div>
-                    </div>
-                    <button id="menu-btn" onClick={handleOpenMenu} style={{background: "none", border:"none"}}>
-                        <img  className="menu-icon" src={MenuIcon} alt="menu"/>
-                    </button>
-                    <button id="back-btn" onClick={handleCloseMenu} style={{background: "none", border:"none", display: "none"}}>
-                        <img className="back-icon" src={BackBtn} alt="menu"/>
-                    </button>
-                </nav>
-            </header>
-            <nav>
-                <div id="mob-menu" className="mobile-menu" style={{display: 'none'}}>
-                    <ul>
-                        <li><NavLink to="/">Home</NavLink></li>
-                        <hr />
-                        <li><NavLink to="restaurants">Restaurants</NavLink></li>
-                        <hr />
-                        <li><NavLink to="commercial">Commercial</NavLink></li>
-                        <hr />
-                        <li><NavLink to="healthcare">Healthcare</NavLink></li>
-                        <hr />
-                        <li><NavLink to="tour-guides">Tour Guides</NavLink></li>
-                        <hr />
-                        <li><NavLink to="contact">Contact Us</NavLink></li>
-                        <hr />
-                        <li><NavLink to="sign-up">Sign Up</NavLink></li>
-                    </ul>
+        <nav className={pathname !== '/' || isScrolled ? 'opaque' : 'transparent'}>
+            <div className="logo">
+                <img src={tourifyLogoBlue} alt="tourify logo" />
+            </div>
+            <div>
+                <Link to='/'>Home</Link>
+                <Link to='/food'>Restaurants</Link>
+                <Link to='/commerce'>Commercial</Link>
+                <Link to='/health'>Healthcare</Link>
+            </div>
+            <div>
+                <Link to='/tour_guides'>Tour Guides</Link>
+                <Link to='/contact_us'>Contact Us</Link>
+                <button onClick={() => {navigator('/sign_up')}} className="main">Sign Up</button>
+            </div>
+            <div className="openBtn">
+                <img src={MenuIcon} onClick={openMenu} alt="menu bars" />
+            </div>
+            <div className={`responsiveMenu ${menuOpen ? '' : "close"}`}>
+                <div>
+                    <Link to='/'>Home</Link>
+                    <Link to='/food'>Restaurants</Link>
+                    <Link to='/commerce'>Commercial</Link>
+                    <Link to='/health'>Healthcare</Link>
                 </div>
-            </nav>
+                <div>
+                    <Link to='/tour_guides'>Tour Guides</Link>
+                    <Link to='/contact_us'>Contact Us</Link>
+                </div>
+                <div>
+                    <button onClick={() => {navigator('/sign_up')}} className="main">Sign Up</button>
+                </div>
+                <div className="close">
+                    <img src={closeBtn} onClick={closeMenu} alt="close" />
+                </div>
+            </div>
+        </nav>
+        // <div>
+        //     <header id="top">
+        //         <nav id="nav">
+        //             <img src={tourifyLogoBlue} alt="logo"/>
+        //             <div className="nav-mobile">
+        //                 <div className="nav-section1">
+        //                     <Link to="/">Home</Link>
+        //                     <Link to="restaurants">Restaurants</Link>
+        //                     <Link to="commercial">Commercial</Link>
+        //                     <Link to="healthcare">Healthcare</Link>
+        //                 </div>
+        //                 <div className="nav-section2">
+        //                     <Link to="tour-guides">Tour Guides</Link>
+        //                     <Link to="contact">Contact Us</Link>
+        //                     <Link to="sign-up" className="signupBtn">Sign Up</Link>
 
-            
-                <Outlet/>
-        
-        </div>
+        //                 </div>
+        //             </div>
+        //             <button id="menu-btn" style={{background: "none", border:"none"}}>
+        //                 <img  className="menu-icon" src={MenuIcon} alt="menu"/>
+        //             </button>
+        //             <button id="back-btn" style={{background: "none", border:"none", display: "none"}}>
+        //                 <img className="back-icon" src={BackBtn} alt="menu"/>
+        //             </button>
+        //         </nav>
+        //     </header>
+        //     <nav>
+        //         <div id="mob-menu" className="mobile-menu" style={{display: 'none'}}>
+        //             <ul>
+        //                 <li><Link to="/">Home</Link></li>
+        //                 <hr />
+        //                 <li><Link to="restaurants">Restaurants</Link></li>
+        //                 <hr />
+        //                 <li><Link to="commercial">Commercial</Link></li>
+        //                 <hr />
+        //                 <li><Link to="healthcare">Healthcare</Link></li>
+        //                 <hr />
+        //                 <li><Link to="tour-guides">Tour Guides</Link></li>
+        //                 <hr />
+        //                 <li><Link to="contact">Contact Us</Link></li>
+        //                 <hr />
+        //                 <li><Link to="sign-up">Sign Up</Link></li>
+        //             </ul>
+        //         </div>
+        //     </nav>
+        // </div>
     );
 }
 

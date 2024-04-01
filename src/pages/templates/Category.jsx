@@ -1,4 +1,5 @@
 import LocationsCategory from "../../components/sections/LocationsCategory"
+import Header from "../../components/sections/Header"
 import Footer from "../../components/sections/Footer"
 
 function Category({category}) {
@@ -6,6 +7,7 @@ function Category({category}) {
 
   return (
     <div className="category" id={`${category.categoryName}`}>
+      <Header/>
         <section className="start">
             <img src={require(`../../${imagePath}/${category.categoryImage}.png`)} alt="food" />
             <h1>{category.headingText}</h1>

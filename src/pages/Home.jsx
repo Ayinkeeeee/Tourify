@@ -7,6 +7,7 @@ import FAQItem from "../components/items/FAQItem"
 import Testimonial from "../components/items/Testimonial"
 import LocationsHome from "../components/sections/LocationsHome"
 import NewsLetter from "../components/forms/NewsLetter"
+import Header from "../components/sections/Header"
 import Footer from "../components/sections/Footer"
 import { useNavigate } from "react-router-dom"
 import { useState, useRef } from "react"
@@ -29,6 +30,7 @@ function Home() {
   
     return (
       <>
+        <Header/>
         <a href='top'></a>
         <div className="hero">
             <video ref={videoRef} muted autoPlay loop width="1000px" height="1000px" src={cityVideo}></video>
