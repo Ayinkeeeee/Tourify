@@ -37,7 +37,7 @@ export default function Header() {
 
     return(
         <nav className={pathname !== '/' || isScrolled ? 'opaque' : 'transparent'}>
-            <div className="logo">
+            <div onClick={() => {navigator('/')}} style={{ cursor: 'pointer' }} className="logo">
                 <img src={tourifyLogoBlue} alt="tourify logo" />
             </div>
             <div>
@@ -73,52 +73,6 @@ export default function Header() {
                 </div>
             </div>
         </nav>
-        // <div>
-        //     <header id="top">
-        //         <nav id="nav">
-        //             <img src={tourifyLogoBlue} alt="logo"/>
-        //             <div className="nav-mobile">
-        //                 <div className="nav-section1">
-        //                     <Link to="/">Home</Link>
-        //                     <Link to="restaurants">Restaurants</Link>
-        //                     <Link to="commercial">Commercial</Link>
-        //                     <Link to="healthcare">Healthcare</Link>
-        //                 </div>
-        //                 <div className="nav-section2">
-        //                     <Link to="tour-guides">Tour Guides</Link>
-        //                     <Link to="contact">Contact Us</Link>
-        //                     <Link to="sign-up" className="signupBtn">Sign Up</Link>
-
-        //                 </div>
-        //             </div>
-        //             <button id="menu-btn" style={{background: "none", border:"none"}}>
-        //                 <img  className="menu-icon" src={MenuIcon} alt="menu"/>
-        //             </button>
-        //             <button id="back-btn" style={{background: "none", border:"none", display: "none"}}>
-        //                 <img className="back-icon" src={BackBtn} alt="menu"/>
-        //             </button>
-        //         </nav>
-        //     </header>
-        //     <nav>
-        //         <div id="mob-menu" className="mobile-menu" style={{display: 'none'}}>
-        //             <ul>
-        //                 <li><Link to="/">Home</Link></li>
-        //                 <hr />
-        //                 <li><Link to="restaurants">Restaurants</Link></li>
-        //                 <hr />
-        //                 <li><Link to="commercial">Commercial</Link></li>
-        //                 <hr />
-        //                 <li><Link to="healthcare">Healthcare</Link></li>
-        //                 <hr />
-        //                 <li><Link to="tour-guides">Tour Guides</Link></li>
-        //                 <hr />
-        //                 <li><Link to="contact">Contact Us</Link></li>
-        //                 <hr />
-        //                 <li><Link to="sign-up">Sign Up</Link></li>
-        //             </ul>
-        //         </div>
-        //     </nav>
-        // </div>
     );
 }
 

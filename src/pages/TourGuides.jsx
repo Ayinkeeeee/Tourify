@@ -1,11 +1,13 @@
 import tourGuides from "../assets/images/tour_guides.png"
 import TourGuide from "../components/items/TourGuide"
 import GuideQnA from "../components/items/GuideQnA"
+import Header from "../components/sections/Header"
 import Footer from "../components/sections/Footer"
 
 function TourGuides() {
   return (
     <div id="tour_guides">
+        <Header/>
         <section className="start">
             <img src={tourGuides} alt="tour guides" />
             <h1>Tour Guides</h1>

@@ -1,5 +1,6 @@
 import eyeSlash from '../assets/icons/visibility_off.svg'
 import eye from '../assets/icons/eye.svg'
+import Header from '../components/sections/Header'
 import Footer from '../components/sections/Footer'
 import { toast } from 'react-toastify'
 import { useState } from "react"
@@ -37,6 +38,7 @@ export default function SignUp() {
 
     return(
         <>
+            <Header/>
             <main className="sign-up">
                 <form id="signup-form" className="signup-form" onSubmit={handleSubmit}>
                     <h1>SIGN UP</h1>

@@ -12,6 +12,7 @@ import ReviewsModal from "../../components/sections/ReviewsModal"
 import RelatedLocations from "../../components/sections/RelatedLocations"
 import ModalContext from "../../context/ModalContext"
 import Footer from "../../components/sections/Footer"
+import Header from "../../components/sections/Header"
 import { Link } from "react-router-dom"
 import { toast, ToastContainer } from "react-toastify"
 import { useState, useContext } from "react"
@@ -55,7 +56,7 @@ function LocationFull({full_location}) {
 
   return (
         <div className={`full_location ${showReviews ? 'modal' : ''}`}>
-            <ToastContainer/>
+            <Header/>
             <div className="img-container">
                 <img src={jlm} alt="Jabi lake mall" />
             </div>

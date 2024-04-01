@@ -15,7 +15,7 @@
 
 html{
     scroll-behavior: smooth;
-    scroll-padding-top: 4rem;
+    scroll-padding-top: 8rem;
 }
 
 button{
@@ -84,6 +84,11 @@ main{
 }
 
 @media screen and (max-width: 600px) {
+
+    html{
+        scroll-behavior: smooth;
+        scroll-padding-top: 12rem;
+    }
     
     main{
         padding: 0 1rem;
@@ -91,6 +96,12 @@ main{
 }
 
 @media screen and (max-width: 365px){
+
+    html{
+        scroll-behavior: smooth;
+        scroll-padding-top: 16.5rem;
+    }
+
     main{
         padding: 0 0.5rem;
     }
