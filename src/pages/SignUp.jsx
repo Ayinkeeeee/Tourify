@@ -38,7 +38,11 @@ export default function SignUp() {
     }
 
     return(
-        <>
+        <motion.div 
+            initial={{width: 0}}
+            animate={{width: '100%'}}
+            exit={{x: window.innerWidth, transition: { duration: 0.1 }}}
+        >
             <Header/>
             <main className="sign-up">
                 <form id="signup-form" className="signup-form" onSubmit={handleSubmit}>
@@ -76,6 +80,6 @@ export default function SignUp() {
                 </form>
             </main>
             <Footer/>
-        </>
+        </motion.div>
     );
 }

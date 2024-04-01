@@ -3,10 +3,16 @@ import TourGuide from "../components/items/TourGuide"
 import GuideQnA from "../components/items/GuideQnA"
 import Header from "../components/sections/Header"
 import Footer from "../components/sections/Footer"
+import { motion } from "framer-motion"
 
 function TourGuides() {
   return (
-    <div id="tour_guides">
+    <motion.div 
+        id="tour_guides"
+        initial={{width: 0}}
+        animate={{width: '100%'}}
+        exit={{x: window.innerWidth, transition: { duration: 0.1 }}}
+    >
         <Header/>
         <section className="start">
             <img src={tourGuides} alt="tour guides" />
@@ -44,7 +50,7 @@ function TourGuides() {
             </section>
         </main>
         <Footer/>
-    </div>
+    </motion.div>
   )
 }
 

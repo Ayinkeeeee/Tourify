@@ -13,8 +13,9 @@ import RelatedLocations from "../../components/sections/RelatedLocations"
 import ModalContext from "../../context/ModalContext"
 import Footer from "../../components/sections/Footer"
 import Header from "../../components/sections/Header"
+import { motion } from "framer-motion"
 import { Link } from "react-router-dom"
-import { toast, ToastContainer } from "react-toastify"
+import { toast } from "react-toastify"
 import { useState, useContext } from "react"
 
 function LocationFull({full_location}) {
@@ -55,7 +56,12 @@ function LocationFull({full_location}) {
     }
 
   return (
-        <div className={`full_location ${showReviews ? 'modal' : ''}`}>
+        <motion.div 
+            className={`full_location ${showReviews ? 'modal' : ''}`}
+            initial={{width: 0}}
+            animate={{width: '100%'}}
+            exit={{x: window.innerWidth, transition: { duration: 0.1 }}}
+        >
             <Header/>
             <div className="img-container">
                 <img src={jlm} alt="Jabi lake mall" />
@@ -131,7 +137,7 @@ function LocationFull({full_location}) {
             </main>
             {showReviews && <ReviewsModal reviews={[0, 0, 0, 0, 0]}/>}
             <Footer/>
-        </div>
+        </motion.div>
   )
 }
 

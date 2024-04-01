@@ -1,15 +1,27 @@
 import LocationsCategory from "../../components/sections/LocationsCategory"
 import Header from "../../components/sections/Header"
 import Footer from "../../components/sections/Footer"
+import { motion } from "framer-motion"
 
 function Category({category}) {
   const imagePath = `assets/images`
 
   return (
-    <div className="category" id={`${category.categoryName}`}>
+    <motion.div 
+      className="category" 
+      id={`${category.categoryName}`}
+      initial={{width: 0}}
+      animate={{width: '100%'}}
+      exit={{x: window.innerWidth, transition: { duration: 0.1 }}}
+    >
       <Header/>
         <section className="start">
-            <img src={require(`../../${imagePath}/${category.categoryImage}.png`)} alt="food" />
+            <motion.img 
+              src={require(`../../${imagePath}/${category.categoryImage}.png`)} alt="food" 
+              initial={{opacity: 0}}
+              animate={{opacity: 1}}
+              transition={{delay: 0.3}}
+            />
             <h1>{category.headingText}</h1>
         </section>
         <main>
@@ -25,7 +37,7 @@ function Category({category}) {
           }
         </main>
         <Footer/>
-    </div>
+    </motion.div>
   )
 }
 

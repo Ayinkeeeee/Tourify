@@ -6,6 +6,7 @@ import home from "../assets/icons/home.svg";
 import eggSauce from "../assets/images/egg-sauce.jpeg";
 import Header from "../components/sections/Header";
 import Footer from "../components/sections/Footer";
+import { motion } from "framer-motion";
 import { toast } from "react-toastify";
 import { useState } from "react";
 
@@ -35,7 +36,12 @@ function ContactUs() {
     }
 
   return (
-    <div id='contact'>
+    <motion.div 
+        id='contact'
+        initial={{width: 0}}
+        animate={{width: '100%'}}
+        exit={{x: window.innerWidth, transition: { duration: 0.1 }}}
+    >
         <Header/>
         <section className="start">
             <img src={contactTelephone} alt="telephone" />
@@ -124,7 +130,7 @@ function ContactUs() {
             </section>
         </main>
         <Footer/>
-    </div>
+    </motion.div>
   )
 }
 
