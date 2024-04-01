@@ -111,7 +111,7 @@
 .full_location .contact_trip .trip > div a {
   text-decoration: none;
 }
-.full_location .contact_trip .trip .maps {
+.full_location .contact_trip .trip .maps a {
   color: #1F3B98;
 }
 .full_location .contact_trip .trip .maps img {

@@ -1,6 +1,7 @@
 import tourGuides from "../assets/images/tour_guides.png"
 import TourGuide from "../components/items/TourGuide"
 import GuideQnA from "../components/items/GuideQnA"
+import Footer from "../components/sections/Footer"
 
 function TourGuides() {
   return (
@@ -40,6 +41,7 @@ function TourGuides() {
                 <p>Call the number for the tour guide you like and you’ll get a prompt response.</p>
             </section>
         </main>
+        <Footer/>
     </div>
   )
 }

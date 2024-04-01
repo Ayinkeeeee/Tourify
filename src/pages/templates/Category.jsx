@@ -1,4 +1,5 @@
 import LocationsCategory from "../../components/sections/LocationsCategory"
+import Footer from "../../components/sections/Footer"
 
 function Category({category}) {
   const imagePath = `assets/images`
@@ -21,6 +22,7 @@ function Category({category}) {
           {category.categories && category.categories.map((categoryItem, index)  =>     <LocationsCategory key={index} categoryName={categoryItem} id={category.categoriesIDs[index]} stagger={index}/>)
           }
         </main>
+        <Footer/>
     </div>
   )
 }

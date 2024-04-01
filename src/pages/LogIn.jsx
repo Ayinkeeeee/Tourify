@@ -1,5 +1,6 @@
 import eyeSlash from '../assets/icons/visibility_off.svg'
 import eye from '../assets/icons/eye.svg'
+import Footer from '../components/sections/Footer'
 import { toast } from 'react-toastify'
 import { useState } from "react"
 import { Link } from "react-router-dom"
@@ -27,25 +28,28 @@ export default function LogIn() {
     }
 
     return(
-        <main>
-            <form id="login-form" className="login-form" onSubmit={handleSubmit}>
-                <h1>LOG IN</h1>
-                <div>
-                    <label htmlFor="email">Email</label>
-                    <input type="email" name="email" placeholder="johndoe@email.com" required value={form.email || ''} onChange={handleChange}/>
-                </div>
-                <div className='passwordInput'>
-                    <label htmlFor="password">Password</label>
+        <>
+            <main>
+                <form id="login-form" className="login-form" onSubmit={handleSubmit}>
+                    <h1>LOG IN</h1>
                     <div>
-                        <input type={showPassword ? 'text' : 'password'} name="password" required value={form.password || ''} onChange={handleChange}/>
-                        <img src={showPassword ? eyeSlash : eye} type="button" onClick={() => setShowPassword(!showPassword)}/>
+                        <label htmlFor="email">Email</label>
+                        <input type="email" name="email" placeholder="johndoe@email.com" required value={form.email || ''} onChange={handleChange}/>
                     </div>
+                    <div className='passwordInput'>
+                        <label htmlFor="password">Password</label>
+                        <div>
+                            <input type={showPassword ? 'text' : 'password'} name="password" required value={form.password || ''} onChange={handleChange}/>
+                            <img src={showPassword ? eyeSlash : eye} type="button" onClick={() => setShowPassword(!showPassword)}/>
+                        </div>
+                    </div>
+                    <div className="account">
+                    <button>Log In</button>
+                    <p>Don't have an account? <Link to='/sign_up'>Sign Up</Link></p>
                 </div>
-                <div className="account">
-                <button>Log In</button>
-                <p>Don't have an account? <Link to='/sign_up'>Sign Up</Link></p>
-            </div>
-            </form>
-        </main>
+                </form>
+            </main>
+            <Footer/>
+        </>
     )
 }

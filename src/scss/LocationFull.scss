@@ -135,7 +135,10 @@
             }
     
             .maps{
-                color: $dark_blue;
+                
+                a{
+                    color: $dark_blue;
+                }
     
                 img{
                     height: 15px;

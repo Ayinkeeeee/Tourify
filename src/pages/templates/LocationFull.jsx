@@ -7,11 +7,11 @@ import fb from "../../assets/icons/fb.png"
 import locationMarker from "../../assets/icons/location_blue.svg"
 import car from "../../assets/icons/car.svg"
 import star from "../../assets/icons/star.svg"
-import greyStar from "../../assets/icons/star_gray.svg"
 import Reviews from "../../components/sections/Reviews"
 import ReviewsModal from "../../components/sections/ReviewsModal"
 import RelatedLocations from "../../components/sections/RelatedLocations"
 import ModalContext from "../../context/ModalContext"
+import Footer from "../../components/sections/Footer"
 import { Link } from "react-router-dom"
 import { toast, ToastContainer } from "react-toastify"
 import { useState, useContext } from "react"
@@ -129,6 +129,7 @@ function LocationFull({full_location}) {
                 <RelatedLocations/>
             </main>
             {showReviews && <ReviewsModal reviews={[0, 0, 0, 0, 0]}/>}
+            <Footer/>
         </div>
   )
 }

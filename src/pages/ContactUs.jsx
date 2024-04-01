@@ -4,6 +4,7 @@ import call from "../assets/icons/call.svg";
 import email from "../assets/icons/email.svg";
 import home from "../assets/icons/home.svg";
 import eggSauce from "../assets/images/egg-sauce.jpeg";
+import Footer from "../components/sections/Footer";
 import { toast } from "react-toastify";
 import { useState } from "react";
 
@@ -120,6 +121,7 @@ function ContactUs() {
                 </div>
             </section>
         </main>
+        <Footer/>
     </div>
   )
 }
