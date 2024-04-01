@@ -52,7 +52,30 @@ function Home() {
         <main>
             <p>Welcome to Abuja! Discover the best of Abuja with Tourify, the best guide for the Capital. Find things to do in Abuja, from iconic leisure spots and fun-filled days out to top restaurants and unmissable Abuja events. If you’re not able to visit just yet, plan ahead to make the most of your next visit.</p>
             <LocationsHome/>
-            <LocationsHome/>
+            <LocationsHome data={{
+                header: "Art and History",
+                text: 'If you’re an art enthusiast or history lover, you would probably enjoy visiting any one of these locations during your stay.',
+                locations: [
+                    {
+                        locationName: "Discovery Museum",
+                        rating: 5,
+                        pic: 'jlm.jpg',
+                        address: "Bala Sokoto Wy, Jabi, Abuja 900108, Federal Capital Territory"
+                    },
+                    {
+                        locationName: "Nike Art Gallery",
+                        rating: '4.0',
+                        pic: 'jlm.jpg',
+                        address: 'Nike Art Gallery, Elegushi Road, Lekki Phase 1, Lagos'
+                    },
+                    {
+                        locationName: 'Retro Africa Gallery',
+                        rating: 4.75,
+                        pic: 'jlm.jpg',
+                        address: 'Km 7.5 Abuja International Airport Road Abuja Central'
+                    }
+                ]
+            }}/>
             <LocationsHome/>
             <section className="about">
                 <div className="text">
