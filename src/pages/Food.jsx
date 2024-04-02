@@ -20,34 +20,34 @@ function Food() {
                 pic: 'food/blucabana.jpg'
               },
               {
-                locationName: "Jabi Lake Mall",
-                address: "Bala Sokoto Way, Jabi, Abuja",
+                locationName: "Tullip Bistro",
+                address: "141 Adetokunbo Ademola Cres, Wuse, Abuja 904101, Federal Capital Territory",
                 rating: 4.5,
-                pic: 'lake_mall.jpg'
+                pic: 'tulip.png'
               },
               {
-                locationName: "Jabi Lake Mall",
-                address: "Bala Sokoto Way, Jabi, Abuja",
+                locationName: "A-Class Restaurant",
+                address: "Plot 102 Along, Kashim Ibrahim Wy, Maitama, Abuja",
                 rating: 4.5,
-                pic: 'lake_mall.jpg'
+                pic: 'aclass.png'
               },
               {
-                locationName: "Jabi Lake Mall",
-                address: "Bala Sokoto Way, Jabi, Abuja",
+                locationName: "The Vue",
+                address: "3F75+W86 Novare mall, Wuse, 904101, Federal Capital Territory",
                 rating: 4.5,
-                pic: 'lake_mall.jpg'
+                pic: 'food/thevue.webp'
               },
               {
-                locationName: "Jabi Lake Mall",
-                address: "Bala Sokoto Way, Jabi, Abuja",
+                locationName: "Chopsticks & Caesar's",
+                address: "52 Mississippi St, Maitama, Abuja 904101, Federal Capital Territory",
                 rating: 4.5,
-                pic: 'lake_mall.jpg'
+                pic: 'chopsticks.png'
               },
               {
-                locationName: "Jabi Lake Mall",
-                address: "Bala Sokoto Way, Jabi, Abuja",
+                locationName: "Zuma grill",
+                address: "Floor, 01, Transcorp Hilton Hotel, No.1, Aguiyi Ironsi Street, Maitama, Abuja, FCT",
                 rating: 4.5,
-                pic: 'lake_mall.jpg'
+                pic: 'zuma.png'
               }
           ]
         }, 
@@ -55,160 +55,160 @@ function Food() {
           categoryName: ["Fast Food", "Fast Food"],
           locations: [
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Dominos Pizza",
+              address: "Aminu Kano Crescent, 52 Kumasi Cres, Wuse, Abuja",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'dominos.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Johnny Rockets",
+              address: "215 Konoko Cres, Wuse, Abuja 900288, Federal Capital Territory",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'johnny.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Street 13",
+              address: "Plot C18 Obioma Onyeador Plaza beside DBB Plaza Along, 1st Avenue, Gwarinpa Estate, Gwarinpa",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'street.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Downtown Takeaway",
+              address: "38 Gana St, Maitama, Abuja 904101, Federal Capital Territory",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'downtown.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Burger King",
+              address: "24 Durban St, Wuse 2, Abuja 904101, Federal Capital Territory",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'burger.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Truckadero by Citybowl",
+              address: "131b Adetokunbo Ademola Cres, Wuse 2, Abuja 904101, Federal Capital Territory",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'truckadero.png'
             }
           ]
         }, 
         { categoryName: ["Native Food", "Native Food"],
           locations: [
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Jevinik Restaurant",
+              address: "494 Bangui St, Wuse 2, Abuja 904101, Federal Capital Territory",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'jevinik.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Iya Oyo",
+              address: " 112 Idris Gidado St, Wuye, Ankuru 900108, Federal Capital Territory",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'iya.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Nkoyo",
+              address: "Ceddi Plaza, 264 Tafawa Balewa Rd, Central Area, Abuja 900211, Federal Capital Territory",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'nkoyo.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Biobak Restaurant",
+              address: "9 Malabo Street, Off Aminu Kano Cres, Wuse 2, Abuja 900288",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'biobak.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Hungryma Restaurant",
+              address: "141 Adetokunbo Ademola Cres, Wuse, Abuja 904101, Federal Capital Territory",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'hungryma.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Akara Cafe",
+              address: "Zone 5, Accra St, opp. Istrom Real Estate, Wuse, Abuja 904101, Federal Capital Territory",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'akara.png'
             }
         ]
         }, 
-        { categoryName: ["Ice-Cream", "Ice-Cream"],
+        { categoryName: ["Creamy Indulgencies", "Creamy Indulgencies"],
           locations: [
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Coldstone Creamery",
+              address: "52 Aminu Kano Cres, Wuse 2, Abuja 904101, Federal Capital Territory",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'coldstone.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Nosta Cafe",
+              address: "2 Atakpame St, Wuse, Abuja 904101, Federal Capital Territory",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'nosta.png'
             },
             {
-              locationName: "Jabi Lake Mall",
+              locationName: "Pinkberry Gourmet Froyo",
               address: "Bala Sokoto Way, Jabi, Abuja",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'pinkberry.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Hans & René",
+              address: "75 Aminu Kano Cres, Wuse 2, Abuja 904101, Federal Capital Territory",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'hans.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Hatlab Gelato",
+              address: "plot 1952 Sokode crescent Wuse zone 5 Abuja. Also located as vendors at some schools.",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'hatlab.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Movenpick Swiss Icecream",
+              address: "Samuel Ladoke Akintola Boulevard, Garki, Abuja 900110, Federal Capital Territory",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'movenpick.png'
             }
           ]
         },
         { categoryName: ["Chinese / Asian", "Chinese / Asian"],
           locations: [
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Macoriano Chinese Restaurant",
+              address: "33 Gana St, Maitama, Abuja 904101, Federal Capital Territory",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'macoriano.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Sinoni Chinese Restaurant",
+              address: "Area 1 Shopping Centre, opp. Nipost, Garki, Abuja 900103, Federal Capital Territory",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'sinoni.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Silk Road Restaurant",
+              address: "Plot 770, Sinoki house, off Samuel Ademulegun Ave, opposite Federal Ministry of Transport, Central Business District, Abuja",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'silk.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Woks & Koi",
+              address: "18 Durban St, Wuse, Abuja 904101, Federal Capital Territory",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'woks.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "4 Guys Restaurant",
+              address: "913 Adetokunbo Ademola Cres, Wuse, Abuja 904101, Federal Capital Territory",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'guys.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Golden Gate Restaurant",
+              address: "Zone 5, 1994 Mombasa St, Wuse, Abuja 904101, Federal Capital Territory",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'golden.png'
             }
           ]
         },
@@ -216,40 +216,40 @@ function Food() {
           categoryName: ["Italian", "Italian"],
           locations: [
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Cantina Restaurant",
+              address: "30 Yedseram St, Maitama, Abuja 900271, Federal Capital Territory",
+              rating: 4.5,
+              pic: 'cantina.png'
+            },
+            {
+              locationName: "Irie Resto Lounge",
+              address: "Jabi lake mall, Jabi, Abuja 900108, Federal Capital Territory",
+              rating: 4.5,
+              pic: 'irie.png'
+            },
+            {
+              locationName: "La Taverna",
+              address: "5th Floor, Statement Hotel, First Ave, Wuse, Abuja 900103, Federal Capital Territory",
+              rating: 4.5,
+              pic: 'la.png'
+            },
+            {
+              locationName: "Luigi's Italian Restaurant",
+              address: "Sheraton Abuja Hotel, Ladi Kwali Way, Maitama, Wuse, Abuja 904101, Federal Capital Territory",
               rating: 4.5,
               pic: 'lake_mall.jpg'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Haraya Restaurant",
+              address: "Block 5, 2 Bria St, Wuse, Abuja 904101, Federal Capital Territory",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'haraya.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Aldo's Restaurant",
+              address: "Plot 466 Alex Ekwueme Way, Jabi, Abuja 900108, Federal Capital Territory",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
-            },
-            {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
-              rating: 4.5,
-              pic: 'lake_mall.jpg'
-            },
-            {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
-              rating: 4.5,
-              pic: 'lake_mall.jpg'
-            },
-            {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
-              rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'aldo.png'
             }
           ]
         },
@@ -257,40 +257,40 @@ function Food() {
           categoryName: ["Shawarma", "Shawarma"],
           locations: [
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Chicken Capitol",
+              address: "4 Lingu Cres, off Aminu Kano Crescent, behind Hyde filling station, Wuse II, Abuja 900288, Federal Capital Territory",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'chicken.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Jamals Shawarma",
+              address: "Riverplate Park, 147 Ahmadu Bello Wy, Wuse, Abuja 904101, Federal Capital Territory",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'jamals.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Caleb's Confectionary",
+              address: "by Aso savings bank, 2/2 junction, Kubwa",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'caleb.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Ahmad's Shawarma",
+              address: "3 32 Cres, opp. Evelyn Garden, Gwarinpa Estate, Abuja 900108, Federal Capital Territory",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'ahmad.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Shawarma Et Al Abuja",
+              address: "90 Adetokunbo Ademola Cres, Wuse, Abuja 904101, Federal Capital Territory",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'shawarma.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Dark Room by the yellow Plate",
+              address: "zone 1, 11 Isoka Street, Wuse, Abuja 904101, Federal Capital Territory",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'dark.png'
             }
           ]
         },
@@ -298,45 +298,45 @@ function Food() {
           categoryName: ["Cafe", "Cafe"],
           locations: [
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Wells Café and Bakehouse",
+              address: "2 Gado Nasko St, Asokoro, Abuja 900110, Federal Capital Territory",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'wells.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "UR Café ",
+              address: "The Tropic Plaza, 269 Muhammad I, Mohammadu Buhari Way, Central Business District, Abuja",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'ur.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "The Living Room",
+              address: "1 Thaba Tseka St, Wuse 2, Abuja 904101, Federal Capital Territory",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'the.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Strobrie Café",
+              address: "HFIA Garden, Off Tafawa Balewa Rd, Garki, Abuja 900103, Federal Capital Territory",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'strobrie.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Café Chocolat",
+              address: "No 3, Cairo Crescent, Wuse 2",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'cafe.png'
             },
             {
-              locationName: "Jabi Lake Mall",
-              address: "Bala Sokoto Way, Jabi, Abuja",
+              locationName: "Café Dimanche",
+              address: "Food City at, Bangui St, Wuse II",
               rating: 4.5,
-              pic: 'lake_mall.jpg'
+              pic: 'cafed.png'
             }
           ]
         }
       ],
-      categoriesIDs: ["fine-dining", "fast-food", "native-food", "ice-cream", "chinese-asian", "italian", "shawarma", "cafe"]
+      categoriesIDs: ["fine-dining", "fast-food", "native-food", "creamy-indulgencies", "chinese-asian", "italian", "shawarma", "cafe"]
     }
   }/>
   )
