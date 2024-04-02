@@ -257,6 +257,8 @@ main .testimonials .reviews .reviewItem {
 main .testimonials .reviews .reviewItem .person {
   position: absolute;
   width: 70px;
+  height: 70px;
+  object-fit: cover;
   border: solid 2px #1F83CB;
   border-radius: 50%;
   top: -25px;

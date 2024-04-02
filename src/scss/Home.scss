@@ -310,6 +310,8 @@ main{
                 .person{
                     position: absolute;
                     width: 70px;
+                    height: 70px;
+                    object-fit: cover;;
                     border: solid 2px $mid_blue;
                     border-radius: 50%;
                     top: -25px;
