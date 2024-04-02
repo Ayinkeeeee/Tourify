@@ -5,6 +5,7 @@ import ContactUs from "../pages/ContactUs"
 import SignUp from "../pages/SignUp"
 import LogIn from "../pages/LogIn"
 import LocationFull from "../pages/templates/LocationFull"
+import Profile from "../pages/Profile"
 import { Route, Routes, useLocation } from "react-router-dom"
 import { AnimatePresence } from "framer-motion"
 
@@ -21,6 +22,7 @@ function AnimatedRoutes() {
             <Route path="/locations/:id" element={<LocationFull/>}/>
             <Route path='/sign_up' element={<SignUp/>} />
             <Route path='/log_in' element={<LogIn/>} />
+            <Route path='/profile' element={<Profile/>} />
         </Routes>
     </AnimatePresence>
   )

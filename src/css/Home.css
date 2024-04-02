@@ -183,6 +183,7 @@ main .about .text, main .faq .text {
 }
 main .about .text ul, main .faq .text ul {
   padding-left: 1rem;
+  list-style: disc;
 }
 main .about .text ul li, main .faq .text ul li {
   font-size: 1.1rem;
