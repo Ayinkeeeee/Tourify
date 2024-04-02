@@ -164,10 +164,31 @@ function Home() {
                 <h1>Testimonials</h1>
                 <p>Don’t just take our word for it. Here are some reviews from satisfied our customers. We’d love to see a review from you too 🥹</p>
                 <div className="reviews">
-                    <Testimonial/>
-                    <Testimonial/>
-                    <Testimonial/>
-                    <Testimonial/>
+                    <Testimonial data={{
+                            person: 'amaka.png',
+                            fname: "Amaka",
+                            location:  "Texas, USA",
+                            review: "It was my first time in Nigeria. My tour guide gave me a good introduction and we toured very memorable places. "
+                          }
+                    }/>
+                    <Testimonial data={{
+                            person: 'ope.png',
+                            fname: "Ope",
+                            location:  "Ilorin, Nigeria",
+                            review: "I visited Abuja for a conference and tourify helped me to find good places to relax."
+                    }}/>
+                   <Testimonial data={{
+                            person: 'dave.png',
+                            fname: "Dave",
+                            location:  "Digital Nomad",
+                            review: "Tourify gave me a warm welcome to the city of Abuja and let me know the best places to go to."
+                    }}/>
+                   <Testimonial data={{
+                            person: 'fatima.png',
+                            fname: "Fatima",
+                            location:  "Abuja, Nigeria",
+                            review: "Tourify is my go to app when looking for new places to have fun on the weekend. "
+                    }}/>
                 </div>
                 <button className="main" onClick={() => mover('/tour_guides')}>Get a Tour Guide</button>
             </section>
