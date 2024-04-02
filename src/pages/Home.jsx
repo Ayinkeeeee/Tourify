@@ -76,7 +76,30 @@ function Home() {
                     }
                 ]
             }}/>
-            <LocationsHome/>
+            <LocationsHome data={{
+                header: "Ways to tour Abuja",
+                text: 'Want to see more parts of Abuja? Whether alone or in groups? We gotchu',
+                locations: [
+                    {
+                        locationName: "Almat Farm Tour",
+                        rating: 5,
+                        pic: 'jlm.jpg',
+                        
+                    },
+                    {
+                        locationName: "Best of Abuja Tour",
+                        rating: '4.0',
+                        pic: 'jlm.jpg',
+                       
+                    },
+                    {
+                        locationName: 'Romantic Walking Tour',
+                        rating: 4.75,
+                        pic: 'jlm.jpg',
+                        
+                    }
+                ]
+            }}/>
             <section className="about">
                 <div className="text">
                     <h1>About Us</h1>
