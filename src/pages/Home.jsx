@@ -145,7 +145,10 @@ function Home() {
                     <h1>FAQs</h1>
                     <p>Here are some freqently asked questions about Tourify</p>
                     <div className="faqs">
-                        <FAQItem/>
+                        <FAQItem faq={{
+                            question: "How do i get my bus featured on Tourify?",
+                            answer: "Fill out the contact form with the purpose as “Request For Feature” and enter the name of your organisation and contact information."
+                         } } />
                         <FAQItem/>
                         <FAQItem/>
                     </div>
