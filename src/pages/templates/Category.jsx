@@ -32,7 +32,7 @@ function Category({category}) {
               </a>
             ))}
           </div>
-          {category.categories && category.categories.map((categoryItem, index)  =>     <LocationsCategory key={index} categoryName={categoryItem.categoryName[0]} data={{
+          {category.categories && category.categories.map((categoryItem, index)  =>     <LocationsCategory key={index} data={{
             header: categoryItem.categoryName[1],
             locations: categoryItem.locations,
           }} id={category.categoriesIDs[index]}/>)
@@ -51,7 +51,7 @@ Category.defaultProps = {
       introText: "Of course you cant come to Abuja without trying our best spots, where every bite tells a story and every sip is an experience to remember. Indulge your senses as we take you on a journey through our vibrant world of food and drinks, showcasing the best flavors our region has to offer.",
       categories: [
         {
-          categoryName: ["Fine Dining", "Fine Dining"],
+          categoryName: ["Fine Dining", "Fine Dining Tables"],
           locations: [
             {
               locationName: "Jabi Lake Mall",

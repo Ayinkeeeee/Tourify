@@ -1,6 +1,6 @@
 import LocationCategory from "../items/LocationCategory"
 
-function LocationsCategory({data, id, categoryName}) {
+function LocationsCategory({data, id}) {
   return (
     <section id={id} className="locationsGroup">
       <h1>{data.header}</h1>

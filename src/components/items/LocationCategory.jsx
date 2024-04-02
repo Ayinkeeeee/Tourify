@@ -11,7 +11,7 @@ function LocationCategory({location}) {
         viewport={{once: true, amount: 0.5 }}
     >
         <div className="image-container">
-            <img src={require(`../../assets/images/lake_mall.jpg`)} alt="jabi_lake_mall" />
+            <img src={require(`../../assets/images/${location.pic}`)} alt="jabi_lake_mall" />
             <p>View Location</p>
         </div>
         <div className="text">

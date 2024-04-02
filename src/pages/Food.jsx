@@ -14,10 +14,10 @@ function Food() {
           categoryName: ["Fine Dining", "Fine Dining"],
           locations: [
               {
-                locationName: "Jabi Lake Mall",
-                address: "Bala Sokoto Way, Jabi, Abuja",
+                locationName: "Blucabana Restaurant",
+                address: "1322 Shehu Yar'adua Wy, Mabushi, Abuja 900108, Federal Capital Territory",
                 rating: 4.5,
-                pic: 'lake_mall.jpg'
+                pic: 'food/blucabana.jpg'
               },
               {
                 locationName: "Jabi Lake Mall",
