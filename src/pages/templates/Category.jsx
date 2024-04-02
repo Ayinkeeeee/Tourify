@@ -4,7 +4,6 @@ import Footer from "../../components/sections/Footer"
 import { motion } from "framer-motion"
 
 function Category({category}) {
-  const imagePath = `assets/images`
 
   return (
     <motion.div 
@@ -17,7 +16,7 @@ function Category({category}) {
       <Header/>
         <section className="start">
             <motion.img 
-              src={require(`../../${imagePath}/${category.categoryImage}.png`)} alt="food" 
+              src={require(`../../assets/images/${category.categoryImage}`)} alt="food" 
               initial={{opacity: 0}}
               animate={{opacity: 1}}
               transition={{delay: 0.3}}
@@ -43,7 +42,7 @@ function Category({category}) {
 
 Category.defaultProps = {
     category: {
-      categoryName: 'food',
+      categoryName: 'food.png',
       headingText: "Food & Drinks in Abuja",
       categoryImage: "food",
       introText: "Of course you cant come to Abuja without trying our best spots, where every bite tells a story and every sip is an experience to remember. Indulge your senses as we take you on a journey through our vibrant world of food and drinks, showcasing the best flavors our region has to offer.",
