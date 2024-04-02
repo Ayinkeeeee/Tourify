@@ -9,8 +9,8 @@ function Commercial() {
       headingText: "Commercial Locations",
       categoryImage: "commercialbackgrounf.png",
       introText: "Welcome to the heart of adventure, where every moment is a new opportunity for excitement! Whether you're seeking a serene escape or a pulse-quickening thrill, our handpicked selection of leisure activities, accommodations, and shopping destinations promises to make your stay unforgettable.",
-      categories: ["Shopping Malls", "Hotels", "For The Kids",],
-      categoriesIDs: ["shopping-malls", "hotels", "for-the-kids",]
+      categories: ["Leisure", "Shopping Malls", "Hotels", "For The Kids",],
+      categoriesIDs: ["leisure", "shopping-malls", "hotels", "for-the-kids",]
     }
   }/>
   )
