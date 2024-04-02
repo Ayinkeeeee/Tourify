@@ -12,9 +12,37 @@ function Profile() {
         fname: 'John',
         lname: 'Doe',
         location: "Abuja, Nigeria",
-        dOB: new Date('1991-02-26'),
+        dOB: new Date('2004-03-04'),
         email: 'tourifyuser@mail.com'
     })
+
+    function formatDateToString(date) {
+        const options = { day: 'numeric', month: 'long', year: 'numeric' };
+        const formatter = new Intl.DateTimeFormat('en-US', options);
+        const formattedDate = formatter.format(date);
+        
+        // Extract day, month, and year from the formatted date
+        const [month, day, year] = formattedDate.split(' ');
+        
+        // Add suffix to the day (e.g., "2nd", "3rd", "4th", etc.)
+        let dayWithSuffix;
+        switch (day.slice(0, -1)) {
+            case '1':
+            dayWithSuffix = `${day.slice(0, -1)}st`;
+            break;
+            case '2':
+            dayWithSuffix = `${day.slice(0, -1)}nd`;
+            break;
+            case '3':
+            dayWithSuffix = `${day.slice(0, -1)}rd`;
+            break;
+            default:
+            dayWithSuffix = `${day.slice(0, -1)}th`;
+        }
+        
+        // Return the formatted date string with the day suffix
+        return `${dayWithSuffix} ${month},  ${year}`;
+    }
 
     const handleChange = (e) => {
         setForm({
@@ -56,7 +84,7 @@ function Profile() {
                 <div className="inputItem">
                     <label htmlFor="lname">Last Name:</label>
                     { edit ? 
-                    <input value={form.fname} type="text" name="lname" id="lname" onChange={handleChange} /> : 
+                    <input value={form.lname} type="text" name="lname" id="lname" onChange={handleChange} /> : 
                     <p>{form.lname}</p>}
                 </div>
                 <div className="inputItem">
@@ -67,7 +95,7 @@ function Profile() {
                 </div>
                 <div className="inputItem">
                     <label htmlFor="dOB">Date of Birth:</label>
-                    <p>{form.dOB.toDateString()}</p>
+                    <p>{formatDateToString(form.dOB)}</p>
                 </div>
                 <div className="inputItem">
                     <label htmlFor="email">Email:</label>
