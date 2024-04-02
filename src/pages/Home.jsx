@@ -146,11 +146,17 @@ function Home() {
                     <p>Here are some freqently asked questions about Tourify</p>
                     <div className="faqs">
                         <FAQItem faq={{
-                            question: "How do i get my bus featured on Tourify?",
+                            question: "How do i get my business featured on Tourify?",
                             answer: "Fill out the contact form with the purpose as “Request For Feature” and enter the name of your organisation and contact information."
                          } } />
-                        <FAQItem/>
-                        <FAQItem/>
+                        <FAQItem faq={{
+                            question: "How do i get a tour guide? ",
+                            answer: "You can easily get a tour guide by heading to the tour guide section and picking a tour guide to contact"
+                         } } />
+                        <FAQItem faq={{
+                            question: "Does Tourify only operate in Abuja? ",
+                            answer: "Tourify operates in Abuja only, for now but it aims at global reach"
+                         } } />
                     </div>
                 </div>
             </section>
