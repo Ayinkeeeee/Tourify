@@ -59,19 +59,19 @@ function Home() {
                     {
                         locationName: "Discovery Museum",
                         rating: 5,
-                        pic: 'jlm.jpg',
+                        pic: 'dm.webp',
                         address: "Bala Sokoto Wy, Jabi, Abuja 900108, Federal Capital Territory"
                     },
                     {
                         locationName: "Nike Art Gallery",
                         rating: '4.0',
-                        pic: 'jlm.jpg',
+                        pic: 'nike.png',
                         address: 'Nike Art Gallery, Elegushi Road, Lekki Phase 1, Lagos'
                     },
                     {
                         locationName: 'Retro Africa Gallery',
                         rating: 4.75,
-                        pic: 'jlm.jpg',
+                        pic: 'lake_mall.jpg',
                         address: 'Km 7.5 Abuja International Airport Road Abuja Central'
                     }
                 ]

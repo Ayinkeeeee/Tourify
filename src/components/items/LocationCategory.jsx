@@ -1,4 +1,4 @@
-import jlm from "../../assets/images/jlm.jpg";
+import jlm from "../../assets/images/lake_mall.jpg";
 import star from "../../assets/icons/star.svg";
 import locationMarker from "../../assets/icons/location.svg"
 import { motion } from "framer-motion";

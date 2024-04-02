@@ -21,19 +21,19 @@ LocationsHome.defaultProps = {
           {
             locationName: "Jabi Lake Mall",
             rating: 4.5,
-            pic: 'jlm.jpg',
+            pic: 'lake_mall.jpg',
             address: "Bala Sokoto Wy, Jabi, Abuja 900108, Federal Capital Territory"
           }, 
           {
             locationName: "Jabi Lake Mall",
             rating: 4.5,
-            pic: 'jlm.jpg',
+            pic: 'lake_mall.jpg',
             address: "Bala Sokoto Wy, Jabi, Abuja 900108, Federal Capital Territory"
           }, 
           {
             locationName: "Jabi Lake Mall",
             rating: 4.5,
-            pic: 'jlm.jpg',
+            pic: 'lake_mall.jpg',
             address: "Bala Sokoto Wy, Jabi, Abuja 900108, Federal Capital Territory"
           }
         ]

@@ -1,5 +1,5 @@
 import "../../css/LocationFull.css"
-import jlm from "../../assets/images/jlm.jpg"
+import jlm from "../../assets/images/lake_mall.jpg"
 import email from "../../assets/icons/email.svg"
 import call from "../../assets/icons/call.svg"
 import instagram from "../../assets/icons/instagram.png"

@@ -1,4 +1,3 @@
-import jlm from "../../assets/images/jlm.jpg";
 import star from "../../assets/icons/star.svg";
 import { motion } from 'framer-motion'
 
@@ -11,7 +10,7 @@ function LocationHome({location}) {
         viewport={{once: true, amount: 0.5 }}
     >
         <div className="image-container">
-            <img src={jlm} alt="jabi_lake_mall" />
+            <img src={require(`../../assets/images/${location.pic}`)} alt="jabi_lake_mall" />
             <p>View Location</p>
         </div>
         <div className="text">
@@ -30,7 +29,7 @@ LocationHome.defaultProps = {
         locationName: "Jabi Lake Mall",
         rating: 4.5,
         address: "Bala Sokoto Wy, Jabi, Abuja 900108, Federal Capital Territory",
-        pic: "jlm.jpg"
+        pic: "nike.png"
     }
 }
 
