@@ -51,7 +51,30 @@ function Home() {
         </div>
         <main>
             <p>Welcome to Abuja! Discover the best of Abuja with Tourify, the best guide for the Capital. Find things to do in Abuja, from iconic leisure spots and fun-filled days out to top restaurants and unmissable Abuja events. If you’re not able to visit just yet, plan ahead to make the most of your next visit.</p>
-            <LocationsHome/>
+            <LocationsHome data={{
+                header: "Popular Locations",
+                text: 'Tourists and residents seem to love these  spots. You should probably check some of them out during your stay here.',
+                locations: [
+                    {
+                        locationName: "Jabi lake Mall",
+                        rating: 4.5,
+                        pic: 'lake_mall.jpg',
+                        address: ""
+                    },
+                    {
+                        locationName: "Transcorp Hilton",
+                        rating: '4.85',
+                        pic: 'transcorp.jpeg',
+                        address: 'Nike Art Gallery, Elegushi Road, Lekki Phase 1, Lagos'
+                    },
+                    {
+                        locationName: 'The Dark Room by The Yellow Plate',
+                        rating: 4.45,
+                        pic: 'darkroom.webp',
+                        address: 'Km 7.5 Abuja International Airport Road Abuja Central'
+                    }
+                ]
+            }}/>
             <LocationsHome data={{
                 header: "Art and History",
                 text: 'If you’re an art enthusiast or history lover, you would probably enjoy visiting any one of these locations during your stay.',
@@ -71,7 +94,7 @@ function Home() {
                     {
                         locationName: 'Retro Africa Gallery',
                         rating: 4.75,
-                        pic: 'lake_mall.jpg',
+                        pic: 'retro.jpeg',
                         address: 'Km 7.5 Abuja International Airport Road Abuja Central'
                     }
                 ]
@@ -83,19 +106,19 @@ function Home() {
                     {
                         locationName: "Almat Farm Tour",
                         rating: 5,
-                        pic: 'jlm.jpg',
+                        pic: 'almat.png',
                         
                     },
                     {
                         locationName: "Best of Abuja Tour",
                         rating: '4.0',
-                        pic: 'jlm.jpg',
+                        pic: 'bestof.png',
                        
                     },
                     {
                         locationName: 'Romantic Walking Tour',
                         rating: 4.75,
-                        pic: 'jlm.jpg',
+                        pic: 'romantic.png',
                         
                     }
                 ]
