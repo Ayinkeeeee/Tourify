@@ -26,13 +26,16 @@ function Category({category}) {
         <main>
           <p>{category.introText}</p>
           <div className="categoriesBtns">
-            {category.categories && category.categories.map((categoryName, index) => (
+            {category.categories && category.categories.map((categoryItem, index) => (
               <a  href={`#${category.categoriesIDs[index]}`} key={index} className={`categoryBtn ${index % 2 === 0 ? 'blue' : 'black'}`}>
-                {categoryName}
+                {categoryItem.categoryName[0]}
               </a>
             ))}
           </div>
-          {category.categories && category.categories.map((categoryItem, index)  =>     <LocationsCategory key={index} categoryName={categoryItem} id={category.categoriesIDs[index]} stagger={index}/>)
+          {category.categories && category.categories.map((categoryItem, index)  =>     <LocationsCategory key={index} categoryName={categoryItem.categoryName[0]} data={{
+            header: categoryItem.categoryName[1],
+            locations: categoryItem.locations,
+          }} id={category.categoriesIDs[index]}/>)
           }
         </main>
         <Footer/>
@@ -42,11 +45,303 @@ function Category({category}) {
 
 Category.defaultProps = {
     category: {
-      categoryName: 'food.png',
+      categoryName: 'food',
       headingText: "Food & Drinks in Abuja",
-      categoryImage: "food",
+      categoryImage: "food.png",
       introText: "Of course you cant come to Abuja without trying our best spots, where every bite tells a story and every sip is an experience to remember. Indulge your senses as we take you on a journey through our vibrant world of food and drinks, showcasing the best flavors our region has to offer.",
-      categories: ["Fine Dining", "Fast Food", "Native Food", "Ice-Cream", "Chinese / Asian", "Italian", "Shawarma", "Cafe"],
+      categories: [
+        {
+          categoryName: ["Fine Dining", "Fine Dining"],
+          locations: [
+            {
+              locationName: "Jabi Lake Mall",
+              address: "Bala Sokoto Way, Jabi, Abuja",
+              rating: 4.5,
+              pic: 'lake_mall.jpg'
+            },
+            {
+              locationName: "Jabi Lake Mall",
+              address: "Bala Sokoto Way, Jabi, Abuja",
+              rating: 4.5,
+              pic: 'lake_mall.jpg'
+            },
+            {
+              locationName: "Jabi Lake Mall",
+              address: "Bala Sokoto Way, Jabi, Abuja",
+              rating: 4.5,
+              pic: 'lake_mall.jpg'
+            },
+            {
+              locationName: "Jabi Lake Mall",
+              address: "Bala Sokoto Way, Jabi, Abuja",
+              rating: 4.5,
+              pic: 'lake_mall.jpg'
+            },
+            {
+              locationName: "Jabi Lake Mall",
+              address: "Bala Sokoto Way, Jabi, Abuja",
+              rating: 4.5,
+              pic: 'lake_mall.jpg'
+            }
+          ]
+        }, 
+        { 
+          categoryName: ["Fast Food", "Fast Food"],
+          locations: [
+            [
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              },
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              },
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              },
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              },
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              }
+            ]
+          ]
+        }, 
+        { categoryName: ["Native Food", "Native Food"],
+          locations: [
+            [
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              },
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              },
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              },
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              },
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              }
+            ]
+          ]
+        }, 
+        { categoryName: ["Ice-Cream", "Ice-Cream"],
+          locations: [
+            [
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              },
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              },
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              },
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              },
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              }
+            ]
+          ]
+        },
+        { categoryName: ["Chinese / Asian", "Chinese / Asian"],
+          locations: [
+            [
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              },
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              },
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              },
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              },
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              }
+            ]
+          ]
+        },
+        {
+          categoryName: ["Italian", "Italian"],
+          locations: [
+            [
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              },
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              },
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              },
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              },
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              }
+            ]
+          ]
+        },
+        {
+          categoryName: ["Shawarma", "Shawarma"],
+          locations: [
+            [
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              },
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              },
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              },
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              },
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              }
+            ]
+          ]
+        },
+        {
+          categoryName: ["Cafe", "Cafe"],
+          locations: [
+            [
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              },
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              },
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              },
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              },
+              {
+                locationName: "Jabi Lake Mall",
+                address: "Bala Sokoto Way, Jabi, Abuja",
+                rating: 4.5,
+                pic: 'lake_mall.jpg'
+              }
+            ]
+          ]
+        }
+      ],
       categoriesIDs: ["fine-dining", "fast-food", "native-food", "ice-cream", "chinese-asian", "italian", "shawarma", "cafe"]
     }
 }

@@ -3,9 +3,9 @@ import LocationCategory from "../items/LocationCategory"
 function LocationsCategory({data, id, categoryName}) {
   return (
     <section id={id} className="locationsGroup">
-      <h1>{categoryName}</h1>
+      <h1>{data.header}</h1>
       <div className="locations">
-        {data.locations && data.locations.map((location, index) => <LocationCategory key={index} />)}
+        {data.locations && data.locations.map((location, index) => <LocationCategory key={index} location={location}/> )}
       </div>
     </section>
   )
@@ -14,7 +14,40 @@ function LocationsCategory({data, id, categoryName}) {
 LocationsCategory.defaultProps = {
     data: {
         header: "Popular Locations",
-        locations: [0, 0, 0, 0, 0, 0]
+        locations: [
+          [
+            {
+              locationName: "Jabi Lake Mall",
+              address: "Bala Sokoto Way, Jabi, Abuja",
+              rating: 4.5,
+              pic: 'lake_mall.jpg'
+            },
+            {
+              locationName: "Jabi Lake Mall",
+              address: "Bala Sokoto Way, Jabi, Abuja",
+              rating: 4.5,
+              pic: 'lake_mall.jpg'
+            },
+            {
+              locationName: "Jabi Lake Mall",
+              address: "Bala Sokoto Way, Jabi, Abuja",
+              rating: 4.5,
+              pic: 'lake_mall.jpg'
+            },
+            {
+              locationName: "Jabi Lake Mall",
+              address: "Bala Sokoto Way, Jabi, Abuja",
+              rating: 4.5,
+              pic: 'lake_mall.jpg'
+            },
+            {
+              locationName: "Jabi Lake Mall",
+              address: "Bala Sokoto Way, Jabi, Abuja",
+              rating: 4.5,
+              pic: 'lake_mall.jpg'
+            }
+          ]
+        ]
     }
 }
 

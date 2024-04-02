@@ -1,4 +1,3 @@
-import jlm from "../../assets/images/lake_mall.jpg";
 import star from "../../assets/icons/star.svg";
 import locationMarker from "../../assets/icons/location.svg"
 import { motion } from "framer-motion";
@@ -12,7 +11,7 @@ function LocationCategory({location}) {
         viewport={{once: true, amount: 0.5 }}
     >
         <div className="image-container">
-            <img src={jlm} alt="jabi_lake_mall" />
+            <img src={require(`../../assets/images/lake_mall.jpg`)} alt="jabi_lake_mall" />
             <p>View Location</p>
         </div>
         <div className="text">
@@ -32,6 +31,7 @@ function LocationCategory({location}) {
 
 LocationCategory.defaultProps = {
     location: {
+        pic: 'lake_mall.jpg',
         locationName: "Jabi Lake Mall",
         rating: 4.5,
         address: "Bala Sokoto Wy, Jabi, Abuja 900108, Federal Capital Territory"

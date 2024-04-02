@@ -1,4 +1,3 @@
-import tomski from "../../assets/images/tomski.png"
 import quote from "../../assets/icons/quote.svg"
 import location from "../../assets/icons/location.svg"
 import { motion } from "framer-motion"
