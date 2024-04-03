@@ -145,7 +145,18 @@
     top: 4.2rem;
   }
 }
+@media screen and (max-width: 500px) {
+  .category .start {
+    height: 60vh;
+  }
+  .category .start h1 {
+    font-size: 4rem;
+  }
+}
 @media screen and (max-width: 422px) {
+  .category .start h1 {
+    font-size: 3rem;
+  }
   .category main .locationsGroup .locations .locationItem {
     width: 350px;
   }
@@ -192,9 +203,6 @@
   }
 }
 @media screen and (max-width: 300px) {
-  .category .start h1 {
-    font-size: 4rem;
-  }
   .category main .locationsGroup .locations .locationItem {
     width: 250px;
   }

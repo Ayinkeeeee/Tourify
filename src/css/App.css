@@ -1159,7 +1159,18 @@ main #newsletter button {
     top: 4.2rem;
   }
 }
+@media screen and (max-width: 500px) {
+  .category .start {
+    height: 60vh;
+  }
+  .category .start h1 {
+    font-size: 4rem;
+  }
+}
 @media screen and (max-width: 422px) {
+  .category .start h1 {
+    font-size: 3rem;
+  }
   .category main .locationsGroup .locations .locationItem {
     width: 350px;
   }
@@ -1206,9 +1217,6 @@ main #newsletter button {
   }
 }
 @media screen and (max-width: 300px) {
-  .category .start h1 {
-    font-size: 4rem;
-  }
   .category main .locationsGroup .locations .locationItem {
     width: 250px;
   }
@@ -1760,6 +1768,10 @@ main #newsletter button {
 #profile > div.heading img {
   width: 1.25rem;
   height: auto;
+  cursor: pointer;
+}
+#profile > div.heading img:hover {
+  scale: 1.05;
 }
 #profile main {
   padding: 0 6rem;

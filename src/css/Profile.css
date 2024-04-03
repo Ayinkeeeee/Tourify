@@ -15,6 +15,10 @@
 #profile > div.heading img {
   width: 1.25rem;
   height: auto;
+  cursor: pointer;
+}
+#profile > div.heading img:hover {
+  scale: 1.05;
 }
 #profile main {
   padding: 0 6rem;

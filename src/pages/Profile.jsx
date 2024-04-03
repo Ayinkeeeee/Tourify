@@ -4,9 +4,11 @@ import Header from "../components/sections/Header"
 import Footer from "../components/sections/Footer"
 import { motion } from "framer-motion"
 import { toast } from "react-toastify"
+import { useNavigate } from "react-router-dom"
 import { useState } from "react"
 
 function Profile() {
+    const navigator = useNavigate()
     const [ edit, setEdit ] = useState(false)
     const [ form, setForm ] = useState({
         fname: 'John',
@@ -67,7 +69,7 @@ function Profile() {
     >
         <Header/>
         <div className="heading">
-            <img src={backBtn} alt="back" />
+            <img src={backBtn} alt="back" onClick={() => {navigator(-1)}} />
             <h1>Profile</h1>
         </div>
         <main>
