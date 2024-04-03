@@ -1,8 +1,11 @@
 import LocationCategory from "../items/LocationCategory"
+import { useNavigate } from "react-router-dom"
 
 function LocationsCategory({data, id}) {
+  const navigator = useNavigate()
+
   return (
-    <section id={id} className="locationsGroup">
+    <section id={id} className="locationsGroup" onClick={() => { navigator(`/locations/5`)}}>
       <h1>{data.header}</h1>
       <div className="locations">
         {data.locations && data.locations.map((location, index) => <LocationCategory key={index} location={location}/> )}
