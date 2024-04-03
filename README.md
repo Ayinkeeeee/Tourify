@@ -1,8 +1,8 @@
-## Tourify
+# Tourify
 
 Tourify is a website designed to provide users and tourists in Abuja with information and locations for various tours and travel experiences.
 
-# Table of Contents 
+## Table of Contents 
 
 - Overview 
 - Features
@@ -14,11 +14,11 @@ Tourify is a website designed to provide users and tourists in Abuja with inform
 
 
 
-## Overview
+### Overview
 
 Tourify is a website designed to provide users with information about various locations in Abuja where all tourists would find interesting. It provides users with popular locations for different activities ranging from commercial, healthcare, even food spots. Tourify also provides users with experienced Abuja-inhabitants known as Tour-guides that allow the users(tourists) to seamlessly navigate and move through these location with their help. This website also has a user-friendly interface making it easy for the users to utilize the site effectively and also leave reviews, feedback.
 
-## Features
+### Features
 
 - Secure Login / Sign Up 
 - Find locations
@@ -31,7 +31,7 @@ Tourify is a website designed to provide users with information about various lo
 
 
 
-## Installation
+### Installation
 
 To run tourify locally on your machine, follow these steps:
 1. Clone the repository into your react IDE
@@ -46,13 +46,13 @@ To run tourify locally on your machine, follow these steps:
 4. Open your browser and visit https://localhost:3000 
 
 
-## Live Site
+### Live Site
 
-[Tourify Website](https://tourify-iota.vercel.app/) to view Tourify
+"https://tourify-iota.vercel.app/" [Tourify Website](https://tourify-iota.vercel.app/) to view Tourify
 
 
 
-## Tools & Technologies Used
+### Tools & Technologies Used
 
 - SCSS
 - JavaScript
@@ -65,7 +65,7 @@ To run tourify locally on your machine, follow these steps:
 
 
 
-## Screenshots
+### Screenshots
 
 1. Tourify Homepage
 
@@ -87,7 +87,7 @@ To run tourify locally on your machine, follow these steps:
 ![image](https://github.com/tomjames156/Tourify/assets/135606453/a5e7916b-e4e4-41a3-bd6b-b7acfca1f204)
 
 
-## Incoming Features
+### Incoming Features
 
 - Tourify for Nigeria, Africa.
 	Expand Tourify to include locations from all parts of Nigeria, Africa and allow users be able to visit all the popular locations and tourist centres around the continent.
