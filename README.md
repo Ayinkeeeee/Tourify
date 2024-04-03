@@ -56,6 +56,8 @@ To run tourify locally on your machine, follow these steps:
 
 
 #Screenshots
+
+<br>
 1.Tourify Homepage
 
 
@@ -76,18 +78,18 @@ To run tourify locally on your machine, follow these steps:
 2.Tourify Commercial Locations Page
 
 
-![image]("https://github.com/tomjames156/Tourify/assets/135606453/64973be4-6e3a-44d1-a96f-62a137714957")
+![image](https://github.com/tomjames156/Tourify/assets/135606453/64973be4-6e3a-44d1-a96f-62a137714957)
 
 
 
 3.Tourify Mobile View
 
-![image]("https://github.com/tomjames156/Tourify/assets/135606453/0cea7514-0474-4f74-aa77-9df192a3eb92")
+![image](https://github.com/tomjames156/Tourify/assets/135606453/0cea7514-0474-4f74-aa77-9df192a3eb92)
 
 
 4. Tourify FIGMA design team
 
-![image]("https://github.com/tomjames156/Tourify/assets/135606453/a5e7916b-e4e4-41a3-bd6b-b7acfca1f204")
+![image](https://github.com/tomjames156/Tourify/assets/135606453/a5e7916b-e4e4-41a3-bd6b-b7acfca1f204)
 
 
 #Incoming Features
