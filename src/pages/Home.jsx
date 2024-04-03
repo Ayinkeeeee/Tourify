@@ -1,5 +1,4 @@
 import cityVideo from "../assets/videos/city_gate.mp4"
-import cityGate from "../assets/images/gate.png"
 import fAQ from "../assets/images/faq.png"
 import tourBus from "../assets/images/tour_bus.jpeg"
 import play from "../assets/icons/play_arrow.svg"
@@ -39,12 +38,8 @@ function Home() {
         <Header/>
         <a href='top'></a>
         <div className="hero">
+            <video ref={videoRef} muted autoPlay loop width="1000px" height="1000px" src={cityVideo}></video>
             <div>
-                <video ref={videoRef} muted autoPlay loop width="1000px" height="1000px" src={cityVideo}></video>
-                <img src={cityGate} alt="abuja city gate" />
-            </div>
-            
-            <div className="hero_text">
             <h1 className="large_text">New to Abuja?</h1>
             <p>Don't worry, we would love to show you around</p>
             <button className="main">Explore Locations</button>
