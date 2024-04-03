@@ -1,5 +1,5 @@
 import "../../css/LocationFull.css"
-import jlm from "../../assets/images/lake_mall.jpg"
+import nike from "../../assets/images/nike.png"
 import email from "../../assets/icons/email.svg"
 import call from "../../assets/icons/call.svg"
 import instagram from "../../assets/icons/instagram.png"
@@ -64,7 +64,7 @@ function LocationFull({full_location}) {
         >
             <Header/>
             <div className="img-container">
-                <img src={jlm} alt="Jabi lake mall" />
+                <img src={nike} alt="Jabi lake mall" />
             </div>
             <main>
                 <h2>{full_location?.locationName}</h2>

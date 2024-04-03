@@ -1,13 +1,17 @@
 import star from "../../assets/icons/star.svg";
 import { motion } from 'framer-motion'
+import { useNavigate } from "react-router-dom";
 
 function LocationHome({location}) {
+    const navigator = useNavigate()
+
   return (
     <motion.div 
         className="locationItem"
         initial={{opacity: 0, x: -100}}
         whileInView={{opacity: 1, x: 0, transition: {duration: 0.45}}}
         viewport={{once: true, amount: 0.5 }}
+        onClick={() => {navigator('locations/6')}}
     >
         <div className="image-container">
             <img src={require(`../../assets/images/${location.pic}`)} alt="jabi_lake_mall" />

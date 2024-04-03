@@ -2,6 +2,7 @@ import Home from "../pages/Home"
 import Food from "../pages/Food"
 import Commercial from "../pages/Commercial"
 import Healthcare from "../pages/Healthcare"
+import Popular from "../pages/Popular"
 import TourGuides from "../pages/TourGuides"
 import ContactUs from "../pages/ContactUs"
 import SignUp from "../pages/SignUp"
@@ -21,6 +22,7 @@ function AnimatedRoutes() {
             <Route path="/food" element={<Food/>} />
             <Route path="/commerce" element={<Commercial />}/>
             <Route path="/health" element={<Healthcare />} />
+            <Route path="/popular" element={<Popular/>} />
             <Route path="/tour_guides" element={<TourGuides/>} />
             <Route path="/contact_us" element={<ContactUs/>}/>
             <Route path="/locations/:id" element={<LocationFull/>}/>

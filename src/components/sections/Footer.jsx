@@ -24,21 +24,18 @@ export default function() {
                         <li><Link to="/contact_us">Contact Us</Link></li>
                         <li><Link to="/sign_up">Sign Up</Link></li>
                         <li><Link to="/log_in">Log In</Link></li>
-                        <li><Link to="/coming_soon">Coming Soon</Link></li>
-                        <li><Link to="/privacy">Privacy Policy</Link></li>
-                        <li><Link to="/terms">Terms of Use</Link></li>
+                        <li><Link to="#coming_soon">Coming Soon</Link></li>
+                        <li><Link to="#privacy">Privacy Policy</Link></li>
+                        <li><Link to="#terms">Terms of Use</Link></li>
                     </ul>
                 </div>
                 <div className="categories footer-column">
                     <h3>CATEGORIES</h3>
                     <ul>
-                        <li><Link to="/explore">Explore All</Link></li>
                         <li><Link to="/popular">Popular Places</Link></li>
-                        <li><Link to="/for_kids">For Kids</Link></li>
-                        <li><Link to="/recreation">Recreation</Link></li>
-                        <li><Link to="/healthcare">Healthcare</Link></li>
-                        <li><Link to="/accomodation">Accomodation</Link></li>
-                        <li><Link to="/commercial">Commercial</Link></li>
+                        <li><Link to="/food">Restaurants</Link></li>
+                        <li><Link to="/health">Healthcare</Link></li>
+                        <li><Link to="/commerce">Commercial</Link></li>
                     </ul>
                 </div>
                 <div className="footer-contact footer-column" style={{marginTop: 0}}>
@@ -47,15 +44,15 @@ export default function() {
                         <ul>
                             <li><a href="tel:08000000000"><img src={phoneIcon} alt=""/>080-0000-0000</a></li>
                             <li><a href="mailto:tourify@gmail.com"><img src={emailIcon} alt=""/>tourify@gmail.com</a></li>
-                            <li><Link to=""><img src={locationWhiteIcon} alt=""/>29 Boulevard, Garki, Abuja</Link></li>
+                            <li><Link target="_blank" to={`https://www.google.com/maps/search/?api=1&query=29 Boulevard, Garki, Abuja`}><img src={locationWhiteIcon} alt=""/>29 Boulevard, Garki, Abuja</Link></li>
                         </ul>
                     </div>
                     <div className="socials">
                         <h3 style={{marginTop: "25px"}}>SOCIALS</h3>
-                        <a href="https://www.instagram.com" className="footer-social"><img src={instaLogo} alt="IG"/></a>
-                        <a href="https://twitter.com" className="footer-social"><img src={xLogo} alt="X"/></a>
-                        <a href="https://www.linkedin.com" className="footer-social"><img src={linkedInLogo} alt="IN"/></a>
-                        <a href="https://www.facebook.com" className="footer-social"><img src={fbLogo} alt="FB"/></a>
+                        <Link target="_blank" to="https://www.instagram.com" className="footer-social"><img src={instaLogo} alt="IG"/></Link>
+                        <Link target="_blank" to="https://twitter.com" className="footer-social"><img src={xLogo} alt="X"/></Link>
+                        <Link target="_blank" to="https://www.linkedin.com" className="footer-social"><img src={linkedInLogo} alt="IN"/></Link>
+                        <Link target="_blank" to="https://www.facebook.com" className="footer-social"><img src={fbLogo} alt="FB"/></Link>
                     </div>
                 </div>
             </div>
