@@ -6,7 +6,7 @@ function Commercial() {
     category={
       {
       categoryName: 'commercial',
-      headingText: "Commercl Locations",
+      headingText: "Commercial Locations",
       categoryImage: "commercialbackgrounf.png",
       introText: "Welcome to the heart of adventure, where every moment is a new opportunity for excitement! Whether you're seeking a serene escape or a pulse-quickening thrill, our handpicked selection of leisure activities, accommodations, and shopping destinations promises to make your stay unforgettable.",
       categories: [

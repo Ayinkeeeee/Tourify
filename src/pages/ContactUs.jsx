@@ -4,6 +4,11 @@ import call from "../assets/icons/call.svg";
 import email from "../assets/icons/email.svg";
 import home from "../assets/icons/home.svg";
 import eggSauce from "../assets/images/egg-sauce.jpeg";
+import calebb from "../assets/images/caleb.png"
+import aqua from "../assets/images/aqualandia.png"
+import art from "../assets/images/art.png"
+import guys from "../assets/images/art.png"
+import chopsticks from "../assets/images/chopsticks.png"
 import Header from "../components/sections/Header";
 import Footer from "../components/sections/Footer";
 import { motion } from "framer-motion";
@@ -109,22 +114,22 @@ function ContactUs() {
                 <p>Check us out on Instagram @tourify. Here are some of our recent posts.</p>
                 <div className="posts">
                     <div>
-                        <img src={eggSauce} alt="egg_sauce" />
+                        <img src={calebb} alt="egg_sauce" />
                     </div>
                     <div>
                         <img src={eggSauce} alt="egg_sauce" />
                     </div>
                     <div>
-                        <img src={eggSauce} alt="egg_sauce" />
+                        <img src={guys} alt="4guys" />
                     </div>
                     <div>
-                        <img src={eggSauce} alt="egg_sauce" />
+                        <img src={aqua} alt="cafe" />
                     </div>
                     <div>
-                        <img src={eggSauce} alt="egg_sauce" />
+                        <img src={art} alt="burger" />
                     </div>
                     <div>
-                        <img src={eggSauce} alt="egg_sauce" />
+                        <img src={chopsticks} alt="bakan" />
                     </div>
                 </div>
             </section>
