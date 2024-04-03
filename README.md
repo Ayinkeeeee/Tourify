@@ -90,7 +90,7 @@ To run tourify locally on your machine, follow these steps:
 ### Incoming Features
 
 - Tourify for Nigeria, Africa.
-	Expand Tourify to include locations from all parts of Nigeria, Africa and allow users be able to visit all the popular locations and tourist centres around the continent.
+Expand Tourify to include locations from all parts of Nigeria, Africa and allow users be able to visit all the popular locations and tourist centres around the continent.
 
 - Interactive AI Travel Guides: 
 Integrate interactive AI travel guides for popular destinations, providing users with comprehensive information about attractions, activities, restaurants, and local tips. 
