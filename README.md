@@ -35,13 +35,13 @@ Tourify is a website designed to provide users with information about various lo
 
 To run tourify locally on your machine, follow these steps:
 1. Clone the repository into your react IDE
-	“git clone https://github.com/tomjames156/Tourify.git” 
+	'git clone https://github.com/tomjames156/Tourify.git'
 
 2. Navigate into the project directory
-	“cd tourify” 
+	'cd tourify' 
 
 3. Start the development server 
-	“npm start”
+	'npm start'
 
 4. Open your browser and visit https://localhost:3000 
 
