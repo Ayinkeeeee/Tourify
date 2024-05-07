@@ -67,6 +67,11 @@ nav{
   padding: 1rem 2rem;
   transition: background-color 0.3s ease;
 
+  .active{
+    text-decoration: underline;
+    text-underline-offset: 0.15rem;
+  }
+
   > div:first-of-type{
 
     img{

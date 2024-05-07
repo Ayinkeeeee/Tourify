@@ -50,6 +50,10 @@ nav {
   padding: 1rem 2rem;
   transition: background-color 0.3s ease;
 }
+nav .active {
+  text-decoration: underline;
+  text-underline-offset: 0.15rem;
+}
 nav > div:first-of-type img {
   width: 180px;
   height: auto;

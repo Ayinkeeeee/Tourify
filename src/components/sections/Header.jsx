@@ -10,6 +10,14 @@ export default function Header() {
     const navigator = useNavigate()
     const { pathname } = useLocation()
 
+    const pathMatch = (link) => {
+        if(link == pathname){
+            return true
+        }
+
+        return false
+    }
+
     const openMenu = () => {
         setMenuOpen(true)
     }
@@ -41,10 +49,10 @@ export default function Header() {
                 <img src={tourifyLogoBlue} alt="tourify logo" />
             </div>
             <div>
-                <Link to='/'>Home</Link>
-                <Link to='/food'>Restaurants</Link>
-                <Link to='/commerce'>Commercial</Link>
-                <Link to='/health'>Healthcare</Link>
+                <Link to='/' className={pathMatch('/') ? 'active' : ''}>Home</Link>
+                <Link to='/food' className={pathMatch('/food') ? 'active' : ''}>Restaurants</Link>
+                <Link to='/commerce' className={pathMatch('/commerce') ? 'active' : ''}>Commercial</Link>
+                <Link to='/health' className={pathMatch('/health') ? 'active' : ''}>Healthcare</Link>
             </div>
             <div>
                 <Link to='/tour_guides'>Tour Guides</Link>
@@ -62,8 +70,8 @@ export default function Header() {
                     <Link to='/health'>Healthcare</Link>
                 </div>
                 <div>
-                    <Link to='/tour_guides'>Tour Guides</Link>
-                    <Link to='/contact_us'>Contact Us</Link>
+                    <Link to='/tour_guides' className={pathMatch('/tour_guides') ? 'active' : ''}>Tour Guides</Link>
+                    <Link to='/contact_us' className={pathMatch('/contact_us') ? 'active' : ''}>Contact Us</Link>
                 </div>
                 <div>
                     <button onClick={() => {navigator('/sign_up')}} className="main">Sign Up</button>
