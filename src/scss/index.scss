@@ -68,8 +68,7 @@ nav{
   transition: background-color 0.3s ease;
 
   .active{
-    text-decoration: underline;
-    text-underline-offset: 0.15rem;
+    font-weight: 600;
   }
 
   > div:first-of-type{

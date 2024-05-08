@@ -51,8 +51,7 @@ nav {
   transition: background-color 0.3s ease;
 }
 nav .active {
-  text-decoration: underline;
-  text-underline-offset: 0.15rem;
+  font-weight: 600;
 }
 nav > div:first-of-type img {
   width: 180px;
