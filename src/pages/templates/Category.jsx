@@ -14,31 +14,31 @@ function Category({category}) {
       exit={{x: window.innerWidth, transition: { duration: 0.1 }}}
     >
       <Header/>
-        <section className="start">
-            <motion.img 
-              src={require(`../../assets/images/${category.categoryImage}`)} alt="food" 
-              initial={{opacity: 0}}
-              animate={{opacity: 1}}
-              transition={{delay: 0.3}}
-            />
-            <h1>{category.headingText}</h1>
-        </section>
-        <main>
-          <p>{category.introText}</p>
-          <div className="categoriesBtns">
-            {category.categories && category.categories.map((categoryItem, index) => (
-              <a  href={`#${category.categoriesIDs[index]}`} key={index} className={`categoryBtn ${index % 2 === 0 ? 'blue' : 'black'}`}>
-                {categoryItem.categoryName[0]}
-              </a>
-            ))}
-          </div>
-          {category.categories && category.categories.map((categoryItem, index)  =>     <LocationsCategory key={index} data={{
-            header: categoryItem.categoryName[1],
-            locations: categoryItem.locations,
-          }} id={category.categoriesIDs[index]}/>)
-          }
-        </main>
-        <Footer/>
+      <section className="start">
+          <motion.img 
+            src={require(`../../assets/images/${category.categoryImage}`)} alt="food" 
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{delay: 0.3}}
+          />
+          <h1>{category.headingText}</h1>
+      </section>
+      <main>
+        <p>{category.introText}</p>
+        <div className="categoriesBtns">
+          {category.categories && category.categories.map((categoryItem, index) => (
+            <a  href={`#${category.categoriesIDs[index]}`} key={index} className={`categoryBtn ${index % 2 === 0 ? 'blue' : 'black'}`}>
+              {categoryItem.categoryName[0]}
+            </a>
+          ))}
+        </div>
+        {category.categories && category.categories.map((categoryItem, index)  =>     <LocationsCategory key={index} data={{
+          header: categoryItem.categoryName[1],
+          locations: categoryItem.locations,
+        }} id={category.categoriesIDs[index]}/>)
+        }
+      </main>
+      <Footer/>
     </motion.div>
   )
 }

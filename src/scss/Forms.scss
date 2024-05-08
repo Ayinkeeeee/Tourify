@@ -38,6 +38,23 @@
                 top: 0.75rem;
                 right: 1.5rem;
             }
+
+            a{
+                position: absolute;
+                bottom: -0.25rem;
+                right: 0.5rem;
+                color: $mid_blue;
+                font-size: 0.75rem;
+                text-align: right; 
+                cursor: pointer;
+                transition: all 100ms;
+            }
+    
+            a:hover{
+                color: $dark_blue;
+                font-weight: 500;
+                transform: translateX(0);
+            }
         }
     }
 
@@ -66,6 +83,15 @@
             transition: transform 1s;
             font-size: 1rem;
             font-weight: 500;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background: lighten($dark_blue, 10);
+        }
+
+        button:active{
+            background: darken($dark_blue, 5);
         }
 
         p{

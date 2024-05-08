@@ -7,6 +7,7 @@ import TourGuides from "../pages/TourGuides"
 import ContactUs from "../pages/ContactUs"
 import SignUp from "../pages/SignUp"
 import LogIn from "../pages/LogIn"
+import ForgotPassword from "../pages/ForgotPassword"
 import LocationFull from "../pages/templates/LocationFull"
 import Profile from "../pages/Profile"
 import { Route, Routes, useLocation } from "react-router-dom"
@@ -29,6 +30,7 @@ function AnimatedRoutes() {
             <Route path='/sign_up' element={<SignUp/>} />
             <Route path='/log_in' element={<LogIn/>} />
             <Route path='/profile' element={<Profile/>} />
+            <Route path="/forgot_pass" element={<ForgotPassword/>}/>
         </Routes>
     </AnimatePresence>
   )

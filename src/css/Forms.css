@@ -31,6 +31,21 @@
   top: 0.75rem;
   right: 1.5rem;
 }
+.signup-form .passwordInput > div a, .login-form .passwordInput > div a {
+  position: absolute;
+  bottom: -0.25rem;
+  right: 0.5rem;
+  color: #1F83CB;
+  font-size: 0.75rem;
+  text-align: right;
+  cursor: pointer;
+  transition: all 100ms;
+}
+.signup-form .passwordInput > div a:hover, .login-form .passwordInput > div a:hover {
+  color: #1F3B98;
+  font-weight: 500;
+  transform: translateX(0);
+}
 .signup-form input, .login-form input {
   width: 98%;
   border-radius: 0.5rem;
@@ -55,6 +70,13 @@
   transition: transform 1s;
   font-size: 1rem;
   font-weight: 500;
+  cursor: pointer;
+}
+.signup-form .account button:hover, .login-form .account button:hover {
+  background: #284bc2;
+}
+.signup-form .account button:active, .login-form .account button:active {
+  background: #1b3383;
 }
 .signup-form .account p, .login-form .account p {
   font-size: 0.8rem;
