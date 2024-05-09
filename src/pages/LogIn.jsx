@@ -5,10 +5,12 @@ import Footer from '../components/sections/Footer'
 import { motion } from 'framer-motion'
 import { toast } from 'react-toastify'
 import { useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth"
 
 export default function LogIn() {
+
+    const mover = useNavigate()
 
     const [form, setForm] = useState({
         email: '',
@@ -34,8 +36,8 @@ export default function LogIn() {
             const userCredentials = await signInWithEmailAndPassword(auth, email, password)
 
             const user = userCredentials.user;
-            console.log(user)
-            toast.success("Welcome back")
+            toast.success("Welcome back " + user.displayName.split(" ")[0])
+            mover("/popular")
         }catch(err){
             toast.error("Login Failed");
         }
