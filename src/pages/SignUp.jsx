@@ -4,6 +4,7 @@ import Header from '../components/sections/Header'
 import Footer from '../components/sections/Footer'
 import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase/auth"
 import { db } from "../firebase.config"
+import { doc, setDoc, serverTimestamp } from "firebase/firestore"
 import { motion } from 'framer-motion'
 import { toast } from 'react-toastify'
 import { useState } from "react"
@@ -50,6 +51,14 @@ export default function SignUp() {
             updateProfile(user, {
                 displayName: fullName,
             })
+
+            const formDataCopy = {...form}
+            delete formDataCopy.password
+            delete formDataCopy.confirmPass
+            formDataCopy.dOB = new Date(dOB) 
+            formDataCopy.timeStamp = serverTimestamp()
+
+            await setDoc(doc(db, 'users', user.uid), formDataCopy)
 
             toast.success("Welcome to Tourify " + fullName.split(" ")[0])
             mover("/popular")
