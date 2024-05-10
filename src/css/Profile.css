@@ -93,6 +93,16 @@
 #profile main form .buttons button.red:active {
   background: #e60000;
 }
+#profile main .main.red {
+  margin-top: 10rem;
+  background: red;
+}
+#profile main .red:hover {
+  background: #ff4d4d;
+}
+#profile main .red:active {
+  background: #e60000;
+}
 
 @media screen and (max-width: 1200px) {
   #profile main form {

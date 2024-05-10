@@ -1,6 +1,7 @@
 import tourifyLogoBlue from "../../assets/icons/logo_blue.png";
 import MenuIcon from "../../assets/icons/menu.svg"
 import closeBtn from "../../assets/icons/close_x.svg"
+import profileIcon from "../../assets/icons/no_pfp.svg"
 import { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 
@@ -58,6 +59,7 @@ export default function Header() {
                 <Link to='/tour_guides' className={pathMatch('/tour_guides') ? 'active' : ''}>Tour Guides</Link>
                 <Link to='/contact_us' className={pathMatch('/contact_us') ? 'active' : ''}>Contact Us</Link>
                 <button onClick={() => {navigator('/sign_up')}} className="main">Sign Up</button>
+                {/* <img onClick={() => {navigator("/profile")}} src={profileIcon} alt="profile" /> */}
             </div>
             <div className="openBtn">
                 <img src={MenuIcon} onClick={openMenu} alt="menu bars" />
@@ -74,6 +76,9 @@ export default function Header() {
                     <Link to='/contact_us' className={pathMatch('/contact_us') ? 'active' : ''}>Contact Us</Link>
                 </div>
                 <div>
+                    {/* <Link to='/profile' className={`profile ${pathMatch('/profile') ? 'active' : ''}`}>
+                        <img src={profileIcon} alt="profile" /><p>Profile</p>
+                    </Link> */}
                     <button onClick={() => {navigator('/sign_up')}} className="main">Sign Up</button>
                 </div>
                 <div className="close">

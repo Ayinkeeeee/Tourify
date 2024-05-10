@@ -114,6 +114,19 @@
                 }
             }
         }
+
+        .main.red{
+            margin-top: 10rem;
+            background: red;
+        }
+
+        .red:hover{
+            background: lighten(red, 15);
+        }
+
+        .red:active{
+            background: darken(red, 5);
+        }
     }
 }
 

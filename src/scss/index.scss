@@ -94,6 +94,23 @@ nav{
       font-size: 1rem;
       padding: 0.35rem 1rem;
     }
+
+    img{
+      padding: 0.1rem 0.25rem;
+      border-radius: 50%;
+      border: solid 2px $dark_blue;
+      cursor: pointer;
+      transition: all ease 100ms;
+    }
+
+    img:hover{
+      background: whitesmoke;
+      border: solid 2px $mid_blue;
+    }
+
+    img:active{
+      border: solid 2px black;
+    }
   }
 
   .openBtn{
@@ -147,6 +164,24 @@ nav{
       font-size: 1.1rem;
       font-weight: 500;
       padding: 0.35rem 1rem;
+    }
+
+    .profile{
+
+      img{
+        width: 1rem;
+
+      }
+
+      display: flex;
+      column-gap: 0.5rem;
+    }
+
+    .profile.active{
+
+      p{
+        font-weight: 600;
+      }
     }
   }
 

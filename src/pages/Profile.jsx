@@ -22,8 +22,6 @@ function Profile() {
         email: 'tourifyuser@mail.com'
     })
 
-    const { fname, lname, location, dOB, email } = form
-
     const auth = getAuth()
 
     const getProfile = async () => {
@@ -36,34 +34,37 @@ function Profile() {
             if(docSnap.exists()){
                 return docSnap.data()
             }else{
-                console.log("Document does not exist")
+                console.log("Profile Not Found")
             }
         }catch(err){
             toast.error("Credential Retrieval Failed")
         }
     }
 
+    const getProfileInfo = async () => {
+        const profile = await getProfile()
+
+        const { displayName, email } = auth.currentUser
+        const { dOB, timeStamp } = profile;
+        const [ fname, lname ] = displayName.split(" ");
+
+        console.log(form)
+
+        setForm((formData) => (
+            {   
+                ...formData, 
+                fname,
+                lname,
+                email,
+                dOB: dOB.toDate(),
+                location: profile?.location || '',
+                dateJoined: timeStamp.toDate()
+            }
+        ))
+    }
+
     useEffect(() => {
-        if(auth){
-            const profile = getProfile()
-
-            const { displayName } = auth.currentUser
-            const { email, dOB, timeStamp } = profile;
-            const [ fname, lname ] = displayName.split(" ");
-
-            setForm((formData) => (
-                {   
-                    ...formData, 
-                    fname,
-                    lname,
-                    email,
-                    dOB: dOB,
-                    location: profile?.location || '',
-                    dateJoined: timeStamp
-                }
-            ))
-        }
-        
+        getProfileInfo()
     }, [])
 
     function formatDateToString(date) {
@@ -109,11 +110,11 @@ function Profile() {
             
             // update location
             await updateDoc(profileRef, {
-                location: location
+                location: form.location
             })
 
             await updateProfile(auth.currentUser, {
-                displayName: fname + " " + lname
+                displayName: form.fname + " " + form.lname
             })
 
             setEdit(false)
@@ -145,28 +146,28 @@ function Profile() {
                 <div className="inputItem">
                     <label htmlFor="fname">First Name:</label>
                     { edit ? 
-                    <input value={fname || ''} type="text" name="fname" id="fname" onChange={handleChange} /> : 
+                    <input value={form.fname || ''} type="text" name="fname" id="fname" onChange={handleChange} /> : 
                     <p>{form.fname}</p>}
                 </div>
                 <div className="inputItem">
                     <label htmlFor="lname">Last Name:</label>
                     { edit ? 
-                    <input value={lname || ''} type="text" name="lname" id="lname" onChange={handleChange} /> : 
+                    <input value={form.lname || ''} type="text" name="lname" id="lname" onChange={handleChange} /> : 
                     <p>{form.lname}</p>}
                 </div>
                 <div className="inputItem">
                     <label htmlFor="location">Location:</label>
                     { edit ? 
-                    <input value={location || ''} type="text" name="location" id="location" onChange={handleChange} /> : 
+                    <input value={form.location || ''} type="text" name="location" id="location" onChange={handleChange} /> : 
                     <p>{form.location}</p>}
                 </div>
                 <div className="inputItem">
                     <label htmlFor="email">Email:</label>
-                    <p>{email}</p>
+                    <p>{form.email}</p>
                 </div>
                 <div className="inputItem">
                     <label htmlFor="dOB">Date of Birth:</label>
-                    <p>{formatDateToString(dOB)}</p>
+                    <p>{formatDateToString(form?.dOB)}</p>
                 </div>
                 <div className="inputItem">
                     <label htmlFor="dOJ">Date Joined:</label>
@@ -181,6 +182,7 @@ function Profile() {
                     <button className="blue" onClick={(e) => { e.preventDefault(); setEdit(true);}}>Edit Profile</button>}
                 </div>
             </form>
+            <button className="main red">Log Out</button>
         </main>
         <Footer/>
     </motion.div> : <h1>Not Logged In</h1>

@@ -71,6 +71,20 @@ nav > div:nth-of-type(3) button {
   font-size: 1rem;
   padding: 0.35rem 1rem;
 }
+nav > div:nth-of-type(3) img {
+  padding: 0.1rem 0.25rem;
+  border-radius: 50%;
+  border: solid 2px #1F3B98;
+  cursor: pointer;
+  transition: all ease 100ms;
+}
+nav > div:nth-of-type(3) img:hover {
+  background: whitesmoke;
+  border: solid 2px #1F83CB;
+}
+nav > div:nth-of-type(3) img:active {
+  border: solid 2px black;
+}
 nav .openBtn {
   display: none;
   cursor: pointer;
@@ -117,6 +131,16 @@ nav .responsiveMenu button {
   font-size: 1.1rem;
   font-weight: 500;
   padding: 0.35rem 1rem;
+}
+nav .responsiveMenu .profile {
+  display: flex;
+  column-gap: 0.5rem;
+}
+nav .responsiveMenu .profile img {
+  width: 1rem;
+}
+nav .responsiveMenu .profile.active p {
+  font-weight: 600;
 }
 nav .responsiveMenu.close {
   width: 0;

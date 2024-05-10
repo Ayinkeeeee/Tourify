@@ -37,7 +37,8 @@ export default function LogIn() {
 
             const user = userCredentials.user;
             toast.success("Welcome back " + user.displayName.split(" ")[0])
-            mover("/popular")
+            // mover("/popular")
+            mover("/profile")
         }catch(err){
             toast.error("Login Failed");
         }
