@@ -60,7 +60,7 @@ export default function SignUp() {
 
             await setDoc(doc(db, 'users', user.uid), formDataCopy)
 
-            toast.success("Welcome to Tourify " + fullName.split(" ")[0])
+            toast.success("Welcome to Tourify! " + fullName.split(" ")[0])
             mover("/popular")
         }catch(err){
             toast.error("Sign Up Failed")

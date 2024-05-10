@@ -31,9 +31,11 @@
     }
     
     main{
+        padding: 0;
 
         > p{
             margin-bottom: 1rem;
+            padding: 0 2rem;
         }
     
         .categoriesBtns{
@@ -44,11 +46,11 @@
             position: -webkit-sticky;
             top: 4.6rem;
             flex-wrap: wrap;
-            padding: 1rem 0 1rem 0;
+            padding: 1rem 2rem 1rem 2rem;
             background: white;
             z-index: 10;
             width: 100%;
-            margin-block: 0;
+            margin-block: 0 !important;
     
             .categoryBtn{
                 outline: none;
@@ -95,9 +97,10 @@
             margin: 6rem 0 0 0;
             display: flex;
             flex-direction: column;
+            padding: 0 2rem;
         
             .locations{
-                margin-top: 2rem;
+                margin-top: 4rem;
                 display: flex;
                 justify-content: space-between;
                 column-gap: 64px;
@@ -181,6 +184,10 @@
             .categoriesBtns{
                 top: 4.2rem;
             }
+
+            .locationsGroup{
+                padding: 0 1rem;
+            }
         }
     }
 }
@@ -257,6 +264,7 @@
         main{
 
             .locationsGroup{
+                padding: 0 0.5rem;
         
                 .locations{
             

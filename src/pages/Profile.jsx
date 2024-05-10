@@ -3,7 +3,7 @@ import backBtn from "../assets/icons/back.svg"
 import Header from "../components/sections/Header"
 import Footer from "../components/sections/Footer"
 import { doc, getDoc, updateDoc } from "firebase/firestore"
-import { getAuth, updateProfile } from "firebase/auth"
+import { getAuth, updateProfile, signOut } from "firebase/auth"
 import { db } from "../firebase.config"
 import { motion } from "framer-motion"
 import { toast } from "react-toastify"
@@ -45,10 +45,7 @@ function Profile() {
         const profile = await getProfile()
 
         const { displayName, email } = auth.currentUser
-        const { dOB, timeStamp } = profile;
         const [ fname, lname ] = displayName.split(" ");
-
-        console.log(form)
 
         setForm((formData) => (
             {   
@@ -56,9 +53,9 @@ function Profile() {
                 fname,
                 lname,
                 email,
-                dOB: dOB.toDate(),
-                location: profile?.location || '',
-                dateJoined: timeStamp.toDate()
+                dOB: profile.dOB.toDate(),
+                location: profile.location || '',
+                dateJoined: profile.timeStamp.toDate()
             }
         ))
     }
@@ -126,6 +123,11 @@ function Profile() {
         
     }
 
+    const logOut = async () => {
+        await signOut();
+        navigator('/')
+    }
+
   return auth.currentUser ? 
     <motion.div
         id="profile"
@@ -182,7 +184,7 @@ function Profile() {
                     <button className="blue" onClick={(e) => { e.preventDefault(); setEdit(true);}}>Edit Profile</button>}
                 </div>
             </form>
-            <button className="main red">Log Out</button>
+            <button className="main red" onClick={logOut}>Log Out</button>
         </main>
         <Footer/>
     </motion.div> : <h1>Not Logged In</h1>

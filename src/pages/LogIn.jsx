@@ -40,7 +40,8 @@ export default function LogIn() {
             // mover("/popular")
             mover("/profile")
         }catch(err){
-            toast.error("Login Failed");
+            toast.error("Invalid Credentials");
+            console.log(err)
         }
     }
 

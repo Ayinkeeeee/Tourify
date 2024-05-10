@@ -1068,8 +1068,12 @@ main #newsletter button {
   text-align: center;
   text-shadow: 1px 4px 4px black;
 }
+.category main {
+  padding: 0;
+}
 .category main > p {
   margin-bottom: 1rem;
+  padding: 0 2rem;
 }
 .category main .categoriesBtns {
   display: flex;
@@ -1079,11 +1083,11 @@ main #newsletter button {
   position: -webkit-sticky;
   top: 4.6rem;
   flex-wrap: wrap;
-  padding: 1rem 0 1rem 0;
+  padding: 1rem 2rem 1rem 2rem;
   background: white;
   z-index: 10;
   width: 100%;
-  margin-block: 0;
+  margin-block: 0 !important;
 }
 .category main .categoriesBtns .categoryBtn {
   outline: none;
@@ -1121,9 +1125,10 @@ main #newsletter button {
   margin: 6rem 0 0 0;
   display: flex;
   flex-direction: column;
+  padding: 0 2rem;
 }
 .category main .locationsGroup .locations {
-  margin-top: 2rem;
+  margin-top: 4rem;
   display: flex;
   justify-content: space-between;
   column-gap: 64px;
@@ -1187,6 +1192,9 @@ main #newsletter button {
   .category main .categoriesBtns {
     top: 4.2rem;
   }
+  .category main .locationsGroup {
+    padding: 0 1rem;
+  }
 }
 @media screen and (max-width: 500px) {
   .category .start {
@@ -1218,6 +1226,9 @@ main #newsletter button {
   }
 }
 @media screen and (max-width: 365px) {
+  .category main .locationsGroup {
+    padding: 0 0.5rem;
+  }
   .category main .locationsGroup .locations .locationItem {
     width: 300px;
   }
