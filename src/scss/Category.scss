@@ -46,7 +46,7 @@
             position: -webkit-sticky;
             top: 4.6rem;
             flex-wrap: wrap;
-            padding: 1rem 2rem 1rem 2rem;
+            padding: 1rem 2rem;
             background: white;
             z-index: 10;
             width: 100%;
@@ -181,8 +181,14 @@
 
         main{
 
+            > p{
+                margin-bottom: 1rem;
+                padding: 0 1rem;
+            }
+
             .categoriesBtns{
                 top: 4.2rem;
+                padding: 1rem 1rem;
             }
 
             .locationsGroup{
@@ -262,6 +268,16 @@
     .category{
 
         main{
+
+            > p{
+                margin-bottom: 1rem;
+                padding: 0 0.5rem;
+            }
+
+            .categoriesBtns{
+                top: 4.2rem;
+                padding: 1rem 0.5rem;
+            }
 
             .locationsGroup{
                 padding: 0 0.5rem;

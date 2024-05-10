@@ -3,7 +3,7 @@ import backBtn from "../assets/icons/back.svg"
 import Header from "../components/sections/Header"
 import Footer from "../components/sections/Footer"
 import { doc, getDoc, updateDoc } from "firebase/firestore"
-import { getAuth, updateProfile, signOut } from "firebase/auth"
+import { getAuth, updateProfile } from "firebase/auth"
 import { db } from "../firebase.config"
 import { motion } from "framer-motion"
 import { toast } from "react-toastify"
@@ -15,11 +15,11 @@ function Profile() {
     const navigator = useNavigate()
     const [ edit, setEdit ] = useState(false)
     const [ form, setForm ] = useState({
-        fname: 'John',
-        lname: 'Doe',
+        fname: '',
+        lname: '',
         location: "",
-        dOB: new Date('2004-03-04'),
-        email: 'tourifyuser@mail.com'
+        dOB: '',
+        email: ''
     })
 
     const auth = getAuth()
@@ -124,7 +124,8 @@ function Profile() {
     }
 
     const logOut = async () => {
-        await signOut();
+        auth.signOut()
+        toast.success("Logged out successfully")
         navigator('/')
     }
 
