@@ -53,16 +53,16 @@ export default function LogIn() {
         >
             <Header/>
             <main>
-                <form id="login-form" className="login-form" onSubmit={handleSubmit}>
+                <form id="login-form" className="login-form " onSubmit={handleSubmit}>
                     <h1>LOG IN</h1>
                     <div>
                         <label htmlFor="email">Email</label>
-                        <input type="email" name="email" placeholder="johndoe@email.com" required value={email || ''} onChange={handleChange}/>
+                        <input type="email" id='email' name="email" placeholder="johndoe@email.com" required value={email || ''} onChange={handleChange}/>
                     </div>
                     <div className='passwordInput'>
                         <label htmlFor="password">Password</label>
                         <div>
-                            <input type={showPassword ? 'text' : 'password'} name="password" required value={password || ''} onChange={handleChange}/>
+                            <input type={showPassword ? 'text' : 'password'} name="password" id='password' required value={password || ''} onChange={handleChange}/>
                             <img src={showPassword ? eyeSlash : eye} type="button" onClick={() => setShowPassword(!showPassword)}/>
                             <Link to='/forgot_pass'>Forgot Password?</Link>
                         </div>

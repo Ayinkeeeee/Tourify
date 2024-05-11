@@ -95,14 +95,14 @@ export default function SignUp() {
                     <div className='passwordInput'>
                         <label htmlFor="password">Password</label>
                         <div>
-                            <input type={showPassword ? 'text' : 'password'} name="password" required value={password || ''} onChange={handleChange}/>
+                            <input type={showPassword ? 'text' : 'password'} name="password" id='password' required value={password || ''} onChange={handleChange}/>
                             <img src={showPassword ? eyeSlash : eye} type="button" onClick={() => setShowPassword(!showPassword)}/>
                         </div>
                     </div>
                     <div className='passwordInput'>
                         <label htmlFor="confirmPass">Confirm Password</label>
                         <div>
-                            <input type={showConfirmPass ? 'text' : 'password'} name="confirmPass" required value={confirmPass || ''} onChange={handleChange}/>
+                            <input type={showConfirmPass ? 'text' : 'password'} name="confirmPass" id='confirmPass' required value={confirmPass || ''} onChange={handleChange}/>
                             <img src={showConfirmPass ? eyeSlash : eye} type="button" onClick={() => setShowConfirmPass(!showConfirmPass)}/>
                         </div>
                     </div>

@@ -4,7 +4,7 @@ import useAuthStatus from "../hooks/useAuthStatus";
 const PrivateRoute = () => {
     const { loggedIn, checkingStatus } = useAuthStatus()
 
-    if(checkingStatus){
+    if(checkingStatus === true){
         return <h3>Loading...</h3>
     }
 

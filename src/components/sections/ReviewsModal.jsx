@@ -9,7 +9,7 @@ function ReviewsModal({reviews}) {
     <section className="all_reviews reviewsGroup">
         <h1>Reviews</h1>
         <div className="reviews">
-            {reviews && reviews.map((review, index) => <Review/> )}
+            {reviews && reviews.map((review, index) => <Review key={index}/> )}
         </div>
         <button onClick={closeReviews} className="main">Close</button>
     </section>
