@@ -10,6 +10,7 @@ import LogIn from "../pages/LogIn"
 import ForgotPassword from "../pages/ForgotPassword"
 import LocationFull from "../pages/templates/LocationFull"
 import Profile from "../pages/Profile"
+import PrivateRoute from "./PrivateRoute"
 import { Route, Routes, useLocation } from "react-router-dom"
 import { AnimatePresence } from "framer-motion"
 
@@ -29,7 +30,11 @@ function AnimatedRoutes() {
             <Route path="/locations/:id" element={<LocationFull/>}/>
             <Route path='/sign_up' element={<SignUp/>} />
             <Route path='/log_in' element={<LogIn/>} />
-            <Route path='/profile' element={<Profile/>} />
+            <Route path='/profile' element={
+              <PrivateRoute>
+                <Profile/>
+              </PrivateRoute>
+            } />
             <Route path="/forgot_pass" element={<ForgotPassword/>}/>
         </Routes>
     </AnimatePresence>
