@@ -30,11 +30,9 @@ function AnimatedRoutes() {
             <Route path="/locations/:id" element={<LocationFull/>}/>
             <Route path='/sign_up' element={<SignUp/>} />
             <Route path='/log_in' element={<LogIn/>} />
-            <Route path='/profile' element={
-              <PrivateRoute>
-                <Profile/>
-              </PrivateRoute>
-            } />
+            <Route path="/profile" element={<PrivateRoute/>}>
+              <Route path='/profile' element={<Profile/>} />
+            </Route>
             <Route path="/forgot_pass" element={<ForgotPassword/>}/>
         </Routes>
     </AnimatePresence>
