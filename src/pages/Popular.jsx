@@ -116,7 +116,7 @@ function Popular() {
             {
                 locationName: "Deda Hospital",
                 address: "B07, Cadastral Zone, Plot 1847 Katampe Rd, Kado, Abuja 900108, Federal Capital Territory",
-                rating: 4.7,
+                rating: 4.65,
                 pic: 'deda.png'
 
             },
