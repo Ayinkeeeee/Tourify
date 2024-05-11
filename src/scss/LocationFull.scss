@@ -16,6 +16,21 @@
     
     main{
         margin-top: 1.2rem;
+
+        > p::first-letter{
+            font-family: inherit;
+            line-height: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+        }
+
+        > h3:first-of-type{
+            margin-bottom: 0.75rem;
+        }
+
+        p.description{
+            margin-bottom: 2rem;
+        }
     
         p.full_address:first-letter{
             font-family: unset;

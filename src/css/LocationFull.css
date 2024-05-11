@@ -13,6 +13,18 @@
 .full_location main {
   margin-top: 1.2rem;
 }
+.full_location main > p::first-letter {
+  font-family: inherit;
+  line-height: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+.full_location main > h3:first-of-type {
+  margin-bottom: 0.75rem;
+}
+.full_location main p.description {
+  margin-bottom: 2rem;
+}
 .full_location main p.full_address:first-letter {
   font-family: unset;
   line-height: unset;

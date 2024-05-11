@@ -104,15 +104,20 @@ function Profile() {
         try{
 
             const profileRef = doc(db, "users", auth.currentUser.uid);
+            const newName = form.fname + " " + form.lname
             
             // update location
             await updateDoc(profileRef, {
+                fullName: newName,
                 location: form.location
             })
 
-            await updateProfile(auth.currentUser, {
-                displayName: form.fname + " " + form.lname
-            })
+            // update users name
+            if(auth.currentUser.displayName !== newName){
+                await updateProfile(auth.currentUser, {
+                    displayName: form.fname + " " + form.lname
+                })
+            }            
 
             setEdit(false)
             toast.success('Profile Updated')

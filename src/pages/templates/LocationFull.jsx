@@ -74,6 +74,8 @@ function LocationFull({full_location}) {
                     {full_location.budget ? full_location.budget.map((budgetItem, index) => 
                     <p key={index} className={`budget ${index % 2 === 0 ? "blue" : 'black'}`}>{budgetItem}</p>) : <p className="budget red">Budget unavailable</p>}
                 </div>
+                <h3>Description</h3>
+                <p className="description">West Africa's largest art gallery, also in Abuja, Kogi & Osun. Open 10am-6pm Mon-Sat 1pm-6pm Sun (Free for individuals Fee for Groups).</p>
                 <h3>Location</h3>
                 <div className="map">
                     <iframe
@@ -147,6 +149,7 @@ LocationFull.defaultProps = {
         address: "5 Usuma St, Three Arms Zone, Abuja 900103, Federal Capital Territory",
         rating: 4.5,
         budget: ["Free for Individual", "Fee for Groups"],
+        about: "West Africa's largest art gallery, also in Abuja, Kogi & Osun.10am-6pm Mon-Sat 1pm-6pm Sun (Free for individuals Fee for Groups)",
         phone: "080-0000-0000",
         instagram: 'nike_arts',
         facebook: 'nike_arts',
